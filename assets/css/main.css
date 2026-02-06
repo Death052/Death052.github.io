@@ -99,10 +99,10 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #888;
-		font-family: "Lato", sans-serif;
+		font-family: "VT323", sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
-		line-height: 1.75em;
+		line-height: 1.5em;
 	}
 
 	a {
@@ -1709,7 +1709,7 @@ input, select, textarea {
 	.container {
 		margin: 0 auto;
 		max-width: calc(100% - 4.5em);
-		width: 45em;
+		width: 40em;
 	}
 
 		.container.xsmall {
@@ -1752,6 +1752,23 @@ input, select, textarea {
 
 		}
 
+/* .project-row {
+    display: flex;
+    align-items: center;   
+    gap: 3rem;             
+}
+
+.project-row p {
+    flex: 1;              
+}
+
+.project-row button {
+    white-space: nowrap; 
+} */
+
+
+
+		
 /* Section/Article */
 
 	section.special, article.special {
@@ -2654,8 +2671,10 @@ input, select, textarea {
 
 	.features article {
 		border-top: solid 3px #f4f4f4;
-		margin-bottom: 2.25em;
-		padding-top: 2.25em;
+		margin-bottom: 5em;
+		padding-top: 5em;
+		margin-left: -5em;
+		margin-right: -5em;
 	}
 
 		.features article:first-child {
