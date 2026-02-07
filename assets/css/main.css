@@ -2432,6 +2432,19 @@ input, select, textarea {
 				width: 2.5em;
 			}
 
+
+	.icon_logo_img img{
+		vertical-align: middle;
+		height: 18%;
+  		width: 18%;
+	}
+
+	.icon_logo_img span {
+    vertical-align: middle;
+    margin-left: 15px;
+    line-height: 50px; /* Match the image height */
+	}
+
 /* Icons */
 
 	ul.icons {

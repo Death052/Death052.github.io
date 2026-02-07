@@ -113,3 +113,14 @@
   display: flex;
   gap: 16px;
 }
+
+
+.pixel-button-link {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.pixel-button-link:active .pixel {
+    top: 2px;
+}
+
