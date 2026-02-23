@@ -1,0 +1,8 @@
+.image-row {
+  display: flex;
+  gap: 10px;
+}
+
+.SE-imgContainer {
+  padding: 5px;
+}
