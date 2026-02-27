@@ -16,12 +16,6 @@
 		<link rel="stylesheet" href="assets/css/button.css" />
         <link rel="stylesheet" href="assets/css/new.css" />
 
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
-
 	</head>
 	<body class="is-preload">
 
@@ -59,55 +53,68 @@
                         </div>
                         <div class="container">
                             <header class="major">
-                                <h2>Prison Island</h2>
-                                <p>Introduction</p>
+                                <h2>Just One Look</h2>
                             </header>
-                            <p>Prison Island is a game made for a university programming project. I am tasked to demake an existing game in less than 2 months, while adding a small twist to its gameplay.</p>
-                            <p>I chose to demake the game "Grey Scout" from Sockpop. This game involves a lot of stealth elements, requiring the player to hide in bushes to avoid guards, while trying to
-                                rescue other prisoners and bringing it back to the ship.
+                            <h3>Introduction</h3>
+                            <p> I have participated in the Global Game Jam 2026, and Just One Look is the game I made for the event.
+                                I worked alongside two teammates to create this game within 3 days. I was the coder, while my teammates were
+                                responsible for the art and level design. The theme for the game jam was "Mask".
                             </p>
                         </div>
+
                     </div>
 
                     <div class="container">
                         <h3>Programs Used</h3>
                         <ul class="feature-icons">
                              <li class="icon_logo_img">
-                                <img src="images/unity_logo.png" alt="Unity" width="50" height="50" >
-                                <span>Unity</span>
+                                <img src="images/godot_logo.png" alt="Godot" width="50" height="50" >
+                                <span>Godot</span>
+                            </li>
+                            <li class="icon_logo_img">
+                                <img src="images/aesprite.png" alt="Aesprite" width="50" height="50" >
+                                <span>Aesprite</span>
                             </li>
                         </ul>
                     </div>
         
                     
                     <div class="container">
-                        <h3>Gameplay Design</h3>
+                        <h3>Gameplay</h3>
                         <p>
-                            The game consist of a single large level with 5 cages containing prisoners. The player is required to go to each cage, free the prisoner within the cage,
-                            and bring the prisoner back to the ship. However, a guard is placed within the close region of each cage, and the player must avoid being seen by the guard.
-                            If a guard sees the player, it will chase the player. The player can hide in bushes to avoid being seen.
+                            The game is created as a large scene, with multiple areas connected to each other. The player is required to collect
+                            all orbs in one area before advancing to the next.
                         </p>
                         <p>
-                            As the twist of the game, I created a mechanism that allows the player to draw cards, each with unique attributes that both benefit and hinder the player 
-                            in some way. 
+                            There are 2 types of normal enemies within the game. The first type is a small enemy which chases after the player once
+                            the player is within its vision. The second type is a large enemy that doesn't move, but has a much larger vision range,
+                            and will instantly kill the player once the player is within its vision.
                         </p>
-                        
+                        <p>
+                            The player can wear a mask to avoid being detected by the enemies mentioned. However, if the player wears the mask for too long,
+                            they will go insane. After going insane, the aformentioned enemies will no longer attack the player. However, new shadow entities
+                            will spawn and chase after the player.
+                        </p>
 
-                        <h5>Gameplay Images</h5>
                         <div class="image-row">
                             <div class="SE-imgContainer">
-                                <img src="images/Prison_Island_1.png" alt="SE1" height="220" width="394">
+                                <span>Title Screen</span>
+                                <img src="images/Just_One_Look_4.png" alt="SE1" height="220" width="394">
                             </div>
                             <div class="SE-imgContainer">
-                                <img src="images/Prison_Island_2.png" alt="SE2" height="220" width="394">
+                                <span>Mask Off</span>
+                                <img src="images/Just_One_Look_1.png" alt="SE2" height="220" width="394">
                             </div>
                         </div>
+
                         <div class="image-row">
                             <div class="SE-imgContainer">
-                                <img src="images/Prison_Island_3.png" alt="SE1" height="220" width="394">
+                                <span>Mask On</span>
+                                <img src="images/Just_One_Look_2.png" alt="SE1" height="220" width="394">
                             </div>
                             <div class="SE-imgContainer">
-                                <img src="images/Prison_Island_4.png" alt="SE2" height="220" width="394">
+                                <span>Insanity</span>
+                                <img src="images/Just_One_Look_3.png" alt="SE2" height="220" width="394">
                             </div>
                         </div>
                     </div>
@@ -115,16 +122,19 @@
                     <div class="container">
                         <h3>Learning Outcomes</h3>
                         <p>
-                            This is my first time creating a gameplay filled game in 3D, branching away from my 2D projects. I learnt how to use  Post Processing Layer  
-                            to create a more atmospheric environment. I also learnt how to use rigged models and import rigged animations in Unity. I also experimented with
-                            NavMeshes in unity for guard movement.
+                            This is the first game jam I have participated in. Even though I am familiar to Godot,
+                            I have never made a game within such a short time frame. I learnt to compromise on the
+                            scale of the game and focus on coding for the core gameplay mechanics.
                         </p>
                         <p>
-                            Similar to previous projects, I also had a refresher on using state machines on both Prisoner and Guard Agents, as well as using Raycast for 
-                            guard detection.
+                            I also learnt how to collaborate with teammates, through by discussing our goals and
+                            understanding each other’s ideas to prevent working on wrong tasks.
                         </p>
-
-                        <!-- https://www.youtube.com/embed/gJUEuxbuTGI -->
+                        <p>
+                            Techical-wise, I had some hands-on experience with some godot shaders, such as the CRT-filter
+                            visible in most parts of the game, and the screen distortion effect when the player is wearing
+                            the mask.
+                        </p>
                     </div>
 
                     <div class="container">
