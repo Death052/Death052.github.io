@@ -2683,9 +2683,11 @@ input, select, textarea {
 /* Features */
 
 	.features article {
+		display: flex;
+		align-items: flex-start;
 		border-top: solid 3px #f4f4f4;
-		margin-bottom: 5em;
-		padding-top: 5em;
+		margin-bottom: 2em;
+		padding-top: 2em;
 		margin-left: -5em;
 		margin-right: -5em;
 	}
@@ -2696,20 +2698,22 @@ input, select, textarea {
 		}
 
 		.features article .image {
-			display: inline-block;
+			flex-shrink: 0;
+			padding: 0 0 0 40px;
 			padding-right: 2.5em;
-			vertical-align: middle;
 			width: 48%;
+			padding-left: 100px;
 		}
 
 			.features article .image img {
-				display: block;
+				display: inline-block;
 				width: 100%;
+				
+				border: 4px solid #6B9E62;
+				box-sizing: border-box;
 			}
 
 		.features article .inner {
-			display: inline-block;
-			vertical-align: middle;
 			width: 50%;
 		}
 

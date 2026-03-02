@@ -112,6 +112,8 @@
 .button-row {
   display: flex;
   gap: 16px;
+  margin-top: 1em;
+  margin-bottom: 0;
 }
 
 
