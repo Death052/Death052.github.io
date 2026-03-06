@@ -9,7 +9,7 @@
 
 .pixel, .pixel2 {
   font-size: 25px;
-  color: white;
+  color: #ACD797;
   height: auto;
   margin: 10px;
   font-family: 'VT323';
@@ -62,7 +62,10 @@
   padding: 10px 20px;
   
 	background: #000000;
-	 background: green;
+  background: #09171D;
+
+  outline: 2px solid #669999;
+  outline-offset: -2px;
 }
 
 .pixel2 {
@@ -73,7 +76,7 @@
   text-transform: uppercase;
   
   font-size: 25px;
-  color: white;
+  color: #669999;
 }
 
 .pixel2::before {
@@ -96,7 +99,7 @@
   bottom: 4px;
   left: -6px;
   right: -6px;
-  background: green;
+  background: #1D3944;
   z-index: -1;
 }
 

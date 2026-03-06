@@ -29,7 +29,20 @@ new Chart(ctx, {
     scales: {
       x: {
         min: 0,
-        max: 100 
+        max: 100, 
+
+        ticks: {
+          color: '#ACD797'  // X-axis numbers color
+        },
+        title: {
+          color: '#ACD797'  // X-axis title color
+        }
+      },
+
+      y: {
+        ticks: {
+          color: '#ACD797'  // Y-axis labels color (language names)
+        }
       }
     },
 
@@ -40,8 +53,10 @@ new Chart(ctx, {
           // This more specific font property overrides the global property
           font: {
               size: 18
-          }
+          },
+          color: '#ACD797'
         }
+        
       }
     }
   }
