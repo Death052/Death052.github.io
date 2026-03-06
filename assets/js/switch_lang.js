@@ -60,14 +60,22 @@ function onChangePageClick(event, targetPage, currentPage) {
         // check if going back to index
         if (targetPage === 'index.html#three'){
             targetPage = '#three';
+             console.log("targetPage is correct");
+        }else{
+            console.log("targetPage is ", targetPage);
         }
+        
+        // Add separator if base doesn't already end with /
+        const separator = base.endsWith('/') ? '' : '/';
 
         if (lang === 1) {
-            window.location.href = base + "/" + targetPage;
+            window.location.href = base + separator + targetPage;
         }else if (lang === 2) {
-            window.location.href = base + "/" + targetPage;
+            window.location.href = base + separator + targetPage;
         }else if (lang === 3) {
-            window.location.href = base + "/" + targetPage;
+            window.location.href = base + separator + targetPage;
+        }
+    }
         }
 	}
 
