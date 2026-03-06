@@ -12,23 +12,28 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Monofett&family=VT323&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/button.css" />
-        <link rel="stylesheet" href="assets/css/new.css" />
+        <link rel="stylesheet" href="../assets/css/main.css" />
+        <link rel="stylesheet" href="../assets/css/button.css" />
+            <link rel="stylesheet" href="../assets/css/new.css" />
 
 	</head>
 	<body class="is-preload">
-
+    <!-- Language Switcher Button -->
+	<div style="position: fixed; top: 1rem; right: 1rem; z-index: 1000;">
+		<a class="pixel-button-link">
+			<div class="pixel" id="lang-switch"><p>繁</p></div>
+		</a>
+	</div>
 		<!-- Header -->
 			<section id="header">
-				<header>
-					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
-					<h1 id="logo"><a href="#">Willis Corto</a></h1>
-					<p>I got reprogrammed by a rogue AI<br />
-					and now I'm totally cray</p>
-				</header>
+                <header>
+                    <span class="image avatar"><img src="../images/avatar.jpg" alt="" /></span>
+                    <h1 id="logo"><a href="#">Kwok Yik Hei Stephen</a></h1>
+                    <p>Just a Game Designer and Digital Artist.<br />
+                    Certified Silly Person</p>
+                </header>
 				<nav id="nav">
-					<a href="index.html#three" class="pixel-button-link">
+					<a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'index.html#three','maya-projects.html')">
                         <div class="pixel"><p>Back to Home</p></div>
                     </a>
 				</nav>
@@ -49,7 +54,7 @@
 				<!-- Main -->
 					<div id="main">
                         <div class="image main" data-position="center">
-                            <img src="images/banner.jpg" alt="" />
+                            <img src="../images/banner.jpg" alt="" />
                         </div>
                         <div class="container">
                             <header class="major">
@@ -70,11 +75,11 @@
                         <h3>Programs Used</h3>
                         <ul class="feature-icons">
                              <li class="icon_logo_img">
-                                <img src="images/maya.png" alt="Maya" width="50" height="50" >
+                                <img src="../images/maya.png" alt="Maya" width="50" height="50" >
                                 <span>Maya</span>
                             </li>
                             <li class="icon_logo_img">
-                                <img src="images/hitfilm_logo.png" alt="HitFilm" width="50" height="50" >
+                                <img src="../images/hitfilm_logo.png" alt="HitFilm" width="50" height="50" >
                                 <span>HitFilm [Video Editing]</span>
                             </li>
                         </ul>
@@ -115,13 +120,13 @@
                             <div class="SE-imgContainer">
                                 <span>Maya Animation Project</span>
                                 <video width="394" height="220" controls>
-                                    <source src="images/Maya_Animation_Project_1.mp4" type="video/mp4">
+                                    <source src="../images/Maya_Animation_Project_1.mp4" type="video/mp4">
                                 </video>
                             </div>
                             <div class="SE-imgContainer">
                                 <span>Maya Static Project 1</span>
                                 <video width="394" height="220" controls>
-                                    <source src="images/Maya_Static_Project_1.mp4" type="video/mp4">
+                                    <source src="../images/Maya_Static_Project_1.mp4" type="video/mp4">
                                 </video>
                             </div>
                         </div>
@@ -130,24 +135,17 @@
                             <div class="SE-imgContainer">
                                 <span>Maya Static Project 2</span>
                                 <video width="394" height="220" controls>
-                                    <source src="images/Maya_Static_Project_2.mp4" type="video/mp4">
+                                    <source src="../images/Maya_Static_Project_2.mp4" type="video/mp4">
                                 </video>
                             </div>
                             <div class="SE-imgContainer">
                                 <span>Maya Static Project 3</span>
                                 <video width="394" height="220" controls>
-                                    <source src="images/Maya_Static_Project_3.mp4" type="video/mp4">
+                                    <source src="../images/Maya_Static_Project_3.mp4" type="video/mp4">
                                 </video>
                             </div>
                         </div>
                     </div>
-
-                    
-                    
-
-                        
-
-                      
-                
+            <script src="../assets/js/switch_lang.js"></script>
     </body>
 </html>

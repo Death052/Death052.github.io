@@ -12,23 +12,28 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Monofett&family=VT323&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/button.css" />
-        <link rel="stylesheet" href="assets/css/new.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/button.css" />
+        <link rel="stylesheet" href="../assets/css/new.css" />
 
 	</head>
 	<body class="is-preload">
-
+    <!-- Language Switcher Button -->
+	<div style="position: fixed; top: 1rem; right: 1rem; z-index: 1000;">
+		<a class="pixel-button-link">
+			<div class="pixel" id="lang-switch"><p>繁</p></div>
+		</a>
+	</div>
 		<!-- Header -->
 			<section id="header">
 				<header>
-					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
-					<h1 id="logo"><a href="#">Willis Corto</a></h1>
-					<p>I got reprogrammed by a rogue AI<br />
-					and now I'm totally cray</p>
-				</header>
+                    <span class="image avatar"><img src="../images/avatar.jpg" alt="" /></span>
+                    <h1 id="logo"><a href="#">Kwok Yik Hei Stephen</a></h1>
+                    <p>Just a Game Designer and Digital Artist.<br />
+                    Certified Silly Person</p>
+                </header>
 				<nav id="nav">
-					<a href="index.html#three" class="pixel-button-link">
+					<a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'index.html#three','just-one-look-details.html')">
                         <div class="pixel"><p>Back to Home</p></div>
                     </a>
 				</nav>
@@ -49,7 +54,7 @@
 				<!-- Main -->
 					<div id="main">
                         <div class="image main" data-position="center">
-                            <img src="images/banner.jpg" alt="" />
+                            <img src="../images/banner.jpg" alt="" />
                         </div>
                         <div class="container">
                             <header class="major">
@@ -68,11 +73,11 @@
                         <h3>Programs Used</h3>
                         <ul class="feature-icons">
                              <li class="icon_logo_img">
-                                <img src="images/godot_logo.png" alt="Godot" width="50" height="50" >
+                                <img src="../images/godot_logo.png" alt="Godot" width="50" height="50" >
                                 <span>Godot</span>
                             </li>
                             <li class="icon_logo_img">
-                                <img src="images/aesprite.png" alt="Aesprite" width="50" height="50" >
+                                <img src="../images/aesprite.png" alt="Aesprite" width="50" height="50" >
                                 <span>Aesprite</span>
                             </li>
                         </ul>
@@ -99,22 +104,22 @@
                         <div class="image-row">
                             <div class="SE-imgContainer">
                                 <span>Title Screen</span>
-                                <img src="images/Just_One_Look_4.png" alt="SE1" height="220" width="394">
+                                <img src="../images/Just_One_Look_4.png" alt="SE1" height="220" width="394">
                             </div>
                             <div class="SE-imgContainer">
                                 <span>Mask Off</span>
-                                <img src="images/Just_One_Look_1.png" alt="SE2" height="220" width="394">
+                                <img src="../images/Just_One_Look_1.png" alt="SE2" height="220" width="394">
                             </div>
                         </div>
 
                         <div class="image-row">
                             <div class="SE-imgContainer">
                                 <span>Mask On</span>
-                                <img src="images/Just_One_Look_2.png" alt="SE1" height="220" width="394">
+                                <img src="../images/Just_One_Look_2.png" alt="SE1" height="220" width="394">
                             </div>
                             <div class="SE-imgContainer">
                                 <span>Insanity</span>
-                                <img src="images/Just_One_Look_3.png" alt="SE2" height="220" width="394">
+                                <img src="../images/Just_One_Look_3.png" alt="SE2" height="220" width="394">
                             </div>
                         </div>
                     </div>
@@ -150,6 +155,6 @@
                         </iframe>
                     </div>
                 </div>
-                
+        <script src="../assets/js/switch_lang.js"></script>
     </body>
 </html>

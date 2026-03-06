@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Read Only by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Monofett&family=VT323&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/main.css" />
+        <link rel="stylesheet" href="../assets/css/button.css" />
+            <link rel="stylesheet" href="../assets/css/new.css" />
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+	</head>
+	<body class="is-preload">
+    <!-- Language Switcher Button -->
+	<div style="position: fixed; top: 1rem; right: 1rem; z-index: 1000;">
+		<a class="pixel-button-link">
+			<div class="pixel" id="lang-switch"><p>繁</p></div>
+		</a>
+	</div>
+		<!-- Header -->
+			<section id="header">
+                <header>
+                    <span class="image avatar"><img src="../images/avatar.jpg" alt="" /></span>
+                    <h1 id="logo"><a href="#">Kwok Yik Hei Stephen</a></h1>
+                    <p>Just a Game Designer and Digital Artist.<br />
+                    Certified Silly Person</p>
+                </header>
+				<nav id="nav">
+					<a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'index.html#three','prison-island-details.html')">
+                        <div class="pixel"><p>Back to Home</p></div>
+                    </a>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+
+
+            <div id="wrapper">
+				<!-- Main -->
+					<div id="main">
+                        <div class="image main" data-position="center">
+                            <img src="../images/banner.jpg" alt="" />
+                        </div>
+                        <div class="container">
+                            <header class="major">
+                                <h2>Prison Island</h2>
+                                <p>Introduction</p>
+                            </header>
+                            <p>Prison Island is a game made for a university programming project. I am tasked to demake an existing game in less than 2 months, while adding a small twist to its gameplay.</p>
+                            <p>I chose to demake the game "Grey Scout" from Sockpop. This game involves a lot of stealth elements, requiring the player to hide in bushes to avoid guards, while trying to
+                                rescue other prisoners and bringing it back to the ship.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <h3>Programs Used</h3>
+                        <ul class="feature-icons">
+                             <li class="icon_logo_img">
+                                <img src="../images/unity_logo.png" alt="Unity" width="50" height="50" >
+                                <span>Unity</span>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    
+                    <div class="container">
+                        <h3>Gameplay Design</h3>
+                        <p>
+                            The game consist of a single large level with 5 cages containing prisoners. The player is required to go to each cage, free the prisoner within the cage,
+                            and bring the prisoner back to the ship. However, a guard is placed within the close region of each cage, and the player must avoid being seen by the guard.
+                            If a guard sees the player, it will chase the player. The player can hide in bushes to avoid being seen.
+                        </p>
+                        <p>
+                            As the twist of the game, I created a mechanism that allows the player to draw cards, each with unique attributes that both benefit and hinder the player 
+                            in some way. 
+                        </p>
+                        
+
+                        <h5>Gameplay Images</h5>
+                        <div class="image-row">
+                            <div class="SE-imgContainer">
+                                <img src="../images/Prison_Island_1.png" alt="SE1" height="220" width="394">
+                            </div>
+                            <div class="SE-imgContainer">
+                                <img src="../images/Prison_Island_2.png" alt="SE2" height="220" width="394">
+                            </div>
+                        </div>
+                        <div class="image-row">
+                            <div class="SE-imgContainer">
+                                <img src="../images/Prison_Island_3.png" alt="SE1" height="220" width="394">
+                            </div>
+                            <div class="SE-imgContainer">
+                                <img src="../images/Prison_Island_4.png" alt="SE2" height="220" width="394">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <h3>Learning Outcomes</h3>
+                        <p>
+                            This is my first time creating a gameplay filled game in 3D, branching away from my 2D projects. I learnt how to use  Post Processing Layer  
+                            to create a more atmospheric environment. I also learnt how to use rigged models and import rigged animations in Unity. I also experimented with
+                            NavMeshes in unity for guard movement.
+                        </p>
+                        <p>
+                            Similar to previous projects, I also had a refresher on using state machines on both Prisoner and Guard Agents, as well as using Raycast for 
+                            guard detection.
+                        </p>
+
+                        <!-- https://www.youtube.com/embed/gJUEuxbuTGI -->
+                    </div>
+
+                    <div class="container">
+                        <h3>Gameplay Video</h3>
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/gJUEuxbuTGI"
+                            title="Gameplay Video"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            <script src="../assets/js/switch_lang.js"></script>
+    </body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Read Only by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Monofett&family=VT323&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/main.css" />
+        <link rel="stylesheet" href="../assets/css/button.css" />
+            <link rel="stylesheet" href="../assets/css/new.css" />
+
+	</head>
+	<body class="is-preload">
+    <!-- Language Switcher Button -->
+	<div style="position: fixed; top: 1rem; right: 1rem; z-index: 1000;">
+		<a class="pixel-button-link">
+			<div class="pixel" id="lang-switch"><p>EN</p></div>
+		</a>
+	</div>
+		<!-- Header -->
+			<section id="header">
+                <header>
+                    <span class="image avatar"><img src="../images/avatar.jpg" alt="" /></span>
+                    <h1 id="logo"><a href="#">郭奕熙</a></h1>
+                    <p>只是一位游戏设计师和数字艺术家。<br />
+                    认证的憨憨</p>
+                </header>
+				<nav id="nav">
+					<a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'index.html#three','patch-synthesis-details.html')">
+                        <div class="pixel"><p>返回首页</p></div>
+                    </a>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+
+
+            <div id="wrapper">
+				<!-- Main -->
+					<div id="main">
+                        <div class="image main" data-position="center">
+                            <img src="../images/banner.jpg" alt="" />
+                        </div>
+                        <div class="container">
+                            <header class="major">
+                                <h2>基于图块的合成</h2>
+                            </header>
+                            <h3>介绍</h3>
+                            <p> 这个项目是我第一个专注于 Compute Shaders 的 Unity 项目，也是我计算机科学本科最终年度项目。
+                                这个项目的主要目标是实现一个基于图块的合成算法，这是一种纹理合成算法，它接收一个
+                                范例纹理，并生成一个任意大小且看起来与范例纹理类似的新纹理。
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="container">
+                        <h3>使用的程序</h3>
+                        <ul class="feature-icons">
+                             <li class="icon_logo_img">
+                                <img src="../images/unity_logo.png" alt="Unity" width="50" height="50" >
+                                <span>Unity</span>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    
+        
+                    
+                    <div class="container">
+                        <h3>算法逻辑</h3>
+                        <p>
+                            算法首先接收一个范例纹理，并将范例纹理分割成小的正方形
+                            图块。然后保存每个图块的边界像素，用于计算图块之间的相似度。
+                        </p>
+                        <p>
+                            然后，算法开始创建新纹理，方法是从范例纹理中随机选择一个图块，
+                            然后根据现有图块的边界像素添加新图块。这个算法相当复杂，
+                            因此如果您感兴趣，欢迎查看我撰写的完整文件。
+                        </p>
+                        <a href="documents/YikHeiKWOK25-FINAL.pdf" class="pixel-button-link"><div class="pixel"><p>文件</p></div></a>
+
+
+                        <div class="image-row">
+                            <div class="SE-imgContainer">
+                                <span>Title Screen</span>
+                                <img src="../images/Just_One_Look_4.png" alt="SE1" height="220" width="394">
+                            </div>
+                            <div class="SE-imgContainer">
+                                <span>Mask Off</span>
+                                <img src="../images/Just_One_Look_1.png" alt="SE2" height="220" width="394">
+                            </div>
+                        </div>
+
+                        <div class="image-row">
+                            <div class="SE-imgContainer">
+                                <span>Mask On</span>
+                                <img src="../images/Just_One_Look_2.png" alt="SE1" height="220" width="394">
+                            </div>
+                            <div class="SE-imgContainer">
+                                <span>Insanity</span>
+                                <img src="../images/Just_One_Look_3.png" alt="SE2" height="220" width="394">
+                            </div>
+                        </div>
+
+
+                        
+
+
+                        
+                    </div>
+
+                    <div class="container">
+                        <h3>学习成果</h3>
+                        <p>
+                            我透过这个项目学到了很多关于 Compute Shaders 的知识，并理解了
+                            使用 Compute Shaders 如何将繁重的计算工作从 CPU 转移到 GPU，
+                            显著提高算法某些方面的性能。
+                        </p>
+
+                        <p>
+                            巧合的是，这是我第一个使用 3D 元素的 Unity 项目（或游戏项目）。
+                            因此，我学会了如何在 Unity 中使用 3D 射线检测，以及使用一些 3D 材质。
+                        </p>
+
+                    </div>
+
+                    <div class="container">
+                        <h3>游戏影片</h3>
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/MrvuT-GkMaA"
+                            title="Gameplay Video"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            <script src="../assets/js/switch_lang.js"></script>
+    </body>
+</html>

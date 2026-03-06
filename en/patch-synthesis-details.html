@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Read Only by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Monofett&family=VT323&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/main.css" />
+        <link rel="stylesheet" href="../assets/css/button.css" />
+            <link rel="stylesheet" href="../assets/css/new.css" />
+
+	</head>
+	<body class="is-preload">
+    <!-- Language Switcher Button -->
+	<div style="position: fixed; top: 1rem; right: 1rem; z-index: 1000;">
+		<a class="pixel-button-link">
+			<div class="pixel" id="lang-switch"><p>繁</p></div>
+		</a>
+	</div>
+		<!-- Header -->
+			<section id="header">
+                <header>
+                    <span class="image avatar"><img src="../images/avatar.jpg" alt="" /></span>
+                    <h1 id="logo"><a href="#">Kwok Yik Hei Stephen</a></h1>
+                    <p>Just a Game Designer and Digital Artist.<br />
+                    Certified Silly Person</p>
+                </header>
+				<nav id="nav">
+					<a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'index.html#three','patch-synthesis-details.html')">
+                        <div class="pixel"><p>Back to Home</p></div>
+                    </a>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+
+
+            <div id="wrapper">
+				<!-- Main -->
+					<div id="main">
+                        <div class="image main" data-position="center">
+                            <img src="../images/banner.jpg" alt="" />
+                        </div>
+                        <div class="container">
+                            <header class="major">
+                                <h2>Patch Based Synthesis</h2>
+                            </header>
+                            <h3>Introduction</h3>
+                            <p> This project is my first Unity project dedicated to Compute Shaders, and it serves as my Computer 
+                                Science Undergraduate Final Year Project. The main goal of this project is to
+                                implement a patch-based synthesis algorithm, which is a texture synthesis algorithm that takes in a 
+                                sample texture, and generates a new texture of any size that looks similar to the sample texture.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="container">
+                        <h3>Programs Used</h3>
+                        <ul class="feature-icons">
+                             <li class="icon_logo_img">
+                                <img src="../images/unity_logo.png" alt="Unity" width="50" height="50" >
+                                <span>Unity</span>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    
+        
+                    
+                    <div class="container">
+                        <h3>Algorithm Logic</h3>
+                        <p>
+                            The algorithm first takes in a sample texture, and it divides the sample texture into small square
+                            patches. The boundary pixels of each patch is then saved, which is used to calculate the similarity
+                            between patches.
+                        </p>
+                        <p>
+                            The algorithm then starts creating the new texture by randomly picking a patch from the sample texture,
+                            and then adding new patches based on the boundary pixels of the existing patches. This algorithm is 
+                            quite complicated, therefore you are welcome to view the full document I wrote if you are interested.
+                        </p>
+                        <a href="documents/YikHeiKWOK25-FINAL.pdf" class="pixel-button-link"><div class="pixel"><p>Document</p></div></a>
+
+
+                        <div class="image-row">
+                            <div class="SE-imgContainer">
+                                <span>Title Screen</span>
+                                <img src="../images/Just_One_Look_4.png" alt="SE1" height="220" width="394">
+                            </div>
+                            <div class="SE-imgContainer">
+                                <span>Mask Off</span>
+                                <img src="../images/Just_One_Look_1.png" alt="SE2" height="220" width="394">
+                            </div>
+                        </div>
+
+                        <div class="image-row">
+                            <div class="SE-imgContainer">
+                                <span>Mask On</span>
+                                <img src="../images/Just_One_Look_2.png" alt="SE1" height="220" width="394">
+                            </div>
+                            <div class="SE-imgContainer">
+                                <span>Insanity</span>
+                                <img src="../images/Just_One_Look_3.png" alt="SE2" height="220" width="394">
+                            </div>
+                        </div>
+
+
+                        
+
+
+                        
+                    </div>
+
+                    <div class="container">
+                        <h3>Learning Outcomes</h3>
+                        <p>
+                            I have learnt a lot about compute shaders through this project, and understood how
+                            using compute shaders can offset heavy computation from the CPU to the GPU,
+                            significantly improving the performance of certain aspects of the algorithm.
+                        </p>
+
+                        <p>
+                            Coincidentally, this my first ever Unity project (or game project in general) that
+                            utilize 3D elements. Therefore, I learnt how to use 3D raycasting in Unity as well as
+                            using some 3D materials.
+                        </p>
+
+                    </div>
+
+                    <div class="container">
+                        <h3>Gameplay Video</h3>
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/MrvuT-GkMaA"
+                            title="Gameplay Video"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            <script src="../assets/js/switch_lang.js"></script>
+    </body>
+</html>

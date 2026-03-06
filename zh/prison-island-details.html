@@ -12,9 +12,9 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Monofett&family=VT323&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/button.css" />
-        <link rel="stylesheet" href="assets/css/new.css" />
+        <link rel="stylesheet" href="../assets/css/main.css" />
+        <link rel="stylesheet" href="../assets/css/button.css" />
+            <link rel="stylesheet" href="../assets/css/new.css" />
 
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/browser.min.js"></script>
@@ -24,18 +24,23 @@
 
 	</head>
 	<body class="is-preload">
-
+    <!-- Language Switcher Button -->
+	<div style="position: fixed; top: 1rem; right: 1rem; z-index: 1000;">
+		<a class="pixel-button-link">
+			<div class="pixel" id="lang-switch"><p>简</p></div>
+		</a>
+	</div>
 		<!-- Header -->
 			<section id="header">
-				<header>
-					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
-					<h1 id="logo"><a href="#">Willis Corto</a></h1>
-					<p>I got reprogrammed by a rogue AI<br />
-					and now I'm totally cray</p>
-				</header>
+                <header>
+                    <span class="image avatar"><img src="../images/avatar.jpg" alt="" /></span>
+                    <h1 id="logo"><a href="#">郭奕熙</a></h1>
+                    <p>只是一位遊戲設計師和數位藝術家。<br />
+                    認證的憨憨</p>
+                </header>
 				<nav id="nav">
-					<a href="index.html#three" class="pixel-button-link">
-                        <div class="pixel"><p>Back to Home</p></div>
+					<a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'index.html#three','prison-island-details.html')">
+                        <div class="pixel"><p>返回首頁</p></div>
                     </a>
 				</nav>
 				<footer>
@@ -55,25 +60,25 @@
 				<!-- Main -->
 					<div id="main">
                         <div class="image main" data-position="center">
-                            <img src="images/banner.jpg" alt="" />
+                            <img src="../images/banner.jpg" alt="" />
                         </div>
                         <div class="container">
                             <header class="major">
                                 <h2>Prison Island</h2>
-                                <p>Introduction</p>
+                                <p>介紹</p>
                             </header>
-                            <p>Prison Island is a game made for a university programming project. I am tasked to demake an existing game in less than 2 months, while adding a small twist to its gameplay.</p>
-                            <p>I chose to demake the game "Grey Scout" from Sockpop. This game involves a lot of stealth elements, requiring the player to hide in bushes to avoid guards, while trying to
-                                rescue other prisoners and bringing it back to the ship.
+                            <p>Prison Island 是為大學程式設計專案製作的遊戲。我的任務是在不到 2 個月的時間內翻新一個現有遊戲，同時為其遊戲玩法增添一些小的變化。</p>
+                            <p>我選擇翻新 Sockpop 的遊戲「Grey Scout」。這個遊戲包含大量的潛行元素，要求玩家躲在灌木叢中躲避警衛，
+                                同時試圖救出其他囚犯並將他們帶回船上。
                             </p>
                         </div>
                     </div>
 
                     <div class="container">
-                        <h3>Programs Used</h3>
+                        <h3>使用的程式</h3>
                         <ul class="feature-icons">
                              <li class="icon_logo_img">
-                                <img src="images/unity_logo.png" alt="Unity" width="50" height="50" >
+                                <img src="../images/unity_logo.png" alt="Unity" width="50" height="50" >
                                 <span>Unity</span>
                             </li>
                         </ul>
@@ -81,54 +86,54 @@
         
                     
                     <div class="container">
-                        <h3>Gameplay Design</h3>
+                        <h3>遊戲玩法設計</h3>
                         <p>
-                            The game consist of a single large level with 5 cages containing prisoners. The player is required to go to each cage, free the prisoner within the cage,
-                            and bring the prisoner back to the ship. However, a guard is placed within the close region of each cage, and the player must avoid being seen by the guard.
-                            If a guard sees the player, it will chase the player. The player can hide in bushes to avoid being seen.
+                            遊戲由一個大型關卡構成，其中有 5 個裝有囚犯的牠籠。玩家需要前往每個牠籠，釋放牠籠內的囚犯，
+                            並將囚犯帶回船上。然而，每個牠籠附近都有一名警衛，玩家必須避免被警衛看到。
+                            如果警衛看到玩家，它會追逐玩家。玩家可以躲在灌木叢中躲避被發現。
                         </p>
                         <p>
-                            As the twist of the game, I created a mechanism that allows the player to draw cards, each with unique attributes that both benefit and hinder the player 
-                            in some way. 
+                            作為遊戲的變化，我創建了一個機制，允許玩家抽取卡片，每張卡片都具有獨特的屬性，
+                            既有益於玩家也會妨礙玩家。
                         </p>
                         
 
-                        <h5>Gameplay Images</h5>
+                        <h5>遊戲圖像</h5>
                         <div class="image-row">
                             <div class="SE-imgContainer">
-                                <img src="images/Prison_Island_1.png" alt="SE1" height="220" width="394">
+                                <img src="../images/Prison_Island_1.png" alt="SE1" height="220" width="394">
                             </div>
                             <div class="SE-imgContainer">
-                                <img src="images/Prison_Island_2.png" alt="SE2" height="220" width="394">
+                                <img src="../images/Prison_Island_2.png" alt="SE2" height="220" width="394">
                             </div>
                         </div>
                         <div class="image-row">
                             <div class="SE-imgContainer">
-                                <img src="images/Prison_Island_3.png" alt="SE1" height="220" width="394">
+                                <img src="../images/Prison_Island_3.png" alt="SE1" height="220" width="394">
                             </div>
                             <div class="SE-imgContainer">
-                                <img src="images/Prison_Island_4.png" alt="SE2" height="220" width="394">
+                                <img src="../images/Prison_Island_4.png" alt="SE2" height="220" width="394">
                             </div>
                         </div>
                     </div>
 
                     <div class="container">
-                        <h3>Learning Outcomes</h3>
+                        <h3>學習成果</h3>
                         <p>
-                            This is my first time creating a gameplay filled game in 3D, branching away from my 2D projects. I learnt how to use  Post Processing Layer  
-                            to create a more atmospheric environment. I also learnt how to use rigged models and import rigged animations in Unity. I also experimented with
-                            NavMeshes in unity for guard movement.
+                            這是我第一次創建一個充滿遊戲玩法的 3D 遊戲，跨出了我的 2D 專案的範疇。我學會了如何使用後期處理層
+                            來創建更有氛圍的環境。我也學會了如何使用骨架模型並在 Unity 中導入骨架動畫。我也嘗試了 Unity 中的
+                            NavMeshes 來實現警衛的移動。
                         </p>
                         <p>
-                            Similar to previous projects, I also had a refresher on using state machines on both Prisoner and Guard Agents, as well as using Raycast for 
-                            guard detection.
+                            與以前的專案類似，我也複習了在囚犯和警衛代理上使用狀態機，以及使用 Raycast 進行
+                            警衛偵測。
                         </p>
 
                         <!-- https://www.youtube.com/embed/gJUEuxbuTGI -->
                     </div>
 
                     <div class="container">
-                        <h3>Gameplay Video</h3>
+                        <h3>遊戲影片</h3>
                         <iframe 
                             width="560" 
                             height="315" 
@@ -140,6 +145,6 @@
                         </iframe>
                     </div>
                 </div>
-                
+            <script src="../assets/js/switch_lang.js"></script>
     </body>
 </html>
