@@ -57,12 +57,17 @@ function onChangePageClick(event, targetPage, currentPage) {
         const base = page_url.split('/'+currentPage)[0];
         console.log(base);
         
+        // check if going back to index
+        if (targetPage === 'index.html#three'){
+            targetPage = '#three';
+        }
+
         if (lang === 1) {
-            window.location.href = base + targetPage;
+            window.location.href = base + "/" + targetPage;
         }else if (lang === 2) {
-            window.location.href = base + targetPage;
+            window.location.href = base + "/" + targetPage;
         }else if (lang === 3) {
-            window.location.href = base + targetPage;
+            window.location.href = base + "/" + targetPage;
         }
 	}
 
