@@ -44,20 +44,42 @@ btn.addEventListener('click', function() {
 });
 
 
+
+
 function onChangePageClick(event, targetPage, currentPage) {
 		event.preventDefault();
         // set up the base URL
         var page_url = window.location.href;
+        
+        // remove the sections # from the page URL
+        page_url = page_url.split('#')[0];
+        
         const base = page_url.split('/'+currentPage)[0];
         console.log(base);
         
-        // in english page
         if (lang === 1) {
-            window.location.href = base + "/" + targetPage;
+            window.location.href = base + targetPage;
         }else if (lang === 2) {
-            window.location.href = base + "/" + targetPage;
+            window.location.href = base + targetPage;
         }else if (lang === 3) {
-            window.location.href = base + "/" + targetPage;
+            window.location.href = base + targetPage;
         }
-		
 	}
+
+
+// function onChangePageClick(event, targetPage, currentPage) {
+// 		event.preventDefault();
+//         // set up the base URL
+//         var page_url = window.location.href;
+//         const base = page_url.split('/'+currentPage)[0];
+//         console.log(base);
+        
+//         // in english page
+//         if (lang === 1) {
+//             window.location.href = base + "/" + targetPage;
+//         }else if (lang === 2) {
+//             window.location.href = base + "/" + targetPage;
+//         }else if (lang === 3) {
+//             window.location.href = base + "/" + targetPage;
+//         }
+// 	}
