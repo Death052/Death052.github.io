@@ -70,13 +70,13 @@ function onChangePageClick(event, targetPage, currentPage) {
 
         if (lang === 1) {
             console.log("Navigating to: ", base + separator + targetPage);
-            //window.location.href = base + separator + targetPage;
+            window.location.href = base + separator + targetPage;
         }else if (lang === 2) {
             console.log("Navigating to: ", base + separator + targetPage);
-            //window.location.href = base + separator + targetPage;
+            window.location.href = base + separator + targetPage;
         }else if (lang === 3) {
             console.log("Navigating to: ", base + separator + targetPage);
-            //window.location.href = base + separator + targetPage;
+            window.location.href = base + separator + targetPage;
         }
     }
 
