@@ -39,3 +39,276 @@
 .container {
     margin-bottom: 2rem;      
 }
+
+/* Intro (About Me) image + text layout */
+.intro-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.5em;
+  flex-wrap: wrap;
+}
+
+.intro-row .intro-image {
+  flex: 0 0 45%;
+  max-width: 400px;
+  order: 2;
+  margin-left: auto;
+}
+
+.intro-row .intro-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 4px solid #6B9E62;
+}
+
+.intro-row .intro-text {
+  flex: 1 1 18em;
+  min-width: 18em;
+  order: 1;
+}
+
+/* Details page row when with image/video*/
+.details-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.5em;
+  flex-wrap: wrap;
+}
+.details-row .details-media {
+  flex: 0 0 45%;
+  max-width: 600px;
+  order: 2;
+  margin-left: auto;
+}
+.details-row .details-media img, .details-row .details-media video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 4px solid #6B9E62;
+}
+.details-row .details-text {
+  flex: 1 1 18em;
+  min-width: 18em;
+  order: 1;
+}
+
+
+
+
+@media screen and (min-width: 737px) {
+  /* Give the About Me section more usable width on desktop so the image can be
+     larger (up to 400px) without crushing the text. */
+  #one > .container {
+    width: 56.25em;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .intro-row {
+    flex-direction: column;
+  }
+
+  .intro-row .intro-image img {
+    max-width: 100%;
+  }
+}
+
+/* Larger project thumbnails (sections 3–5) */
+@media screen and (min-width: 737px) {
+  #three .features article .image,
+  #four .features article .image,
+  #five .features article .image {
+    width: 55%;
+    padding-left: 40px;
+    padding-right: 2em;
+  }
+
+  #three .features article .inner,
+  #four .features article .inner,
+  #five .features article .inner {
+    width: 45%;
+  }
+}
+
+/* Tighter spacing between title -> labels -> description (sections 3–5) */
+#three .features article .inner h4,
+#four .features article .inner h4,
+#five .features article .inner h4 {
+  margin-bottom: 0.35em;
+}
+
+#three .features article .inner h4 + p,
+#four .features article .inner h4 + p,
+#five .features article .inner h4 + p {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+#three .features article .inner h4 + p + p,
+#four .features article .inner h4 + p + p,
+#five .features article .inner h4 + p + p {
+  margin-top: 0;
+}
+
+/* Responsibilities list container (sections 3–5) */
+#three .features  .responsibilities-box,
+#four .features  .responsibilities-box,
+#five .features   .responsibilities-box {
+  background: #09171D;
+  border: 2px solid #6B9E62;
+  border-radius: 5px;
+  padding: 0.9em 1em;
+  margin-top: 0.25em;
+}
+
+@media screen and (min-width: 737px) {
+  #three .features article,
+  #four .features article,
+  #five .features article {
+    flex-wrap: wrap;
+  }
+
+  #three .features article > .responsibilities-box,
+  #four .features article > .responsibilities-box,
+  #five .features article > .responsibilities-box {
+    width: calc(100% - 40px);
+    margin-left: 40px;
+  }
+}
+
+#three .features article,
+#four .features article,
+#five .features article {
+  flex-wrap: wrap;
+}
+
+#three .features  .responsibilities-box > p,
+#four .features  .responsibilities-box > p,
+#five .features  .responsibilities-box > p {
+  margin: 0 0 0.25em 0;
+}
+
+#three .features  .responsibilities-box > ul,
+#four .features  .responsibilities-box > ul,
+#five .features  .responsibilities-box > ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.label-coding {
+  display: inline-block;
+  background-color: #1c77b0;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.label-narrative {
+  display: inline-block;
+  background-color: #e67e22;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.label-art {
+  display: inline-block;
+  background-color: #c33493;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.label-game-design {
+  display: inline-block;
+  background-color: #7c47d1;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.label-modelling {
+  display: inline-block;
+  background-color: #2340c4;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+/* Programs Used table (project detail pages) */
+.programs-used-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+}
+
+.programs-used-table tbody tr {
+  border: 2px solid #ccc;
+  background: transparent;
+}
+
+/* Override global table striping from main.css */
+.programs-used-table tbody tr:nth-child(2n + 1) {
+  background-color: transparent;
+}
+
+.programs-used-table td {
+  
+  padding: 0.35em 0;
+  vertical-align: middle;
+  background: transparent;
+}
+
+.programs-used-table td.program-desc {
+  border: 2px solid #ccc;
+}
+
+/* Keep table content aligned with the section header */
+.programs-used-table td.program-icon {
+  width: 50px;
+  padding-left: 15px;
+}
+
+.programs-used-table td.program-name,
+.programs-used-table td.program-desc {
+  padding-left: 1em;
+}
+
+.programs-used-table td.program-icon img {
+  display: block;
+}
+
+/* Details media + text (project detail pages) */
+.details-row {
+  display: flex;
+  gap: 1.5em;
+  align-items: center; /* center video vertically vs text */
+  flex-wrap: wrap;
+}
+
+.details-row .details-media {
+  flex: 1 1 320px;
+}
+
+.details-row .details-text {
+  flex: 1 1 18em;
+}
+
+.details-row .details-media video {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border: 4px solid #6B9E62;
+}
+
+
+
