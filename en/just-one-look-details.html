@@ -60,46 +60,193 @@
                                 <h2>Just One Look</h2>
                             </header>
                             <h3>Introduction</h3>
-                            <p> I have participated in the Global Game Jam 2026, and Just One Look is the game I made for the event.
-                                I worked alongside two teammates to create this game within 3 days. I was the coder, while my teammates were
-                                responsible for the art and level design. The theme for the game jam was "Mask".
+                            <p> I have participated in the Global Game Jam 2026, with the theme "Mask", and Just One Look is the game I made for the event.
+                                I worked alongside two teammates to create this game within 3 days. Just One Look is a Pac-Man inspired strategy game, where the 
+                                player navigates through a enclosed mansion, collecting orbs in a mansion while avoiding enemies.  
                             </p>
+                            <p style="margin-bottom: 10px; margin-top: -15px;">
+                                I am responsible for:
+                            </p>
+                            <ul style="margin-top: 10px;">
+                                <li>Programming the whole game, implementing all planned features</li>
+                                <li>Technical Design, making sure the game can be feasibly completed in a short time</li>
+                                <li>Brainstorming a simple and creative narrative</li>
+                                <li>Enemy Mechanic Design</li>
+                            </ul>
+                            
                         </div>
 
                     </div>
 
                     <div class="container">
                         <h3>Programs Used</h3>
-                        <ul class="feature-icons">
-                             <li class="icon_logo_img">
-                                <img src="../images/godot_logo.png" alt="Godot" width="50" height="50" >
-                                <span>Godot</span>
-                            </li>
-                            <li class="icon_logo_img">
-                                <img src="../images/aesprite.png" alt="Aesprite" width="50" height="50" >
-                                <span>Aesprite</span>
-                            </li>
-                        </ul>
+                        <table class="programs-used-table">
+                            <tbody>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/godot_logo.png" alt="Godot" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Godot</span></td>
+                                    <td class="program-desc"><span>Programming Software used to create this game</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/github.png" alt="github" width="50" height="50" ></td>
+                                    <td class="program-name"><span>github</span></td>
+                                    <td class="program-desc"><span>Version Control</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/aesprite.png" alt="Aesprite" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Aesprite</span></td>
+                                    <td class="program-desc"><span>For creating art assets for the game</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/notion_logo.png" alt="Notion" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Notion</span></td>
+                                    <td class="program-desc"><span>Task Management</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-        
+
+                    <div class="container">
+                        <h3>Section Details</h3>
+                         <div class="Detail-Segment-Button-Container">
+                            <ul>
+                                <li>
+                                    <a onclick="toggleContentScripting()" class="pixel-button-link">
+                                        <div class="pixel-blue"><p>Scripting</p></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a onclick="toggleContentNarrativeDesign()" class="pixel-button-link">
+                                        <div class="pixel-orange"><p>Narrative Design</p></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a onclick="toggleContentGameDesign()" class="pixel-button-link">
+                                        <div class="pixel-purple"><p>Game Design</p></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> 
+                    
+
+                    <div id="hidden-section-scripting" style="display: none;">
+                        <div class="container">
+                            <h2>Scripting</h2>
+                            <p>
+                                The game is entirely coded in Godot using the gdscript language. This is my first time creating a fully finished game
+                                in Godot and such a short period of time.
+                            </p>
+                            <p>
+                                State machines are used to control the behaviour of enemies, for which one main state script handles multiple enemy states.
+                                Raycasting are used to detect the player, while NavigationAgent2D is used for enemy movement. Global scripts are used to 
+                                handle the game state, such as the player's insanity states as well as checkpoints.
+                            </p>
+                            <p>
+                                Shaders are also used to create custom visual effects like the CRT filter, which are created using Godot's shader language 
+                                (gdshader). This involves the manipulation of the fragment shader for colour changes of the CRT filter and uv vertices for 
+                                CRT wave effects.
+                            </p>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>Without Shader</span>
+                                    <img src="../images/Just_One_Look_NoShader.png" alt="No CRT Shader" height="264" width="420">
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>With Shader</span>
+                                    <img src="../images/Just_One_Look_Shader.png" alt="CRT Shader" height="264" width="420">
+                                </div>
+                            </div>      
+                        </div>
+                    </div>
+
+
+                    <div id="hidden-section-game-design" style="display: none;">
+                        <div class="container">
+                            <h2>Game Design</h2>
+                            <p>
+                               I am mainly in charge of the enemy mechanism for the game. Our team agreed the level should be designed with tight 
+                               spaces, therefore I decided to give enemies a large vision range. Initially, the game jam's mask theme was only 
+                               reflected in the enemy designs, which featured various masks. However I decided to intergrate this concept into the
+                               game design as well.
+                            </p>
+                            <h4> Mask Enemies </h4>
+                            <p>
+                                Without using the mask or hiding behind walls, the first type of enemy will chase after
+                                the player until the player is out of sight, while the second type of enemy will instantly kill the player.
+                                Due to the duration of the jam, I reused the same concept for both enemies with variations; both enemies will ignore
+                                the player when the player wears a mask.
+                            </p>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>Mask Enemy Variant 1</span>
+                                    <video height="264" width="420" controls>
+                                        <source src="../videos/JustOneLook_Enemy1.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>Mask Enemy Variant 2</span>
+                                    <video height="264" width="420" controls>
+                                        <source src="../videos/JustOneLook_Enemy2.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+
+
+                            <h4> Shadow Enemy + Insanity Mode</h4>
+                            <p>
+                                This enemy only appears when the player wears the mask for too long and reaches insanity mode. This enemy appears as a 
+                                dark silhouette of the player, copying the player's movement directions. This poses a huge challenge especially in tight spaces,
+                                where the player needs to plan their movement to avoid being cornered. 
+                                In insanity mode, enemies can be killed using a knife. The mask can also no longer be taken off, making Shadow Enemies the player's 
+                                only threat.
+                            </p>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>Invoking Insanity</span>
+                                    <video height="264" width="420" controls>
+                                        <source src="../videos/JustOneLook_InsanityStart.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>Shadow Enemy</span>
+                                    <video height="264" width="420" controls>
+                                        <source src="../videos/JustOneLook_ShadowEnemy.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+
+                           
+                        </div>
+                     </div>
+
+                     <div id="hidden-section-narrative-design" style="display: none;">
+                        <div class="container">
+                            <h2>Narrative Design</h2>
+                            <p>
+                                The scope of the game jam limits the narrative potential of the game, but a promptless branching narrative was
+                                implemented to represent the negative effects of cultism.
+                            </p>
+                            <p>
+                                Before the narrative is planned, we thought of adding an ability for the player to switch between normal and insane states.
+                                However, by locking the player in insane state after initiating it, the social pressure of not being able to leave a cult is
+                                shown. This shows how joining a cult can be a one-way street, and how it can be difficult to leave once you are in.
+                            </p>
+                        </div>
+                    </div>
                     
                     <div class="container">
-                        <h3>Gameplay</h3>
+                        <h3>Learning Outcomes</h3>
                         <p>
-                            The game is created as a large scene, with multiple areas connected to each other. The player is required to collect
-                            all orbs in one area before advancing to the next.
+                            This is the first game jam I have participated in. Even though I am familiar to Godot,
+                            I have never made a game within such a short time frame. I learnt to compromise on the
+                            scale of the game and focus on coding for the core gameplay mechanics. I also learnt how to collaborate with teammates through discussing goals and
+                            understanding each other’s ideas.
                         </p>
-                        <p>
-                            There are 2 types of normal enemies within the game. The first type is a small enemy which chases after the player once
-                            the player is within its vision. The second type is a large enemy that doesn't move, but has a much larger vision range,
-                            and will instantly kill the player once the player is within its vision.
-                        </p>
-                        <p>
-                            The player can wear a mask to avoid being detected by the enemies mentioned. However, if the player wears the mask for too long,
-                            they will go insane. After going insane, the aformentioned enemies will no longer attack the player. However, new shadow entities
-                            will spawn and chase after the player.
-                        </p>
+                    </div>
 
+                    <!-- <div class="container">
+                        <h3>Game Images</h3>
                         <div class="image-row">
                             <div class="SE-imgContainer">
                                 <span>Title Screen</span>
@@ -121,25 +268,8 @@
                                 <img src="../images/Just_One_Look_3.png" alt="SE2" height="220" width="394">
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="container">
-                        <h3>Learning Outcomes</h3>
-                        <p>
-                            This is the first game jam I have participated in. Even though I am familiar to Godot,
-                            I have never made a game within such a short time frame. I learnt to compromise on the
-                            scale of the game and focus on coding for the core gameplay mechanics.
-                        </p>
-                        <p>
-                            I also learnt how to collaborate with teammates, through by discussing our goals and
-                            understanding each other’s ideas to prevent working on wrong tasks.
-                        </p>
-                        <p>
-                            Techical-wise, I had some hands-on experience with some godot shaders, such as the CRT-filter
-                            visible in most parts of the game, and the screen distortion effect when the player is wearing
-                            the mask.
-                        </p>
-                    </div>
 
                     <div class="container">
                         <h3>Gameplay Video</h3>
@@ -155,5 +285,6 @@
                     </div>
                 </div>
         <script src="../assets/js/switch_lang.js"></script>
+        <script src="../assets/js/show_items.js"></script>
     </body>
 </html>

@@ -2,6 +2,8 @@ const DETAIL_SECTION_IDS = [
   "hidden-section-scripting",
   "hidden-section-game-design",
   "hidden-section-art-design",
+  "hidden-section-narrative-design",
+  "hidden-section-UX-design"
 ];
 
 function toggleExclusive(sectionId) {
@@ -33,4 +35,12 @@ function toggleContentGameDesign() {
 
 function toggleContentArtDesign() {
   toggleExclusive("hidden-section-art-design");
+}
+
+function toggleContentNarrativeDesign() {
+  toggleExclusive("hidden-section-narrative-design");
+}
+
+function toggleContentUXDesign() {
+  toggleExclusive("hidden-section-UX-design");
 }

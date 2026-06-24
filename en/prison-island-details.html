@@ -66,37 +66,139 @@
                                 <h2>Prison Island</h2>
                                 <h3>Introduction</h3>
                             </header>
-                            <p>Prison Island is a game made for a university programming project. I am tasked to demake an existing game in less than 2 months, while adding a small twist to its gameplay.</p>
-                            <p>I chose to demake the game "Grey Scout" from Sockpop. This game involves a lot of stealth elements, requiring the player to hide in bushes to avoid guards, while trying to
-                                rescue other prisoners and bringing it back to the ship.
+                            <p>
+                                Prison Island is a game I made when I was tasked to demake an existing game in less than 2 months while adding a small twist to its gameplay.
+                                The game I chose to demake is called "Grey Scout" from Sockpop, which is a stealth based 3D game where the player's goal is to save prisoners
+                                and bring them to the exit while avoiding the guard's line of sight.
                             </p>
+                            <p style="margin-bottom: 10px; margin-top: -15px;">
+                                I am responsible for:
+                            </p>
+                            <ul style="margin-top: 10px;">
+                                <li>Programming the whole game, implementing all planned features</li>
+                                <li>Level Design Planning</li>
+                                <li>Brainstorming and implementing card mechanism</li>
+                            </ul>
                         </div>
                     </div>
 
                     <div class="container">
                         <h3>Programs Used</h3>
-                        <ul class="feature-icons">
-                             <li class="icon_logo_img">
-                                <img src="../images/unity_logo.png" alt="Unity" width="50" height="50" >
-                                <span>Unity</span>
-                            </li>
-                        </ul>
+                        <table class="programs-used-table">
+                            <tbody>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/unity_logo.png" alt="Unity" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Unity</span></td>
+                                    <td class="program-desc"><span>Programming Software used to create this game</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/github.png" alt="github" width="50" height="50" ></td>
+                                    <td class="program-name"><span>github</span></td>
+                                    <td class="program-desc"><span>Version Control</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/miro.png" alt="Miro" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Miro</span></td>
+                                    <td class="program-desc"><span>Game Planning Tool</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-        
-                    
-                    <div class="container">
-                        <h3>Gameplay Design</h3>
-                        <p>
-                            The game consist of a single large level with 5 cages containing prisoners. The player is required to go to each cage, free the prisoner within the cage,
-                            and bring the prisoner back to the ship. However, a guard is placed within the close region of each cage, and the player must avoid being seen by the guard.
-                            If a guard sees the player, it will chase the player. The player can hide in bushes to avoid being seen.
-                        </p>
-                        <p>
-                            As the twist of the game, I created a mechanism that allows the player to draw cards, each with unique attributes that both benefit and hinder the player 
-                            in some way. 
-                        </p>
-                        
 
+
+                    <div class="container">
+                         <h3>Section Details</h3>
+                         <div class="Detail-Segment-Button-Container">
+                            <ul>
+                                <li>
+                                    <a onclick="toggleContentScripting()" class="pixel-button-link">
+                                        <div class="pixel-blue"><p>Scripting</p></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a onclick="toggleContentGameDesign()" class="pixel-button-link">
+                                        <div class="pixel-purple"><p>Game Design</p></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> 
+                    
+
+                    <div id="hidden-section-scripting" style="display: none;">
+                        <div class="container">
+                            <h2>Scripting</h2>
+                            <p>
+                                The game is entirely coded in Unity and therefore uses C# as the scripting language. This is my first attempt creating a 3D game in Unity,
+                                and therefore learnt how to use and import 3D assets alongside character animations.
+                            </p>
+                            <p>
+                                I used state machines to control the behaviour of guards and prisoners. I utilized raycasting specifically for guard detection, and used
+                                NavMesh for guard movement near the cages. Unity's Post Processing Layer is used to create atmospheric effects. Animation state blend trees 
+                                are used for conducting smooth blending animations.
+                            </p>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>Guard Prisoner Behaviour</span>
+                                    <video height="264" width="420" controls>
+                                        <source src="../videos/PrisonIsland_PrisonerGuardMechanism.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="hidden-section-game-design" style="display: none;">
+                        <div class="container">
+                            <h2>Game Design</h2>
+                            <p>
+                                I made sure the level design of the game is easy to navigate and understood. I drew a map layout to plan out how 
+                                the player can hide from guards and navigate the level. This is to ensure appropriate levels of challenge and fun for the player.
+                            </p>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>Layout Planning</span>
+                                    <img src="../images/Prison_Island_LevelDesign.png" alt="Level Layout with Guards" height="264" width="420">
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>Implemented Layout</span>
+                                    <img src="../images/Prison_Island_LevelDesignLayout.png" alt="Level Layout" height="264" width="420">
+                                </div>
+                            </div>
+
+                            <p>
+                                I also designed a card mechanism as the twist for the game. The player can draw cards while in the game by pressing a button. 
+                                Each card has unique attributes that both benefit and hinder the player in some way. The card abilities have been rigourously playtested to ensure they are not too overpowered or underpowered, and that they can be used in a variety of different ways.
+                                to ensure fair gameplay.
+                            </p>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>Card Mechanism</span>
+                                    <video height="264" width="420" controls>
+                                        <source src="../videos/PrisonIsland_CardMechanism.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>Card Details</span>
+                                    <img src="../images/Prison_Island_CardDetails.png" alt="Card Details" height="264" width="420">
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+
+
+                    <div class="container">
+                        <h3>Learning Outcomes</h3>
+                        <p>
+                            As a coding project, I understood how demaking a game is different from creating a game from scratch; requirements for game projects
+                            like these are often more strict, similar to how a company would have strict requirements for a project. I also learnt how to 
+                            think about new game mechanics within a restricted context, which doesn't deviate the game's original concept, yet adds value to the
+                            gameplay experience.
+                        </p>
+                    </div>
+
+
+                    <!-- <div class="container">
                         <h5>Gameplay Images</h5>
                         <div class="image-row">
                             <div class="SE-imgContainer">
@@ -114,22 +216,8 @@
                                 <img src="../images/Prison_Island_4.png" alt="SE2" height="220" width="394">
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="container">
-                        <h3>Learning Outcomes</h3>
-                        <p>
-                            This is my first time creating a gameplay filled game in 3D, branching away from my 2D projects. I learnt how to use  Post Processing Layer  
-                            to create a more atmospheric environment. I also learnt how to use rigged models and import rigged animations in Unity. I also experimented with
-                            NavMeshes in unity for guard movement.
-                        </p>
-                        <p>
-                            Similar to previous projects, I also had a refresher on using state machines on both Prisoner and Guard Agents, as well as using Raycast for 
-                            guard detection.
-                        </p>
-
-                        <!-- https://www.youtube.com/embed/gJUEuxbuTGI -->
-                    </div>
 
                     <div class="container">
                         <h3>Gameplay Video</h3>
@@ -145,5 +233,6 @@
                     </div>
                 </div>
             <script src="../assets/js/switch_lang.js"></script>
+            <script src="../assets/js/show_items.js"></script>
     </body>
 </html>

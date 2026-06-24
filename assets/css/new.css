@@ -2,6 +2,7 @@
   display: flex;
   gap: 10px;
   align-items: flex-start;
+  margin-bottom: 40px;
 }
 .image-row-with-border {
   display: flex;
@@ -234,6 +235,18 @@
   font-size: 0.9em;
 }
 
+.label-UX-design {
+  display: inline-block;
+  background-color: #1e6963;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+
+
+
 .label-modelling {
   display: inline-block;
   background-color: #2340c4;
@@ -284,6 +297,31 @@
 
 .programs-used-table td.program-icon img {
   display: block;
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Exactly 2 columns per row */
+    gap: 10px;                             /* Space between rows and columns */
+    /* background-color: #1a333d; */
+    background-color: #09171D;
+    padding: 10px;
+    border: 4px solid #6B9E62;                /* Optional outer border */
+}
+
+/* Individual program blocks */
+.program-item {
+    display: flex;
+    align-items: center;                   /* Vertically centers text with logo */
+    gap: 15px;                             /* Space between logo and text */
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle divider lines */
+}
+
+/* Styling for the text */
+.program-item span {
+   
+    font-size: 1.5rem;
 }
 
 /* Details media + text (project detail pages) */

@@ -1,0 +1,282 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Read Only by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Monofett&family=VT323&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/button.css" />
+        <link rel="stylesheet" href="../assets/css/new.css" />
+
+	</head>
+	<body class="is-preload">
+    <!-- Language Switcher Button -->
+	<div style="position: fixed; top: 1rem; right: 1rem; z-index: 1000;">
+		<a class="pixel-button-link">
+			<div class="pixel" id="lang-switch"><p>繁</p></div>
+		</a>
+	</div>
+		<!-- Header -->
+			<section id="header">
+				<header>
+                    <span class="image avatar"><img src="../images/avatar.jpg" alt="" /></span>
+                    <h1 id="logo"><a href="#">Kwok Yik Hei Stephen</a></h1>
+                    <p>Just a Game Designer and Digital Artist.<br />
+                    Certified Silly Person</p>
+                </header>
+				<nav id="nav">
+					<a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'index.html#three','just-one-look-details.html')">
+                        <div class="pixel"><p>Back to Home</p></div>
+                    </a>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://www.instagram.com/blue_sheep_cookie/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://www.linkedin.com/in/yik-hei-kwok-54680b214/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/Death052" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+
+
+            <div id="wrapper">
+				<!-- Main -->
+					<div id="main">
+                         <div class="image main" data-position="center">
+                            <img src="../images/HeaderImg_index.png" alt="" />
+                        </div>
+                        <div class="container">
+                            <header class="major">
+                                <h2>Good Luck Is Coming</h2>
+                            </header>
+                            <h3>Introduction</h3>
+                            <p>
+                                Developed in one month for the 2026 NetEase Game Jam by an 8-person team, Good Luck Is Coming is a 2D truck management game where 
+                                players dispatch trucks to various locations, switching to a top-down perspective to aim and crash onto shifting, yellow-highlighted 
+                                targets.
+                            </p>
+                            <p style="margin-bottom: 10px; margin-top: -15px;">
+                                I am responsible for:
+                            </p>
+                            <ul style="margin-top: 10px;">
+                                <li>Programming the game, notably UI interactions and resource creation</li>
+                                <li>Technical Design on game's core systems and mechanics, understanding and deciding if some mechanisms are feasible</li>
+                                <li>Thinking about customs events that make the game interesting</li>
+                                <li>UI Design and UX exploration, understanding how users interact with the game</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="container">
+                        <h3>Programs Used</h3>
+                        <table class="programs-used-table">
+                            <tbody>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/godot_logo.png" alt="Godot" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Godot</span></td>
+                                    <td class="program-desc"><span>Programming Software used to create this game</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/github.png" alt="github" width="50" height="50" ></td>
+                                    <td class="program-name"><span>github</span></td>
+                                    <td class="program-desc"><span>Version Control</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/miro.png" alt="Miro" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Miro</span></td>
+                                    <td class="program-desc"><span>Game Planning Tool</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="container">
+                        <h3>Section Details</h3>
+                         <div class="Detail-Segment-Button-Container">
+                            <ul>
+                                <li>
+                                    <a onclick="toggleContentScripting()" class="pixel-button-link">
+                                        <div class="pixel-blue"><p>Scripting</p></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a onclick="toggleContentGameDesign()" class="pixel-button-link">
+                                        <div class="pixel-purple"><p>Game Design</p></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a onclick="toggleContentUXDesign()" class="pixel-button-link">
+                                        <div class="pixel-grey-green"><p>UX Design</p></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> 
+                    
+
+                    <div id="hidden-section-scripting" style="display: none;">
+                        <div class="container">
+                            <h2>Scripting</h2>
+                            <p>
+                                The game is entirely coded in Godot using the gdscript language. I haven't created a management simulation game before,
+                                which usually has many UI elements. I also never worked with another coder simultaneously in a game jam before.
+                            </p>
+                            <p>
+                                For the UI elements, I made sure to make use of Horizontal and Vertical Containers to make sure the UI elements are 
+                                responsive to different screen sizes and are organized properly. I also made sure signals are used appropriately to
+                                communicate between UI elements and provide interation. Due to the game having a variety of targets, trucks and civilians, 
+                                I made sure to use resources for each category of objects to make sure the game is scalable.
+                            </p>
+                            <p>
+                                
+                            </p>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>Resource Structure</span>
+                                    <img src="../images/Truck_Management_Simulator_Resources.png" alt="Resources" height="264" width="420">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="hidden-section-game-design" style="display: none;">
+                        <div class="container">
+                            <h2>Game Design</h2>
+                            <p>
+                               While the core mechanics of the game is designed by other game designers, I contributed on designing custom events 
+                               for the game to make it more interesting.
+                            </p>
+                            <p>
+                                Initally, traffic congestion event was designed to slow down trucks and even block paths. making reaching the 
+                                target destination more interesting. However, not only it will it be difficult to implement, it also will only
+                                affect the truck routing gameplay and not the truck collision gameplay.
+                            </p>
+                            <p>
+                                Therefore I designed earthquake and flooding events instead. Not only will it slow down the trucks during truck
+                                routing, weird effects are created to spice up the truck collision gameplay. Details can be seen in the videos 
+                                below.
+                            </p>
+                            
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>Earthquake Event</span>
+                                    <video height="264" width="420" controls>
+                                        <source src="../videos/Truck_Management_Simulator_Earthquake.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>Flooding Event</span>
+                                    <video height="264" width="420" controls>
+                                        <source src="../videos/Truck_Management_Simulator_Flood.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+
+                     <div id="hidden-section-UX-design" style="display: none;">
+                        <div class="container">
+                            <h2>UX Design</h2>
+                            <p>
+                                As the main UI Programmer of the game, I am also responsible for designing the core UX and UI elements of the game. This includes
+                                drawing diagrams with iterations, serving as prototypes. This is important for the team to understand how the player will interact
+                                with the game, and how the game will respond to the player's actions.
+                            </p>
+                            <p>
+                                Diagrams are drawn in Miro before UI implementation as shown below. Changes are made to the main UI due to the specification of the 
+                                game changed to having only 2 targets appearing at the same time instead of multiple targets appearing at different sequences. 
+                            </p>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>Iteration 1</span>
+                                    <img src="../images/Truck_Management_Simulator_UX_Design_old.png" alt="UI Iteration 1" height="246" width="388">
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>Iteration 2</span>
+                                    <img src="../images/Truck_Management_Simulator_UX_Design_new.png" alt="UI Iteration 2" height="246" width="388">
+                                </div>
+                            </div>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>Main UI</span>
+                                    <img src="../images/Truck_Management_Simulator_UX_Main.png" alt="UI Iteration 1" height="217" width="388">
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>Location Details UI</span>
+                                    <img src="../images/Truck_Management_Simulator_UX_location.png" alt="UI Iteration 2" height="217" width="388">
+                                </div>
+                            </div>
+
+
+
+                            <p> 
+                                
+                            </p>
+                           
+                        </div>
+                     </div>
+
+
+                    <!-- <div class="container">
+                        <h3>Game Images</h3>
+                        <div class="image-row">
+                            <div class="SE-imgContainer">
+                                <span>Title Screen</span>
+                                <img src="../images/Just_One_Look_4.png" alt="SE1" height="220" width="394">
+                            </div>
+                            <div class="SE-imgContainer">
+                                <span>Mask Off</span>
+                                <img src="../images/Just_One_Look_1.png" alt="SE2" height="220" width="394">
+                            </div>
+                        </div>
+
+                        <div class="image-row">
+                            <div class="SE-imgContainer">
+                                <span>Mask On</span>
+                                <img src="../images/Just_One_Look_2.png" alt="SE1" height="220" width="394">
+                            </div>
+                            <div class="SE-imgContainer">
+                                <span>Insanity</span>
+                                <img src="../images/Just_One_Look_3.png" alt="SE2" height="220" width="394">
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="container">
+                        <h3>Learning Outcomes</h3>
+                        <p>
+                            I learnt how to work with another programmer as effectively as possible, by not only using version control, but also by
+                            communicating with each other on what to work on. I also learnt how to maintain flexibility in the game design process,
+                            thinking about game design as a more iterative process rather than a waterfall model.
+                        </p>
+                    </div>
+
+                    <div class="container">
+                        <h3>Gameplay Video</h3>
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/gJUEuxbuTGI"
+                            title="Gameplay Video"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+        <script src="../assets/js/switch_lang.js"></script>
+        <script src="../assets/js/show_items.js"></script>
+    </body>
+</html>

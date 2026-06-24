@@ -71,12 +71,15 @@
 
                     <div class="container">
                         <h3>Programs Used</h3>
-                        <ul class="feature-icons">
-                             <li class="icon_logo_img">
-                                <img src="../images/unity_logo.png" alt="Unity" width="50" height="50" >
-                                <span>Unity</span>
-                            </li>
-                        </ul>
+                        <table class="programs-used-table">
+                            <tbody>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/unity_logo.png" alt="Unity" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Unity</span></td>
+                                    <td class="program-desc"><span>Programming Software used to create this algorithm</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
 
 
@@ -85,19 +88,37 @@
                     
                     <div class="container">
                         <h3>Algorithm Logic</h3>
-                        <p>
+                        <!-- <p>
                             The algorithm first takes in a sample texture, and it divides the sample texture into small square
                             patches. The boundary pixels of each patch is then saved, which is used to calculate the similarity
-                            between patches.
+                            between patches. The algorithm then starts creating the new texture by randomly picking a patch from the sample texture,
+                            and then adding new patches based on the boundary pixels of the existing patches.
+                        </p> -->
+                        <p>
+                            The algorithm divides a sample texture into small square patches and saves their boundary pixels. It then 
+                            generates a new texture by randomly selecting an initial patch and seamlessly adding new ones based on 
+                            boundary pixel similarities.
                         </p>
                         <p>
-                            The algorithm then starts creating the new texture by randomly picking a patch from the sample texture,
-                            and then adding new patches based on the boundary pixels of the existing patches. This algorithm is 
-                            quite complicated, therefore you are welcome to view the full document I wrote if you are interested.
+                            View the full document I wrote if you are interested.
                         </p>
-                        <a href="documents/YikHeiKWOK25-FINAL.pdf" class="pixel-button-link"><div class="pixel"><p>Document</p></div></a>
+                        <div class="button-row" style="margin-top: -30px;">
+                            <a href="documents/YikHeiKWOK25-FINAL.pdf" class="pixel-button-link"><div class="pixel"><p>Document</p></div></a>
+                        </div>
+                    </div>
 
+                    <div class="container">
+                        <h3>Learning Outcomes</h3>
+                        <p>
+                            I have learnt a lot about compute shaders through this project, and understood how
+                            using compute shaders can offset heavy computation from the CPU to the GPU,
+                            significantly improving the performance of certain aspects of the algorithm. I also 
+                            have a better imderstanding of how raycasting works.
+                        </p>
+                    </div>
 
+                    <div class="container">
+                        <h3>Game Images</h3>
                         <div class="image-row">
                             <div class="SE-imgContainer">
                                 <span>Choose Textures</span>
@@ -119,29 +140,10 @@
                                 <img src="../images/Patch_Synthesis_4.png" alt="SE2" height="220" width="394">
                             </div>
                         </div>
-
-
-                        
-
-
-                        
                     </div>
 
-                    <div class="container">
-                        <h3>Learning Outcomes</h3>
-                        <p>
-                            I have learnt a lot about compute shaders through this project, and understood how
-                            using compute shaders can offset heavy computation from the CPU to the GPU,
-                            significantly improving the performance of certain aspects of the algorithm.
-                        </p>
 
-                        <p>
-                            Coincidentally, this my first ever Unity project (or game project in general) that
-                            utilize 3D elements. Therefore, I learnt how to use 3D raycasting in Unity as well as
-                            using some 3D materials.
-                        </p>
 
-                    </div>
 
                     <div class="container">
                         <h3>Gameplay Video</h3>

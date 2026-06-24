@@ -1,0 +1,302 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Read Only by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Monofett&family=VT323&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/main.css" />
+        <link rel="stylesheet" href="../assets/css/button.css" />
+        <link rel="stylesheet" href="../assets/css/new.css" />
+
+	</head>
+	<body class="is-preload">
+    <!-- Language Switcher Button -->
+	<div style="position: fixed; top: 1rem; right: 1rem; z-index: 1000;">
+		<a class="pixel-button-link">
+			<div class="pixel" id="lang-switch"><p>繁</p></div>
+		</a>
+	</div>
+		<!-- Header -->
+			<section id="header">
+                <header>
+                    <span class="image avatar"><img src="../images/avatar.jpg" alt="" /></span>
+                    <h1 id="logo"><a href="#">Kwok Yik Hei Stephen</a></h1>
+                    <p>Just a Game Designer and Digital Artist.<br />
+                    Certified Silly Person</p>
+                </header>
+				<nav id="nav">
+                    <a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'index.html#three','stitched-exe-details.html')">
+                        <div class="pixel"><p>Back to Home</p></div>
+                    </a>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://www.instagram.com/blue_sheep_cookie/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://www.linkedin.com/in/yik-hei-kwok-54680b214/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/Death052" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+
+
+            <div id="wrapper">
+				<!-- Main -->
+					<div id="main">
+                        <div class="image main" data-position="center">
+                            <img src="../images/HeaderImg_index.png" alt="" />
+                        </div>
+                        <div class="container">
+                            <header class="major">
+                                <h2>Stitched.EXE</h2>
+                                <h3>Introduction</h3>
+                            </header>
+                            <p>Stitched.EXE is an immersive horror platformer about two Nintendo characters, the Ice Climbers.</p>
+                            <p>This game has a gameplay time of about 20 minutes, and is one of the first successful projects I have published on the internet, at 2024. This is a personal solo project, so I am in charge of all aspects of development, excluding the music.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="container">
+                        <h3>Programs Used</h3>
+                        <table class="programs-used-table">
+                            <tbody>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/unity_logo.png" alt="Unity" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Unity</span></td>
+                                    <td class="program-desc"><span>Programming Software used to create this game</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/csp_logo.png" alt="Clip Studio Paint" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Clip Studio Paint</span></td>
+                                    <td class="program-desc"><span>For creating art assets for the game</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/hitfilm_logo.png" alt="HitFilm" width="50" height="50" ></td>
+                                    <td class="program-name"><span>HitFilm</span></td>
+                                    <td class="program-desc"><span>For Promotional Material</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Buttons that display different category of items -->
+                       
+
+                    </div>
+
+                    <div class="container">
+                         <div class="Detail-Segment-Button-Container">
+                            <ul>
+                                <li>
+                                    <a onclick="toggleContentScripting()" class="pixel-button-link">
+                                        <div class="pixel-blue"><p>Scripting</p></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a onclick="toggleContentGameDesign()" class="pixel-button-link">
+                                        <div class="pixel-purple"><p>Game Design</p></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a onclick="toggleContentArtDesign()" class="pixel-button-link">
+                                        <div class="pixel-pink"><p>Art Design</p></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div id="hidden-section-scripting" style="display: none;">
+                        <div class="container">
+                            <h2>Scripting</h2>
+                            <h4>General Information</h4>
+                            <p>
+                                The entire game is programmed in C# using the Unity Engine, composed of
+                                many scenes joined together. The game has a full UI menu system and a 
+                                smooth platforming system.
+                            </p>
+                            <h4>Enemy State Machines</h4>
+                            <p>
+                                The enemy AI is implemented using state machines, allowing for complex 
+                                behavior patterns and transitions between different states. Each enemy type has its
+                                unique base class, with its specific behaviours inheriting from this class. This
+                                structure allow easy transition between different behaviours.
+                            </p>
+                            <div class="details-row">
+                                <div class="details-media">
+                                    <video width="540" height="300" controls>
+                                        <source src="../videos/Stitched_EXE_StateMachines.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+
+                                <div class="details-text"> 
+                                    <p>
+                                        An easy example will be the Dead Climber. It has Wait, Activate, Moving, Attacking
+                                        and Death states. When the player is close to the climber, it will transition from Wait to Activate, 
+                                        then to Moving. If the player is in range, it will transition to Attacking, and 
+                                        if the player kills it, it will transition to Death.
+                                    </p>
+                                </div>
+                            </div>
+                            <h4>State Trees</h4>
+                            <p>
+                                All functions required for advancing the game, including cutscenes and gameplay events, are 
+                                encapsulated in a script, which is attached to an object within the scene. These functions are called
+                                whenever required in corresponding unity scenes.
+                            </p>
+
+                            <h4>Dialogue System</h4>
+                            <div class="details-row">
+                                <div class="details-media">
+                                    <img src="../images/StitchedEXE_DialogueBox.png" alt="Dialogue System" width="648" height="394">
+                                </div>
+                                <div class="details-text"> 
+                                    <p>
+                                        The dialogue system is made up of a custom dialogue manager and dialogue triggers.
+                                        Each dialogue trigger has an array of dialogue lines, which are passed into the
+                                        dialogue manager. The dialogue manager passes in each character of each dialogue line into the 
+                                        TextMeshPro, creating a typewriter effect.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="hidden-section-game-design" style="display: none;">
+                        <div class="container">
+                            <h2>Game Design</h2>
+                            <p>
+                                I aimed to implement unique gameplay mechanics, while maintaining the core roots of
+                                the platformer genre. 
+                            </p>
+                            
+                            <h4>Gameplay Mechanics</h4>
+                            <p>
+                                The game does not rely on simple combat for gameplay. Since the two main characters are
+                                constantly being hunted by a being of eldrith horror, I wanted to incorporate hide and seek
+                                elements within the game to create suspense and helplessness.
+                            </p>
+
+                            <div class="details-row">
+                                <div class="details-media">
+                                    <video width="540" height="300" controls>
+                                            <source src="../videos/Stitched_EXE_hiding1.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="details-text"> 
+                                     <p>
+                                        A huge floating head is visible in the first part of the game. The floating head will open its eyes
+                                        and look around the map. If the player isn't hiding behind the walls located around the map,
+                                        the floating head will see the player and kill them. The player must carefully navigate the environment 
+                                        to avoid being caught.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="details-row">
+                                <div class="details-media">
+                                    <video width="540" height="300" controls>
+                                        <source src="../videos/Stitched_EXE_hiding2.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="details-text"> 
+                                     <p>
+                                        The monster will personally hunt the player in the second part of the game. Similar to before, there are
+                                        areas around the map where the player can hide. However this time, the monster teleports to different parts
+                                        of the map. Initially, the player locates the monster by listening to the directional sound it makes. However,
+                                        playtesters found it too difficult to determine especially without headphones. Therefore, I used heartbeat 
+                                        sound effects to indicate the monster's proximity instead.
+                                    </p>
+                                </div>
+                            </div>
+                            
+
+                            <h4>UI Design</h4>
+                            <div class="details-row">
+                                <div class="details-media">
+                                    <img src="../images/StitchedEXE_PauseMenuOld.png" alt="Pause Menu Old" width="648" height="394">
+                                </div>
+                                <div class="details-text"> 
+                                    <p>
+                                        The pause menu is designed to be simple with minimum elements. I initially created
+                                        a general menu with buttons and sliders, but while functional, it looks too bland.
+                                        This issue was brought up by early playtesters.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="details-row">
+                                <div class="details-media">
+                                    <img src="../images/StitchedEXE_PauseMenuNew.png" alt="Pause Menu New" width="648" height="394">
+                                </div>
+                                <div class="details-text"> 
+                                    <p>
+                                        Therefore, I redesigned the pause menu, allowing the pause menu elements to slide in from
+                                        the right. I also incorporated the ice climbers into the design for it to fit the aesthetic.
+                                        Some playtesters complained that the game is constantly stuck on full screen, so I added a 
+                                        button to allow players to switch between windowed and full screen mode.
+                                    </p>
+                                </div>
+                            </div>
+
+                            
+
+
+
+                            <h5>Old Design</h5>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <img src="../images/StitchedEXE_3.png" alt="SE1" height="220" width="394">
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <img src="../images/StitchedEXE_5.png" alt="SE2" height="220" width="394">
+                                </div>
+                            </div>
+
+                            <h5>New Design</h5>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <img src="../images/StitchedEXE_3.png" alt="SE1" height="220" width="394">
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <img src="../images/StitchedEXE_4.png" alt="SE2" height="220" width="394">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div id="hidden-section-art-design" style="display: none;">
+                        <div class="container">
+                            <h3>Art Direction</h3>
+                            <p>The atmosphere and art design of Stitched.EXE is inspired by classic creepypasta games like Sonic.Exe. It involves graphical death animations and a dark, pixelated aesthetic. 
+                                I decided to use harmony of adjacent hues to create the atmosphere; the first scene uses cool colours to display a sense of dread, while the second scene uses warm but eerie tones to create a 
+                                feeling of being lost in a strange, unsettling world.</p>
+    
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <img src="../images/StitchedEXE_1.png" alt="SE1" height="220" width="394">
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <img src="../images/StitchedEXE_2.png" alt="SE2" height="220" width="394">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+
+        <script src="../assets/js/switch_lang.js"></script>
+        <script src="../assets/js/show_items.js"></script>
+
+    </body>
+</html>
+
