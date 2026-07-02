@@ -5,6 +5,77 @@ const labelEn = document.getElementById('age-label-en');
 const labelZh = document.getElementById('age-label-zh');
 let lang = 1; // 1 for english, 2 for chinese T, 3 for chinese S
 
+let imageLightbox;
+
+function ensureImageLightbox() {
+    if (imageLightbox) {
+        return imageLightbox;
+    }
+
+    imageLightbox = document.createElement('div');
+    imageLightbox.className = 'image-lightbox';
+    imageLightbox.innerHTML = [
+        '<div class="image-lightbox__backdrop" aria-hidden="true"></div>',
+        '<figure class="image-lightbox__figure" role="dialog" aria-modal="true" aria-label="Image preview">',
+        '<button type="button" class="image-lightbox__close" aria-label="Close image preview">&times;</button>',
+        '<img class="image-lightbox__image" alt="">',
+        '<figcaption class="image-lightbox__caption"></figcaption>',
+        '</figure>'
+    ].join('');
+
+    document.body.appendChild(imageLightbox);
+
+    const closeLightbox = function () {
+        imageLightbox.classList.remove('is-open');
+        document.body.style.overflow = '';
+    };
+
+    imageLightbox.addEventListener('click', function (event) {
+        if (event.target.closest('.image-lightbox__figure') && !event.target.classList.contains('image-lightbox__backdrop')) {
+            return;
+        }
+        closeLightbox();
+    });
+
+    imageLightbox.querySelector('.image-lightbox__close').addEventListener('click', closeLightbox);
+    imageLightbox.closeLightbox = closeLightbox;
+
+    return imageLightbox;
+}
+
+function openImageLightbox(imageElement) {
+    const lightbox = ensureImageLightbox();
+    const previewImage = lightbox.querySelector('.image-lightbox__image');
+    const caption = lightbox.querySelector('.image-lightbox__caption');
+
+    previewImage.src = imageElement.src;
+    previewImage.alt = imageElement.alt || '';
+    caption.textContent = imageElement.alt || imageElement.getAttribute('data-caption') || '';
+
+    lightbox.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+}
+
+function initImageLightbox() {
+    document.addEventListener('click', function (event) {
+        const image = event.target.closest('.SE-imgContainer img');
+        if (!image) {
+            return;
+        }
+
+        event.preventDefault();
+        openImageLightbox(image);
+    });
+
+    document.addEventListener('keydown', function (event) {
+        if (event.key !== 'Escape' || !imageLightbox || !imageLightbox.classList.contains('is-open')) {
+            return;
+        }
+
+        imageLightbox.closeLightbox();
+    });
+}
+
 // Function to detect and set language based on URL
 function detectLanguageFromUrl() {
     var page_url = window.location.href;
@@ -19,6 +90,7 @@ function detectLanguageFromUrl() {
 
 // Call the function when page loads
 detectLanguageFromUrl();
+initImageLightbox();
 
 btn.addEventListener('click', function() {
     // if in english page, find /en/ and replace with /zh/

@@ -1,0 +1,304 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Read Only by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Monofett&family=VT323&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/main.css" />
+        <link rel="stylesheet" href="../assets/css/button.css" />
+        <link rel="stylesheet" href="../assets/css/new.css" />
+
+	</head>
+	<body class="is-preload">
+    <!-- Language Switcher Button -->
+	<div style="position: fixed; top: 1rem; right: 1rem; z-index: 1000;">
+		<a class="pixel-button-link">
+			<div class="pixel" id="lang-switch"><p>繁</p></div>
+		</a>
+	</div>
+		<!-- Header -->
+			<section id="header">
+                <header>
+                    <span class="image avatar"><img src="../images/avatar.jpg" alt="" /></span>
+                    <h1 id="logo"><a href="#">Kwok Yik Hei Stephen</a></h1>
+                    <p>Just a Game Designer and Digital Artist.<br />
+                    Certified Silly Person</p>
+                </header>
+				<nav id="nav">
+                    <a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'index.html#three','within-the-trenches.html')">
+                        <div class="pixel"><p>Back to Home</p></div>
+                    </a>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://www.instagram.com/blue_sheep_cookie/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://www.linkedin.com/in/yik-hei-kwok-54680b214/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/Death052" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+
+
+            <div id="wrapper">
+				<!-- Main -->
+					<div id="main">
+                        <div class="image main" data-position="center">
+                            <img src="../images/HeaderImg_index.png" alt="" />
+                        </div>
+                        <div class="container">
+                            <header class="major">
+                                <h2>Silence</h2>
+                                <h3>Introduction</h3>
+                            </header>
+                            <p>Silence is a passion project that I am working on alongside a small team. This game is going to be a metroidvania
+                                that uses sound as a core mechanic to navigate through areas and deal with enemies. When the player produces sound
+                                either by hitting objects, enemies or even by falling from a height, they will switch between alternate worlds.
+                            </p>
+                            <p style="margin-bottom: 10px; margin-top: -15px;">
+                                I am responsible for:
+                            </p>
+                            <ul style="margin-top: 10px;">
+                                <li>Management of the project, organizing tasks and milestones</li>
+                                <li>Mechanic Design involving core sound-based gameplay, enemy behavior</li>
+                                <li>Narrative Design through world-building and character development</li>
+                                <li>Art Design and Implementation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <table class="programs-used-table">
+                            <tbody>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/godot_logo.png" alt="Godot" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Godot</span></td>
+                                    <td class="program-desc"><span>Programming Software used to create this game</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/github.png" alt="github" width="50" height="50" ></td>
+                                    <td class="program-name"><span>github</span></td>
+                                    <td class="program-desc"><span>Version Control</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/aesprite.png" alt="Aesprite" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Aesprite</span></td>
+                                    <td class="program-desc"><span>Art tool</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/miro.png" alt="Miro" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Miro</span></td>
+                                    <td class="program-desc"><span>Game Planning Tool</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/notion_logo.png" alt="Notion" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Notion</span></td>
+                                    <td class="program-desc"><span>Game Planning / Project Management Tool</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="container">
+                        <h3>Section Details</h3>
+                         <div class="Detail-Segment-Button-Container">
+                            <ul>
+                                <li>
+                                    <a onclick="toggleContentProjectManagement()" class="pixel-button-link">
+                                        <div class="pixel-black-blue"><p style="font-size: 22px;">Project Management</p></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a onclick="toggleContentGameDesign()" class="pixel-button-link">
+                                        <div class="pixel-purple"><p>Game Design</p></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a onclick="toggleContentNarrativeDesign()" class="pixel-button-link">
+                                        <div class="pixel-orange"><p>Narrative Design</p></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a onclick="toggleContentArtDesign()" class="pixel-button-link">
+                                        <div class="pixel-pink"><p>Art Design</p></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> 
+
+                    <div id="hidden-section-project-management" style="display: none;">
+                        <div class="container">
+                            <h2>Project Management</h2>
+                            <h4> My Responsibility </h4>
+                            <p>
+                                As the project manager, I am responsible for organizing all tasks and deadlines for the team, as well as hosting
+                                regular meetings to discuss about progress and any issues that may arise.
+                            </p>
+                            <h4> How Is It Managed </h4>
+                            <p>
+                                Notion is primarily used to organize the items mentioned. I have a dedicated page for noting down tasks 
+                                and meeting times to keep track of progress. Perhaps more importantly, I used a Game Design Document (GDD)
+                                to organize ideas that were put forth by everyone on the team. The GDD is very new and is constantly updating.
+                            </p>
+                            <p>
+                                GDD consists of general information, story structure, gameplay specifics and character details. The Elemental Tetrad
+                                and Gameplay Loop is written to establish a clearer vision to plan ahead.
+                            </p>
+                            
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>Resource Structure</span>
+                                    <img src="../images/Truck_Management_Simulator_Resources.png" alt="Resources" height="264" width="420">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="hidden-section-game-design" style="display: none;">
+                        <div class="container">
+                            <h2>Mechanic and Enemy Design</h2>
+                            <p>
+                               I am responsible on thinking about the core mechanics of the game, which I believe has to be unique to
+                               seperate from other metroidvania games. I have chosen to use a sound-based mechanic, where producing
+                               enough sound will switch the player between two alternate worlds.
+                            </p>
+                            <h4> Inspirations </h4>
+                            <p>
+                                I have taken inspiration from various games. The alternate world switching mechanic is inspired from 
+                                Fran Bow, where the player can switch between two worlds to solve puzzles. However, switching between
+                                worlds with just a button press felt too mundane that a lot of games already do. Therefore, inspired
+                                from games like Mr.Hopp's Playhouse and Little Nightmares, I decided to make the mechanic sound-based, 
+                                where the player has to carefully plan how much noise to produce for switching between worlds.
+                            </p>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>Fran Bow World Switching</span>
+                                    <img src="../images/Silence-Mechanic-Inspiration-Franbow.png" alt="UI Iteration 1" height="217" width="388">
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>Little Nightmares Sound Mechanic</span>
+                                    <img src="../images/Silence-Mechanic-Inspiration-LittleNightmare.png" alt="UI Iteration 2" height="217" width="388">
+                                </div>
+                            </div>
+                            <h4> Enemy Concept </h4>
+                            <p>
+                                Aiming for enemies to be unique and also use the sound-based mechanic, I have designed two large enemies 
+                                confined at two different locations. Concepts and ideas for these enemies are planned within Notion.
+                            </p>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>Enemy Design on Miro</span>
+                                    <img src="../images/Silence-Enemy-Design-eng.png" alt="UI Iteration 1" height="462" width="855">
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                     <div id="hidden-section-narrative-design" style="display: none;">
+                        <div class="container">
+                            <h2>Narrative Design</h2>
+                            <h4>My Responsibility</h4>
+                            <p>
+                                I am responsible for packaging broad narrative ideas given by the team into a more cohesive story, with interactable 
+                                characters and a more structured story progression.
+                            </p>
+                            <h4>Story Overview</h4>
+                            <p>
+                                Born mute, Yuki’s scientist parents tried to cure her but accidentally became a mindless, fifth-dimensional deity. 
+                                Now, the world is cursed: anyone who makes a sound is dragged into the fifth dimension and devoured. Retaining no 
+                                memory of the incident, and possessing a brain shard that tells her to ascend the Seropa Building to reach the deity, 
+                                Yuki will do so, either alone or with the help of people along the way.
+                            </p>
+                            <div class="SE-imgContainer">
+                                <span>Branching Narrative [Still in Progress]</span>
+                                <img src="../images/Silence-Branching-Narrative-eng.png" alt="Branching Narrative" height="293" width="855">
+                            </div>
+
+                            <h4>Type of Story</h4>
+                            <p>
+                                I intend the game to have branching narrative pathways based on if the player chooses to interact with characters or
+                                not. There will be meta-elements within the story, where the player's brain shard will tell the player to not trust
+                                anyone. This will create a dilemma for the player, where they will have to choose between trusting characters or not. 
+                                The moral of the story is to show that people must interact and comfort each other to overcome the challenges of a
+                                dystopian world.
+                            </p>
+
+                            <h4>Story Planning</h4>
+                            <p>
+                                Everyone in the group has vague story ideas that could benefit the narrative in some ways. These ideas are
+                                written into Miro, where I can then organize them into a more cohesive story witin Notion. Story planning
+                                includes writing down character details, motivations, and area maps.
+                            </p>
+                            <div class="image-row">
+                            <div class="SE-imgContainer">
+                                <span>Character Description Organized in Tables</span>
+                                <img src="../images/Silence-Narrative-Characters-eng.png" alt="Character Descriptions" height="252" width="400">
+                            </div>
+                            <div class="SE-imgContainer">
+                                <span>Area Map Diagrams given to Level Designer</span>
+                                <img src="../images/Silence-Narrative-AreaMaps-eng.png" alt="Area Maps" height="252" width="400">
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    
+                    <!-- <div class="container">
+                        <h3>Inspirations</h3>
+                        <p>
+                            I was inspired by various games, which motivated me to create this combat-based platformer to begin with.
+                            I aim to create a game that has combat elements similar to Luna Nights, but with unique skills. I also aim to
+                            create a narrative based story progression to the game, using visual-based storytelling similar to Hollow Knight.
+                        </p>
+                        <div class="image-row">
+                            <div class="SE-imgContainer">
+                                <img src="../images/inspiration_luna_nights.png" alt="luna_nights" height="104" width="330">
+                            </div>
+                            <div class="SE-imgContainer">
+                                <img src="../images/inspiration_hollow_knight.png" alt="hollow_knight" height="104" width="330">
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="container">
+                        <h3>Game Mechanics</h3>
+                        <p>
+                            The game takes root in a narrative progressive system, where the player will acquire more and more equipable
+                            skills as they progress through the game. The game, at least in this development stage, has 4 main stages, each
+                            with unique enemies and bosses.
+                        </p>
+                        <p>
+                            The game functions as a metroidvania, where the player will have to backtrack to previous stages to access new
+                            areas with the new skills they have acquired. For example, you are required to acquire a wall jump ability from
+                            a character before advancing to a new area requiring this ability.
+                        </p>
+                        <div class="image-row">
+                            <div class="SE-imgContainer">
+                                <span>Area requiring wall jump</span>
+                                <img src="../images/Within_the_trenches_1.png" alt="WT1" height="220" width="394">
+                            </div>
+                            <div class="SE-imgContainer">
+                                <span>Obtaining wall jump ability</span>
+                                <img src="../images/Within_the_trenches_2.png" alt="WT2" height="220" width="394">
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+
+    
+
+        <script src="../assets/js/switch_lang.js"></script>
+        <script src="../assets/js/show_items.js"></script>
+
+    </body>
+</html>
+

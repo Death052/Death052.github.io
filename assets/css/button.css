@@ -7,7 +7,7 @@
   text-align: center;
 }
 
-.pixel, .pixel-blue, .pixel-purple, .pxiel-purple, .pixel-orange, .pixel-pink, .pixel-grey-green, .pixel2 {
+.pixel, .pixel-blue, .pixel-purple, .pxiel-purple, .pixel-orange, .pixel-pink, .pixel-grey-green, .pixel-black-blue, .pixel2 {
   font-size: 25px;
   color: #ACD797;
   height: auto;
@@ -53,10 +53,101 @@
   color: #489784;
 }
 
+.pixel-black-blue{
+  color: #90a1db;
+}
 
 
-.pixel:active, .pixel-blue:active, .pixel-purple:active, .pxiel-purple:active, .pixel-orange:active, .pixel-pink:active, .pixel-grey-green:active, .pixel2:active {
+
+.pixel:active, .pixel-blue:active, .pixel-purple:active, .pxiel-purple:active, .pixel-orange:active, .pixel-pink:active, .pixel-grey-green:active, .pixel-black-blue:active, .pixel2:active {
   top: 2px;
+}
+
+.pixel:hover, .pixel:focus-visible, .pixel[aria-pressed="true"], .pixel.is-selected,
+.pixel-button-link:hover .pixel, .pixel-button-link:focus-visible .pixel, .pixel-button-link[aria-pressed="true"] .pixel, .pixel-button-link .pixel.is-selected {
+  color: #09171D;
+}
+
+.pixel:hover p, .pixel:focus-visible p, .pixel[aria-pressed="true"] p, .pixel.is-selected p,
+.pixel-button-link:hover .pixel p, .pixel-button-link:focus-visible .pixel p, .pixel-button-link[aria-pressed="true"] .pixel p, .pixel-button-link .pixel.is-selected p {
+  background: #ACD797;
+  outline-color: #09171D;
+}
+
+.pixel-blue:hover, .pixel-blue:focus-visible, .pixel-blue[aria-pressed="true"], .pixel-blue.is-selected,
+.pixel-button-link:hover .pixel-blue, .pixel-button-link:focus-visible .pixel-blue, .pixel-button-link[aria-pressed="true"] .pixel-blue, .pixel-button-link .pixel-blue.is-selected {
+  color: #131a3e;
+}
+
+.pixel-blue:hover p, .pixel-blue:focus-visible p, .pixel-blue[aria-pressed="true"] p, .pixel-blue.is-selected p,
+.pixel-button-link:hover .pixel-blue p, .pixel-button-link:focus-visible .pixel-blue p, .pixel-button-link[aria-pressed="true"] .pixel-blue p, .pixel-button-link .pixel-blue.is-selected p {
+  background: #6bdaff;
+  outline-color: #131a3e;
+}
+
+.pixel-purple:hover, .pixel-purple:focus-visible, .pixel-purple[aria-pressed="true"], .pixel-purple.is-selected,
+.pxiel-purple:hover, .pxiel-purple:focus-visible, .pxiel-purple[aria-pressed="true"], .pxiel-purple.is-selected,
+.pixel-button-link:hover .pixel-purple, .pixel-button-link:focus-visible .pixel-purple, .pixel-button-link[aria-pressed="true"] .pixel-purple, .pixel-button-link .pixel-purple.is-selected,
+.pixel-button-link:hover .pxiel-purple, .pixel-button-link:focus-visible .pxiel-purple, .pixel-button-link[aria-pressed="true"] .pxiel-purple, .pixel-button-link .pxiel-purple.is-selected {
+  color: #131a3e;
+}
+
+.pixel-purple:hover p, .pixel-purple:focus-visible p, .pixel-purple[aria-pressed="true"] p, .pixel-purple.is-selected p,
+.pxiel-purple:hover p, .pxiel-purple:focus-visible p, .pxiel-purple[aria-pressed="true"] p, .pxiel-purple.is-selected p,
+.pixel-button-link:hover .pixel-purple p, .pixel-button-link:focus-visible .pixel-purple p, .pixel-button-link[aria-pressed="true"] .pixel-purple p, .pixel-button-link .pixel-purple.is-selected p,
+.pixel-button-link:hover .pxiel-purple p, .pixel-button-link:focus-visible .pxiel-purple p, .pixel-button-link[aria-pressed="true"] .pxiel-purple p, .pixel-button-link .pxiel-purple.is-selected p {
+  background: #a872ff;
+  outline-color: #131a3e;
+}
+
+.pixel-orange:hover, .pixel-orange:focus-visible, .pixel-orange[aria-pressed="true"], .pixel-orange.is-selected,
+.pixel-button-link:hover .pixel-orange, .pixel-button-link:focus-visible .pixel-orange, .pixel-button-link[aria-pressed="true"] .pixel-orange, .pixel-button-link .pixel-orange.is-selected {
+  color: #131a3e;
+}
+
+.pixel-orange:hover p, .pixel-orange:focus-visible p, .pixel-orange[aria-pressed="true"] p, .pixel-orange.is-selected p,
+.pixel-button-link:hover .pixel-orange p, .pixel-button-link:focus-visible .pixel-orange p, .pixel-button-link[aria-pressed="true"] .pixel-orange p, .pixel-button-link .pixel-orange.is-selected p {
+  background: #e67e22;
+  outline-color: #131a3e;
+}
+
+.pixel-pink:hover, .pixel-pink:focus-visible, .pixel-pink[aria-pressed="true"], .pixel-pink.is-selected,
+.pixel-button-link:hover .pixel-pink, .pixel-button-link:focus-visible .pixel-pink, .pixel-button-link[aria-pressed="true"] .pixel-pink, .pixel-button-link .pixel-pink.is-selected {
+  color: #131a3e;
+}
+
+.pixel-pink:hover p, .pixel-pink:focus-visible p, .pixel-pink[aria-pressed="true"] p, .pixel-pink.is-selected p,
+.pixel-button-link:hover .pixel-pink p, .pixel-button-link:focus-visible .pixel-pink p, .pixel-button-link[aria-pressed="true"] .pixel-pink p, .pixel-button-link .pixel-pink.is-selected p {
+  background: #ff61ca;
+  outline-color: #131a3e;
+}
+
+.pixel-grey-green:hover, .pixel-grey-green:focus-visible, .pixel-grey-green[aria-pressed="true"], .pixel-grey-green.is-selected,
+.pixel-button-link:hover .pixel-grey-green, .pixel-button-link:focus-visible .pixel-grey-green, .pixel-button-link[aria-pressed="true"] .pixel-grey-green, .pixel-button-link .pixel-grey-green.is-selected {
+  color: #131a3e;
+}
+
+.pixel-grey-green:hover p, .pixel-grey-green:focus-visible p, .pixel-grey-green[aria-pressed="true"] p, .pixel-grey-green.is-selected p,
+.pixel-button-link:hover .pixel-grey-green p, .pixel-button-link:focus-visible .pixel-grey-green p, .pixel-button-link[aria-pressed="true"] .pixel-grey-green p, .pixel-button-link .pixel-grey-green.is-selected p {
+  background: #489784;
+  outline-color: #131a3e;
+}
+
+.pixel-black-blue:hover, .pixel-black-blue:focus-visible, .pixel-black-blue[aria-pressed="true"], .pixel-black-blue.is-selected,
+.pixel-button-link:hover .pixel-black-blue, .pixel-button-link:focus-visible .pixel-black-blue, .pixel-button-link[aria-pressed="true"] .pixel-black-blue, .pixel-button-link .pixel-black-blue.is-selected {
+  color: #131a3e;
+}
+
+.pixel-black-blue:hover p, .pixel-black-blue:focus-visible p, .pixel-black-blue[aria-pressed="true"] p, .pixel-black-blue.is-selected p,
+.pixel-button-link:hover .pixel-black-blue p, .pixel-button-link:focus-visible .pixel-black-blue p, .pixel-button-link[aria-pressed="true"] .pixel-black-blue p, .pixel-button-link .pixel-black-blue.is-selected p {
+  background: #90a1db;
+  outline-color: #131a3e;
+}
+
+.pixel2:hover, .pixel2:focus-visible, .pixel2[aria-pressed="true"], .pixel2.is-selected,
+.pixel-button-link:hover .pixel2, .pixel-button-link:focus-visible .pixel2, .pixel-button-link[aria-pressed="true"] .pixel2, .pixel-button-link .pixel2.is-selected {
+  color: white;
+  background: #669999;
 }
 
 .pixel {
@@ -77,7 +168,7 @@
   border-image: url(https://i.imgur.com/sREM8Yn.png) 20 stretch;
 }
 
-.pixel p, .pixel-blue p, .pixel-purple p, .pxiel-purple p, .pixel-orange p, .pixel-pink p, .pixel-grey-green p {
+.pixel p, .pixel-blue p, .pixel-purple p, .pxiel-purple p, .pixel-orange p, .pixel-pink p, .pixel-grey-green p, .pixel-black-blue p {
   display: inline-block;
   /* vertical-align: top; */
   position: relative;
@@ -122,6 +213,10 @@
   outline: 2px solid #489784;
 }
 
+.pixel-black-blue p {
+	background: #131a3e;
+  outline: 2px solid #90a1db;
+}
 
 .Detail-Segment-Button-Container ul {
   list-style: none;
