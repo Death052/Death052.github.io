@@ -1,8 +1,4 @@
-const btn = document.getElementById('lang-switch');
-const ageEn = document.getElementById('age-en');
-const ageZh = document.getElementById('age-zh');
-const labelEn = document.getElementById('age-label-en');
-const labelZh = document.getElementById('age-label-zh');
+let btn = null;
 let lang = 1; // 1 for english, 2 for chinese T, 3 for chinese S
 
 let imageLightbox;
@@ -57,14 +53,18 @@ function openImageLightbox(imageElement) {
 }
 
 function initImageLightbox() {
-    document.addEventListener('click', function (event) {
-        const image = event.target.closest('.SE-imgContainer img');
-        if (!image) {
+    const images = document.querySelectorAll('.SE-imgContainer img');
+
+    images.forEach(function (image) {
+        if (image.dataset.lightboxBound === 'true') {
             return;
         }
 
-        event.preventDefault();
-        openImageLightbox(image);
+        image.dataset.lightboxBound = 'true';
+        image.addEventListener('click', function (event) {
+            event.preventDefault();
+            openImageLightbox(image);
+        });
     });
 
     document.addEventListener('keydown', function (event) {
@@ -88,32 +88,46 @@ function detectLanguageFromUrl() {
     }
 }
 
-// Call the function when page loads
-detectLanguageFromUrl();
-initImageLightbox();
-
-btn.addEventListener('click', function() {
-    // if in english page, find /en/ and replace with /zh/
-    var page_url = window.location.href;
-    if (lang === 1) {
-        if (page_url.includes('/en/')) {
-            var new_url = page_url.replace('/en/', '/zh/');
-            window.location.href = new_url;
-        }
-    } else if (lang === 2) {
-        if (page_url.includes('/zh/')) {
-            var new_url = page_url.replace('/zh/', '/ch/');
-            window.location.href = new_url;
-        }
-    } else if (lang === 3) {
-        lang = 1;
-        if (page_url.includes('/ch/')) {
-            var new_url = page_url.replace('/ch/', '/en/');
-            window.location.href = new_url;
-        }  
+function initLanguageSwitch() {
+    btn = document.getElementById('lang-switch');
+    if (!btn) {
+        return;
     }
-     lang++;
-});
+
+    btn.addEventListener('click', function() {
+        var page_url = window.location.href;
+        if (lang === 1) {
+            if (page_url.includes('/en/')) {
+                var new_url = page_url.replace('/en/', '/zh/');
+                window.location.href = new_url;
+            }
+        } else if (lang === 2) {
+            if (page_url.includes('/zh/')) {
+                var new_url = page_url.replace('/zh/', '/ch/');
+                window.location.href = new_url;
+            }
+        } else if (lang === 3) {
+            lang = 1;
+            if (page_url.includes('/ch/')) {
+                var new_url = page_url.replace('/ch/', '/en/');
+                window.location.href = new_url;
+            }
+        }
+        lang++;
+    });
+}
+
+function initPageScripts() {
+    detectLanguageFromUrl();
+    initImageLightbox();
+    initLanguageSwitch();
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initPageScripts, { once: true });
+} else {
+    initPageScripts();
+}
 
 
 
