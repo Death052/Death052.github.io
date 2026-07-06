@@ -1,6 +1,7 @@
 const DETAIL_SECTION_IDS = [
   "hidden-section-scripting",
   "hidden-section-game-design",
+  "hidden-section-level-design",
   "hidden-section-art-design",
   "hidden-section-narrative-design",
   "hidden-section-UX-design",
@@ -10,6 +11,7 @@ const DETAIL_SECTION_IDS = [
 const DETAIL_BUTTON_SELECTORS = {
   "hidden-section-scripting": 'a.pixel-button-link[onclick="toggleContentScripting()"]',
   "hidden-section-game-design": 'a.pixel-button-link[onclick="toggleContentGameDesign()"]',
+  "hidden-section-level-design": 'a.pixel-button-link[onclick="toggleContentLevelDesign()"]',
   "hidden-section-art-design": 'a.pixel-button-link[onclick="toggleContentArtDesign()"]',
   "hidden-section-narrative-design": 'a.pixel-button-link[onclick="toggleContentNarrativeDesign()"]',
   "hidden-section-UX-design": 'a.pixel-button-link[onclick="toggleContentUXDesign()"]',
@@ -19,14 +21,14 @@ const DETAIL_BUTTON_SELECTORS = {
 function setSelectedButton(sectionId) {
   for (const id of DETAIL_SECTION_IDS) {
     const button = document.querySelector(DETAIL_BUTTON_SELECTORS[id]);
-    const visual = button?.querySelector(".pixel, .pixel-blue, .pixel-purple, .pxiel-purple, .pixel-orange, .pixel-pink, .pixel-grey-green, .pixel-black-blue, .pixel2");
+    const visual = button?.querySelector(".pixel, .pixel-blue, .pixel-purple, .pxiel-purple, .pixel-mechanic-design, .pixel-level-design, .pixel-orange, .pixel-pink, .pixel-grey-green, .pixel-black-blue, .pixel2");
 
     if (button) button.removeAttribute("aria-pressed");
     if (visual) visual.classList.remove("is-selected");
   }
 
   const selectedButton = document.querySelector(DETAIL_BUTTON_SELECTORS[sectionId]);
-  const selectedVisual = selectedButton?.querySelector(".pixel, .pixel-blue, .pixel-purple, .pxiel-purple, .pixel-orange, .pixel-pink, .pixel-grey-green, .pixel-black-blue, .pixel2");
+  const selectedVisual = selectedButton?.querySelector(".pixel, .pixel-blue, .pixel-purple, .pxiel-purple, .pixel-mechanic-design, .pixel-level-design, .pixel-orange, .pixel-pink, .pixel-grey-green, .pixel-black-blue, .pixel2");
 
   if (selectedButton && selectedVisual) {
     selectedButton.setAttribute("aria-pressed", "true");
@@ -37,7 +39,7 @@ function setSelectedButton(sectionId) {
 function clearSelectedButtons() {
   for (const id of DETAIL_SECTION_IDS) {
     const button = document.querySelector(DETAIL_BUTTON_SELECTORS[id]);
-    const visual = button?.querySelector(".pixel, .pixel-blue, .pixel-purple, .pxiel-purple, .pixel-orange, .pixel-pink, .pixel-grey-green, .pixel-black-blue, .pixel2");
+    const visual = button?.querySelector(".pixel, .pixel-blue, .pixel-purple, .pxiel-purple, .pixel-mechanic-design, .pixel-level-design, .pixel-orange, .pixel-pink, .pixel-grey-green, .pixel-black-blue, .pixel2");
 
     if (button) button.removeAttribute("aria-pressed");
     if (visual) visual.classList.remove("is-selected");
@@ -73,6 +75,10 @@ function toggleContentScripting() {
 
 function toggleContentGameDesign() {
   toggleExclusive("hidden-section-game-design");
+}
+
+function toggleContentLevelDesign() {
+  toggleExclusive("hidden-section-level-design");
 }
 
 function toggleContentArtDesign() {

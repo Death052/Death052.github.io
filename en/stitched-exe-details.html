@@ -93,10 +93,16 @@
                                     <td class="program-desc"><span>For creating art assets for the game</span></td>
                                 </tr>
                                 <tr>
+                                    <td class="program-icon"><img src="../images/figma_logo.png" alt="Figma" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Figma</span></td>
+                                    <td class="program-desc"><span>UI Planning</span></td>
+                                </tr>
+                                <tr>
                                     <td class="program-icon"><img src="../images/hitfilm_logo.png" alt="HitFilm" width="50" height="50" ></td>
                                     <td class="program-name"><span>HitFilm</span></td>
                                     <td class="program-desc"><span>For Promotional Material</span></td>
                                 </tr>
+
                             </tbody>
                         </table>
 
@@ -116,9 +122,16 @@
                                 </li>
                                 <li>
                                     <a onclick="toggleContentGameDesign()" class="pixel-button-link">
-                                        <div class="pixel-purple"><p>Game Design</p></div>
+                                        <div class="pixel-purple"><p>Mechanics Design</p></div>
                                     </a>
                                 </li>
+
+                                <li>
+                                    <a onclick="toggleContentUXDesign()" class="pixel-button-link">
+                                        <div class="pixel-grey-green"><p>UX Design</p></div>
+                                    </a>
+                                </li>
+
                                 <li>
                                     <a onclick="toggleContentArtDesign()" class="pixel-button-link">
                                         <div class="pixel-pink"><p>Art Design</p></div>
@@ -162,7 +175,7 @@
 
                     <div id="hidden-section-game-design" style="display: none;">
                         <div class="container">
-                            <h2>Game Design</h2>
+                            <h2>Mechanics Design</h2>
                             <p>
                                 The game does not rely on simple combat for gameplay. Since the two main characters are
                                 constantly being hunted by a being of eldrith horror, I wanted to incorporate hide and seek
@@ -195,6 +208,42 @@
 
                         </div>
                     </div>
+                    
+                    <div id="hidden-section-UX-design" style="display: none;">
+                        <div class="container">
+                            <h2>UX Design</h2>
+                            <p>
+                                UI is pre-planned using figma before actual implementation.
+                                The pause menu was designed to be simple with minimum elements in the first iteration
+                                , but playtesters said it looked too bland. 
+                                Therefore I looked up references in <a href="https://www.gameuidatabase.com/">UI Database</a> and
+                                redesigned it by incorporating the ice climbers into
+                                the design and changing its layout. I also added a full screen toggle button upon user request.
+                            </p>
+
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>Old Pause Menu Diagram</span>
+                                    <img src="../images/StitchedEXE_PauseMenuOld_Wireframe.png" alt="Old Pause Menu Diagram" height="270" width="394">
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>Old Pause Menu Implementation</span>
+                                    <img src="../images/StitchedEXE_PauseMenuOld.png" alt="Old Pause Menu Implementation" height="270" width="394">
+                                </div>
+                            </div>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>New Pause Menu Diagram</span>
+                                    <img src="../images/StitchedEXE_PauseMenuNew_Wireframe.png" alt="New Pause Menu Diagram" height="270" width="394">
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>New Pause Menu Implementation</span>
+                                    <img src="../images/StitchedEXE_PauseMenuNew.png" alt="New Pause Menu Implementation" height="270" width="394">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
 
                     <div id="hidden-section-art-design" style="display: none;">
                         <div class="container">
@@ -206,32 +255,15 @@
                                 palette for the first part of the game, and a eerie warm colour palette for
                                 the second part, both sceneries conveying hopelessness.
                             </p>
-                            <p>
-                                The pause menu was designed to be simple with minimum elements, but playtesters said
-                                it looked too bland. Therefore I looked up references in <a href="https://www.gameuidatabase.com/">UI Database</a> and
-                                redesigned it by incorporating the ice climbers into
-                                the design and changing its layout. Even some levels have been redesigned to become more visually appealing in later stages.
-                            </p>
 
                             <div class="image-row">
                                 <div class="SE-imgContainer">
-                                    <span>Old Pause Menu</span>
-                                    <img src="../images/StitchedEXE_PauseMenuOld.png" alt="Old Pause Menu" height="220" width="394">
+                                    <span>First Level Art Design</span>
+                                    <img src="../images/StitchedEXE_1.png" alt="Level 1 Design" height="220" width="394">
                                 </div>
                                 <div class="SE-imgContainer">
-                                    <span>New Pause Menu</span>
-                                    <img src="../images/StitchedEXE_PauseMenuNew.png" alt="New Pause Menu" height="220" width="394">
-                                </div>
-                            </div>
-
-                            <div class="image-row">
-                                <div class="SE-imgContainer">
-                                    <span>First Level Old Design</span>
-                                    <img src="../images/StitchedEXE_1_Old.png" alt="Old level 1 Design" height="220" width="394">
-                                </div>
-                                <div class="SE-imgContainer">
-                                    <span>First Level New Design</span>
-                                    <img src="../images/StitchedEXE_1.png" alt="New level 1 Design" height="220" width="394">
+                                    <span>Second Level Art Design</span>
+                                    <img src="../images/StitchedEXE_6.png" alt="Level 2 Design" height="220" width="394">
                                 </div>
                             </div>
                             <div class="image-row">

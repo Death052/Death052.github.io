@@ -288,9 +288,19 @@
   font-size: 0.9em;
 }
 
-.label-game-design {
+.label-game-design,
+.label-mechanic-design {
   display: inline-block;
   background-color: #7c47d1;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.label-level-design {
+  display: inline-block;
+  background-color: #b88400;
   color: white;
   padding: 2px 6px;
   border-radius: 4px;
@@ -370,29 +380,143 @@
   display: block;
 }
 
+.programs-categories {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.program-category-wrap h4 {
+  margin: 0 0 0.75rem;
+}
+
+.program-category-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.program-category {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: #09171D;
+  border: 4px solid #6B9E62;
+  padding: 0.9rem;
+  box-sizing: border-box;
+}
+
 .programs-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Exactly 2 columns per row */
-    gap: 10px;                             /* Space between rows and columns */
-    /* background-color: #1a333d; */
-    background-color: #09171D;
-    padding: 10px;
-    border: 4px solid #6B9E62;                /* Optional outer border */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  width: 100%;
 }
 
 /* Individual program blocks */
 .program-item {
-    display: flex;
-    align-items: center;                   /* Vertically centers text with logo */
-    gap: 15px;                             /* Space between logo and text */
-    padding: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle divider lines */
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* Styling for the text */
 .program-item span {
-   
-    font-size: 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* Awards and Achievements table (portfolio home page) */
+.awards-achievements-table {
+  width: 100%;
+  margin: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: #09171D;
+  border: 4px solid #6B9E62;
+  box-sizing: border-box;
+}
+
+.awards-achievements-table tr {
+  background: transparent;
+}
+
+.awards-achievements-table thead,
+.awards-achievements-table tfoot {
+  border: 0;
+}
+
+.awards-achievements-table th {
+  color: #ACD797;
+  background-color: rgba(107, 158, 98, 0.14);
+  border-bottom: 2px solid rgba(107, 158, 98, 0.55);
+  padding: 0.8em 1em;
+}
+
+.awards-achievements-table td {
+  color: #ACD797;
+  padding: 0.75em 1em;
+  border-top: 1px solid rgba(107, 158, 98, 0.3);
+}
+
+.awards-achievements-table th:not(:first-child),
+.awards-achievements-table td:not(:first-child) {
+  border-left: 1px solid rgba(107, 158, 98, 0.35);
+}
+
+.awards-achievements-table td:nth-child(2) {
+  white-space: nowrap;
+}
+
+.institution-with-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8em;
+  width: 100%;
+}
+
+.institution-name {
+  min-width: 0;
+}
+
+.institution-logo {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.4em;
+  height: 2em;
+  padding: 0 0.5em;
+  border: 2px solid rgba(172, 215, 151, 0.65);
+  border-radius: 999px;
+  background: rgba(107, 158, 98, 0.16);
+  color: #ACD797;
+  font-size: 0.75em;
+  line-height: 1;
+  letter-spacing: 0.04em;
+}
+
+.awards-achievements-table .institution-logo img {
+  display: block;
+  border: 1px solid rgba(172, 215, 151, 0.65);
+  box-sizing: border-box;
+}
+
+.awards-achievements-table tr:first-child th {
+  border-top: 0;
+}
+
+.awards-achievements-table tbody tr:nth-child(2n + 1) {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+@media screen and (max-width: 980px) {
+  .programs-categories {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Details media + text (project detail pages) */
