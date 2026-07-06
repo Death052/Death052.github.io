@@ -177,6 +177,73 @@
   .intro-row .intro-image img {
     max-width: 100%;
   }
+
+  .intro-row .intro-image,
+  .intro-row .intro-text {
+    max-width: 100%;
+    min-width: 0;
+    width: 100%;
+    margin-left: 0;
+    order: initial;
+  }
+
+  #three h2,
+  #four h2,
+  #five h2,
+  #three > .container > p,
+  #four > .container > p,
+  #five > .container > p {
+    margin-left: 0 !important;
+  }
+
+  .image-row,
+  .image-row-with-border,
+  .image-row-with-border-center,
+  .wireframe-row,
+  .button-row,
+  .Detail-Segment-Button-Container ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .wireframe-row {
+    justify-content: flex-start !important;
+    gap: 16px !important;
+  }
+
+  .wireframe-column,
+  .Detail-Segment-Button-Container li,
+  .button-row > * {
+    width: 100%;
+  }
+
+  .Detail-Segment-Button-Container li {
+    padding: 0 0 10px;
+  }
+
+  .button-row {
+    gap: 10px;
+  }
+
+  .button-row .pixel-button-link,
+  .Detail-Segment-Button-Container .pixel-button-link {
+    width: 100%;
+  }
+
+  .button-row .pixel-button-link .pixel,
+  .button-row .pixel-button-link .pixel-blue,
+  .button-row .pixel-button-link .pixel-purple,
+  .button-row .pixel-button-link .pxiel-purple,
+  .button-row .pixel-button-link .pixel-mechanic-design,
+  .button-row .pixel-button-link .pixel-level-design,
+  .button-row .pixel-button-link .pixel-orange,
+  .button-row .pixel-button-link .pixel-pink,
+  .button-row .pixel-button-link .pixel-grey-green,
+  .button-row .pixel-button-link .pixel-black-blue,
+  .button-row .pixel-button-link .pixel2 {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 /* Larger project thumbnails (sections 3–5) */
