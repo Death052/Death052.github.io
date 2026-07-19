@@ -8,6 +8,15 @@
   display: flex;
   gap: 10px;
   align-items: flex-start;
+  
+  #three h2,
+  #four h2,
+  #five h2,
+  #three > .container > p,
+  #four > .container > p,
+  #five > .container > p {
+    margin-left: 0 !important;
+  }
 }
 .image-row-with-border img {
   border: 4px solid #6B9E62;
@@ -196,6 +205,109 @@
     margin-left: 0 !important;
   }
 
+  #three .features article,
+  #four .features article {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1rem;
+    background: #09171D;
+    border: 2px solid #6B9E62;
+    border-radius: 8px;
+  }
+
+  #three .features article .image,
+  #four .features article .image {
+    order: 1;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 1em 0;
+  }
+
+  #three .features article .inner,
+  #four .features article .inner {
+    display: contents;
+  }
+
+  #three .features article .inner h4,
+  #four .features article .inner h4 {
+    order: 2;
+    margin: 0 0 0.4rem 0;
+  }
+
+  #three .features article .inner > p:first-of-type,
+  #four .features article .inner > p:first-of-type {
+    order: 3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0 0 0.75rem 0;
+  }
+
+  #three .features article .inner > p + p,
+  #four .features article .inner > p + p {
+    order: 4;
+    margin: 0 0 0.9rem 0;
+  }
+
+  #three .features article > .responsibilities-box,
+  #four .features article > .responsibilities-box {
+    order: 5;
+    width: 100% !important;
+    margin: 0.25rem 0 0 0 !important;
+  }
+
+  #three .features article .inner .button-row,
+  #four .features article .inner .button-row {
+    order: 6;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 0.9rem;
+  }
+
+  #three .features article .inner .button-row .pixel-button-link,
+  #four .features article .inner .button-row .pixel-button-link {
+    width: auto !important;
+  }
+
+  .container .button-row .pixel-button-link {
+    width: auto !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #three .features article .inner .button-row .pixel-button-link .pixel,
+  #three .features article .inner .button-row .pixel-button-link .pixel-blue,
+  #three .features article .inner .button-row .pixel-button-link .pixel-purple,
+  #three .features article .inner .button-row .pixel-button-link .pxiel-purple,
+  #three .features article .inner .button-row .pixel-button-link .pixel-mechanic-design,
+  #three .features article .inner .button-row .pixel-button-link .pixel-level-design,
+  #three .features article .inner .button-row .pixel-button-link .pixel-orange,
+  #three .features article .inner .button-row .pixel-button-link .pixel-pink,
+  #three .features article .inner .button-row .pixel-button-link .pixel-grey-green,
+  #three .features article .inner .button-row .pixel-button-link .pixel-black-blue,
+  #three .features article .inner .button-row .pixel-button-link .pixel2,
+  #four .features article .inner .button-row .pixel-button-link .pixel,
+  #four .features article .inner .button-row .pixel-button-link .pixel-blue,
+  #four .features article .inner .button-row .pixel-button-link .pixel-purple,
+  #four .features article .inner .button-row .pixel-button-link .pxiel-purple,
+  #four .features article .inner .button-row .pixel-button-link .pixel-mechanic-design,
+  #four .features article .inner .button-row .pixel-button-link .pixel-level-design,
+  #four .features article .inner .button-row .pixel-button-link .pixel-orange,
+  #four .features article .inner .button-row .pixel-button-link .pixel-pink,
+  #four .features article .inner .button-row .pixel-button-link .pixel-grey-green,
+  #four .features article .inner .button-row .pixel-button-link .pixel-black-blue,
+  #four .features article .inner .button-row .pixel-button-link .pixel2 {
+    width: auto !important;
+    box-sizing: border-box;
+  }
+
   .image-row,
   .image-row-with-border,
   .image-row-with-border-center,
@@ -208,7 +320,6 @@
 
   .wireframe-row {
     justify-content: flex-start !important;
-    gap: 16px !important;
   }
 
   .wireframe-column,
@@ -222,7 +333,12 @@
   }
 
   .button-row {
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
   }
 
   .button-row .pixel-button-link,
@@ -610,5 +726,16 @@
   border: 4px solid #6B9E62;
 }
 
+/* Position the language switch button inside the header sidebar */
+#header .header-lang-switch {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 10;
+}
 
+/* Optional: Ensure text alignment inside the button doesn't inherit conflicting sidebar alignments */
+#header .header-lang-switch p {
+    margin: 0;
+}
 

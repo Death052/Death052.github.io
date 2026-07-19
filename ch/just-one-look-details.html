@@ -28,12 +28,11 @@
 			<section id="header">
 				<header>
                     <span class="image avatar"><img src="../images/avatar.jpg" alt="" /></span>
-                    <h1 id="logo"><a href="#">郭奕熙</a></h1>
-                    <p>只是一位游戏设计师和数字艺术家。<br />
-                    I am a developer, and a designer at heart</p>
+                    <h1 id="logo"><a href="#">郭奕熙 Stephen</a></h1>
+                    <p>我是一名开发者，心中同时怀着设计师的灵魂</p>
                 </header>
 				<nav id="nav">
-					<a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'index.html#three','just-one-look-details.html')">
+					<a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'index.html#four','just-one-look-details.html')">
                         <div class="pixel"><p>返回首页</p></div>
                     </a>
 				</nav>
@@ -52,95 +51,182 @@
             <div id="wrapper">
 				<!-- Main -->
 					<div id="main">
-                        <div class="image main" data-position="center">
+                         <div class="image main" data-position="center">
                             <img src="../images/HeaderImg_index.png" alt="" />
                         </div>
                         <div class="container">
                             <header class="major">
-                                <h2>Just One Look</h2>
+                                <h2>Just One Look（就看一眼）</h2>
                             </header>
-                            <h3>介绍</h3>
-                            <p> 我参加了 2026 年全球游戏创作大赛（Global Game Jam 2026），Just One Look 是我为此活动制作的游戏。
-                                我与两名队友合作，在 3 天内创建了这款游戏。我担任程序设计师，而我的队友则负责
-                                美术和关卡设计。这次游戏创作大赛的主题是「面具（Mask）」。
+                            <h3>简介</h3>
+                            <p> 我参加了 2026 年的 Global Game Jam，这次的主题是「面具」（Mask），而《Just One Look》就是我为这次活动制作的游戏。
+                                我与两位队友合作，在 3 天内完成了这款游戏。《Just One Look》是一款受到《小精灵》（Pac-Man）启发的策略游戏，玩家必须在一个封闭的大宅中穿梭，一边收集光球，一边躲避敌人。  
+                            </p>
+                            <p style="margin-bottom: 10px; margin-top: -15px;">
+                                我主要负责：
+                            </p>
+                            <ul style="margin-top: 10px;">
+                                <li>编写整个游戏的程序，实现所有规划的功能</li>
+                                <li>技术设计，确保游戏能在短时间内切实完成</li>
+                                <li>构思简单且富有创意的叙事故事</li>
+                                <li>敌人机制设计</li>
+                            </ul>
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="container">
+                        <h3>使用的软件</h3>
+                        <table class="programs-used-table">
+                            <tbody>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/godot_logo.png" alt="Godot" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Godot</span></td>
+                                    <td class="program-desc"><span>用于制作这款游戏的程序开发软件</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/github.png" alt="github" width="50" height="50" ></td>
+                                    <td class="program-name"><span>GitHub</span></td>
+                                    <td class="program-desc"><span>版本控制</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/aesprite.png" alt="Aesprite" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Aseprite</span></td>
+                                    <td class="program-desc"><span>用于创作游戏的美术资产</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/notion_logo.png" alt="Notion" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Notion</span></td>
+                                    <td class="program-desc"><span>任务管理</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="container">
+                        <h3>各部分详情</h3>
+                         <div class="Detail-Segment-Button-Container">
+                            <ul>
+                                <li>
+                                    <a onclick="toggleContentScripting()" class="pixel-button-link">
+                                        <div class="pixel-blue"><p>程序逻辑</p></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a onclick="toggleContentNarrativeDesign()" class="pixel-button-link">
+                                        <div class="pixel-orange"><p>叙事设计</p></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a onclick="toggleContentGameDesign()" class="pixel-button-link">
+                                        <div class="pixel-mechanic-design"><p>机制设计</p></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> 
+                    
+
+                    <div id="hidden-section-scripting" style="display: none;">
+                        <div class="container">
+                            <h2>程序逻辑</h2>
+                            <p>
+                                游戏完全是在 Godot 中使用 GDScript 语言编写的。这是我第一次在如此短的时间内，在 Godot 中完成一款完全做好的游戏。
+                            </p>
+                            <p>
+                                状态机（State machines）被用来控制敌人的行为，由一个主状态脚本处理多个敌人状态。
+                                射线检测（Raycasting）用于侦测玩家，而 NavigationAgent2D 则用于敌人的移动路径寻找。全局脚本（Global scripts）用于处理游戏状态，例如玩家的精神错乱（insanity）状态以及存盘点。
+                            </p>
+                            <p>
+                                着色器（Shaders）也被用来创建自定义的视觉效果，像是 CRT 滤镜，这些是使用 Godot 的着色器语言（gdshader）制作的。这涉及操作片段着色器（fragment shader）以改变 CRT 滤镜的颜色，以及操作 UV 顶点来制造 CRT 波浪效果。
+                            </p>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>未使用着色器</span>
+                                    <img src="../images/Just_One_Look_NoShader.png" alt="无 CRT 着色器" height="264" width="420">
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>使用着色器</span>
+                                    <img src="../images/Just_One_Look_Shader.png" alt="CRT 着色器" height="264" width="420">
+                                </div>
+                            </div>      
+                        </div>
+                    </div>
+
+
+                    <div id="hidden-section-game-design" style="display: none;">
+                        <div class="container">
+                            <h2>机制设计</h2>
+                            <p>
+                               我主要负责游戏的敌人机制。我们团队一致认为关卡应该设计成紧凑的空间，因此我决定给予敌人较大的视野范围。起初，Game Jam 的「面具」主题只体现在带有各种面具的敌人设计上。然而，我决定将这个概念也融入到游戏玩法设计中。
+                            </p>
+                            <h4> 面具敌人 </h4>
+                            <p>
+                                在不使用面具或躲在墙后的情况下，第一类型的敌人会一直追赶玩家直到玩家离开视线，而第二类型的敌人则会瞬间杀死玩家。
+                                由于 Game Jam 时间有限，我将同一个概念进行微调并套用在两种敌人上：当玩家戴上面具时，这两种敌人角色都会忽略玩家。
+                            </p>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>面具敌人 变体 1</span>
+                                    <video height="264" width="420" controls>
+                                        <source src="../videos/JustOneLook_Enemy1.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>面具敌人 变体 2</span>
+                                    <video height="264" width="420" controls>
+                                        <source src="../videos/JustOneLook_Enemy2.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+
+
+                            <h4> 影子敌人 + 精神错乱模式</h4>
+                            <p>
+                                这种敌人只有在玩家配戴面具时间过长、进入精神错乱模式时才会出现。它会以玩家的黑色剪影形式出现，并复制玩家的移动方向。这在狭窄的空间中带来了极大的挑战，玩家需要规划好自己的移动路线以避免被逼入绝境。
+                                在精神错乱模式下，玩家可以使用小刀杀死敌人。此时面具也无法再摘下，使得影子敌人成为玩家唯一的威胁。
+                            </p>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>触发精神错乱</span>
+                                    <video height="264" width="420" controls>
+                                        <source src="../videos/JustOneLook_InsanityStart.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>影子敌人</span>
+                                    <video height="264" width="420" controls>
+                                        <source src="../videos/JustOneLook_ShadowEnemy.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+
+                           
+                        </div>
+                     </div>
+
+                    <div id="hidden-section-narrative-design" style="display: none;">
+                        <div class="container">
+                            <h2>叙事设计</h2>
+                            <p>
+                                虽然 Game Jam 的时限限制了游戏的叙事深度，但我们仍实现了一个无提示的分支叙事，以此来表现邪教主义的负面影响。
+                            </p>
+                            <p>
+                                在规划叙事之前，我们曾想过加入让玩家在正常和疯狂状态之间自由切换的能力。然而，通过在触发疯狂状态后将玩家锁定在该状态中，展现了无法脱离邪教的社会压力。这隐喻了加入邪教往往是一条单行道，一旦陷入就很难离开。
                             </p>
                         </div>
-
                     </div>
-
-                    <div class="container">
-                        <h3>使用的程序</h3>
-                        <ul class="feature-icons">
-                             <li class="icon_logo_img">
-                                <img src="../images/godot_logo.png" alt="Godot" width="50" height="50" >
-                                <span>Godot</span>
-                            </li>
-                            <li class="icon_logo_img">
-                                <img src="../images/aesprite.png" alt="Aesprite" width="50" height="50" >
-                                <span>Aesprite</span>
-                            </li>
-                        </ul>
-                    </div>
-        
                     
-                    <div class="container">
-                        <h3>游戏玩法</h3>
-                        <p>
-                            游戏由一个大型场景构成，多个区域彼此连接。玩家需要在一个区域内收集所有宝珠，
-                            然后才能前进到下一个区域。
-                        </p>
-                        <p>
-                            游戏中有两种普通敌人。第一种是小型敌人，一旦玩家进入其视野，它就会追逐玩家。
-                            第二种是大型敌人，不会移动，但视野范围更大，一旦玩家进入其视野就会立即杀死玩家。
-                        </p>
-                        <p>
-                            玩家可以戴上面具来避免被上述敌人发现。然而，如果玩家戴面具太久，
-                            他们会陷入疯狂。陷入疯狂后，前述的敌人将不再攻击玩家。然而，新的阴影实体
-                            会出现并追逐玩家。
-                        </p>
-
-                        <div class="image-row">
-                            <div class="SE-imgContainer">
-                                <span>标题画面</span>
-                                <img src="../images/Just_One_Look_4.png" alt="SE1" height="220" width="394">
-                            </div>
-                            <div class="SE-imgContainer">
-                                <span>未戴面具</span>
-                                <img src="../images/Just_One_Look_1.png" alt="SE2" height="220" width="394">
-                            </div>
-                        </div>
-
-                        <div class="image-row">
-                            <div class="SE-imgContainer">
-                                <span>戴上面具</span>
-                                <img src="../images/Just_One_Look_2.png" alt="SE1" height="220" width="394">
-                            </div>
-                            <div class="SE-imgContainer">
-                                <span>疯狂状态</span>
-                                <img src="../images/Just_One_Look_3.png" alt="SE2" height="220" width="394">
-                            </div>
-                        </div>
-                    </div>
-
                     <div class="container">
                         <h3>学习成果</h3>
                         <p>
-                            这是我第一次参加游戏创作大赛。即使我对 Godot 很熟悉，
-                            我从未在如此短的时间内制作游戏。我学会了如何在游戏规模上妥协，
-                            并专注于编写核心游戏玩法机制。
-                        </p>
-                        <p>
-                            我也学会了如何与队友合作，透过讨论我们的目标并
-                            理解彼此的想法，以防止在错误的任务上工作。
-                        </p>
-                        <p>
-                            在技术方面，我获得了一些使用 Godot 着色器的实际经验，例如
-                            游戏大部分区域中可见的 CRT 滤镜，以及玩家戴上面具时的屏幕扭曲效果。
+                            这是我第一次参加 Game Jam。虽然我对 Godot 很熟悉，但从未在如此短的时间内制作过一款游戏。我学会了在游戏规模上做出妥协，并将精力集中在核心玩法机制的编码上。我也学会了如何通过讨论目标和理解彼此的想法来与队友进行高效协作。
                         </p>
                     </div>
 
                     <div class="container">
-                        <h3>游戏影片</h3>
+                        <h3>游戏实机影片</h3>
                         <iframe 
                             width="560" 
                             height="315" 
@@ -153,5 +239,6 @@
                     </div>
                 </div>
         <script src="../assets/js/switch_lang.js"></script>
+        <script src="../assets/js/show_items.js"></script>
     </body>
 </html>

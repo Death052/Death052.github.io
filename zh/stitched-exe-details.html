@@ -28,11 +28,11 @@
 			<section id="header">
                 <header>
                     <span class="image avatar"><img src="../images/avatar.jpg" alt="" /></span>
-                    <h1 id="logo"><a href="#">郭奕熙</a></h1>
-                    <p>只是一位遊戲設計師和數位藝術家。<br/></p>
+                    <h1 id="logo"><a href="#">郭奕熙 Stephen</a></h1>
+                    <p>我是一名開發者，心中同時懷著設計師的靈魂</p>
                 </header>
 				<nav id="nav">
-                    <a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'index.html#three','stitched-exe-details.html')">
+                    <a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'index.html#four','stitched-exe-details.html')">
                         <div class="pixel"><p>返回首頁</p></div>
                     </a>
 				</nav>
@@ -57,84 +57,235 @@
                         <div class="container">
                             <header class="major">
                                 <h2>Stitched.EXE</h2>
-                                <h3>介紹</h3>
+                                <h3>簡介</h3>
                             </header>
-                            <p>Stitched.EXE 是一款關於兩個任天堂角色——Ice Climbers（翻越冰山者）的沉浸式恐怖平台遊戲。</p>
-                            <p>這個遊戲時長約為 20 分鐘。這是我在 2024 年在網路上發佈的第一個成功專案之一，是個人獨立專案，所以除了音樂之外，我負責所有開發方面。</p>
+                            <p>《Stitched.EXE》是一款沉浸式恐怖平台遊戲，主角為兩位任天堂角色——敲冰塊（Ice Climbers）。這款遊戲的遊玩時間約為 20 分鐘，是我個人首次成功獨立製作並公開發行的單人遊戲專案。遊戲講述了兩位敲冰塊主角試圖在一個擁有他們已故手足外貌的超自然存在手中倖存下來的故事。
+                            </p>
+                            <p style="margin-bottom: 10px; margin-top: -15px;">
+                                我主要負責：
+                            </p>
+                            <ul style="margin-top: 10px;">
+                                <li>編寫整個遊戲的程式，實現所有規劃的功能</li>
+                                <li>關卡設計規劃</li>
+                                <li>設計並拓展躲藏機制</li>
+                                <li>遊戲美術創作</li>
+                            </ul>
+                            
                         </div>
 
                     </div>
 
                     <div class="container">
-                        <h3>使用的程式</h3>
-                        <ul class="feature-icons">
-                             <li class="icon_logo_img">
-                                <img src="../images/unity_logo.png" alt="Unity" width="50" height="50" >
-                                <span>Unity</span>
-                            </li>
-                            <li class="icon_logo_img">
-                                <img src="../images/csp_logo.png" alt="CSP" width="50" height="50" >
-                                <span>Clip Studio Paint</span>
-                            </li>
-                            <li class="icon_logo_img">
-                                <img src="../images/hitfilm_logo.png" alt="HitFilm" width="50" height="50" >
-                                <span>HitFilm</span>
-                            </li>
-                        </ul>
-                    </div>
-        
-                    
-                    <div class="container">
-                        <h3>藝術風格</h3>
-                        <p>Stitched.EXE 的氛圍和藝術設計受到經典都市傳說遊戲（如 Sonic.Exe）的啟發。它包含死亡動畫以及黑暗的場景。
-                            我決定使用相似色調來創建氛圍；第一個場景使用冷色調來展示恐懼感，而第二個場景使用溫暖但詭異的色調，
-                            營造一種在奇怪、不安世界中迷失的感覺。</p>
+                        <h3>使用的軟體</h3>
+                        <table class="programs-used-table">
+                            <tbody>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/unity_logo.png" alt="Unity" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Unity</span></td>
+                                    <td class="program-desc"><span>用於製作這款遊戲的程式開發軟體</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/csp_logo.png" alt="Clip Studio Paint" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Clip Studio Paint</span></td>
+                                    <td class="program-desc"><span>用於創作遊戲的美術資產</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/figma_logo.png" alt="Figma" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Figma</span></td>
+                                    <td class="program-desc"><span>使用者介面（UI）規劃</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/hitfilm_logo.png" alt="HitFilm" width="50" height="50" ></td>
+                                    <td class="program-name"><span>HitFilm</span></td>
+                                    <td class="program-desc"><span>用於製作宣傳素材</span></td>
+                                </tr>
 
-                        <div class="image-row">
-                            <div class="SE-imgContainer">
-                                <img src="../images/StitchedEXE_1.png" alt="SE1" height="220" width="394">
-                            </div>
-                            <div class="SE-imgContainer">
-                                <img src="../images/StitchedEXE_2.png" alt="SE2" height="220" width="394">
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <div class="container">
+                        <h3>各部分詳情</h3>
+                         <div class="Detail-Segment-Button-Container">
+                            <ul>
+                                <li>
+                                    <a onclick="toggleContentScripting()" class="pixel-button-link">
+                                        <div class="pixel-blue"><p>程式編寫</p></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a onclick="toggleContentGameDesign()" class="pixel-button-link">
+                                        <div class="pixel-purple"><p>機制設計</p></div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a onclick="toggleContentUXDesign()" class="pixel-button-link">
+                                        <div class="pixel-grey-green"><p>UI/UX 設計</p></div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a onclick="toggleContentArtDesign()" class="pixel-button-link">
+                                        <div class="pixel-pink"><p>美術設計</p></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div id="hidden-section-scripting" style="display: none;">
+                        <div class="container">
+                            <h2>程式編寫</h2>
+                            <p>
+                                整個遊戲是在 Unity 引擎中以 C# 語言編寫而成，由許多銜接在一起的場景所組成。遊戲具備了完整的 UI 選單系統以及流暢的平台動作系統。
+                            </p>
+                            
+                            <p>
+                                由於這是一個個人專案，遊戲內的所有程式編寫均由我獨立完成。我分析並採用了一套利用重力和向量操作來提升打擊感（feel-good）的平台跳躍教學，並設計了一個簡單的攻擊敵人系統。這也是我第一次利用對話陣列（arrays of dialogues）來實現對話系統。此外，我還為敵人引入了有限狀態機（state machines），讓它們能擁有複雜且自定義的行為模式。
+                            </p>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>狀態機敵人範例</span>
+                                    <video width="394" height="220" controls>
+                                        <source src="../videos/Stitched_EXE_StateMachines.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>自定義對話框</span>
+                                    <img src="../images/StitchedEXE_DialogueBox.png" alt="對話框" width="394" height="220" />
+                                </div>
                             </div>
                         </div>
                     </div>
 
+                    <div id="hidden-section-game-design" style="display: none;">
+                        <div class="container">
+                            <h2>機制設計</h2>
+                            <p>
+                                這款遊戲的玩法並不依賴簡單的戰鬥。由於兩位主角不斷受到一個古神恐怖存在（eldrith horror）的追殺，我希望在遊戲中融入捉迷藏的元素，以營造出角色的懸疑感與無助感。遊戲中有兩個部分設計了帶有微調變化的躲藏機制。
+                            </p>
+                            <p>
+                                第一部分引入了一個融入背景的巨大懸浮頭顱。這個懸浮頭顱會在設定的時間內睜開眼睛並環顧地圖。第二部分則引入了一隻會在部分地圖上行走並能四處傳送的怪物，玩家只能透過節奏性的心跳聲來判斷怪物的距離。在這兩種情況下，玩家都需要躲在物體後面以避免瞬間死亡。
+                            </p>
+                            
+
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>躲藏機制 第一部分</span>
+                                    <video width="394" height="220" controls>
+                                        <source src="../videos/Stitched_EXE_hiding1.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>躲藏機制 第二部分</span>
+                                    <video width="394" height="220" controls>
+                                        <source src="../videos/Stitched_EXE_hiding2.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                     
+                    <div id="hidden-section-UX-design" style="display: none;">
+                        <div class="container">
+                            <h2>UI/UX 設計</h2>
+                            <p>
+                                在實際實裝之前，UI 已先使用 Figma 進行了預先規劃。
+                                在第一次迭代中，暫停選單被設計得很簡單，僅保留最少元素，但測試玩家反映外觀顯得過於單調。
+                                因此，我參考了 <a href="https://www.gameuidatabase.com/">UI 資料庫</a>中的範例，將敲冰塊角色的視覺元素融入設計中並重新調整了佈局。我還根據使用者的反饋，新增了全螢幕切換按鈕。
+                            </p>
+
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>舊版暫停選單線框圖</span>
+                                    <img src="../images/StitchedEXE_PauseMenuOld_Wireframe.png" alt="舊版暫停選單線框圖" height="270" width="394">
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>舊版暫停選單實裝</span>
+                                    <img src="../images/StitchedEXE_PauseMenuOld.png" alt="舊版暫停選單實裝" height="270" width="394">
+                                </div>
+                            </div>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>新版暫停選單線框圖</span>
+                                    <img src="../images/StitchedEXE_PauseMenuNew_Wireframe.png" alt="新版暫停選單線框圖" height="270" width="394">
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>新版暫停選單實裝</span>
+                                    <img src="../images/StitchedEXE_PauseMenuNew.png" alt="新版暫停選單實裝" height="270" width="394">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div id="hidden-section-art-design" style="display: none;">
+                        <div class="container">
+                            <h2>美術設計</h2>
+                            <p>
+                                我使用 Clip Studio Paint 來繪製遊戲內的所有資產。
+                                我特別參考了遊戲《小小夢魘》（Little Nightmares）的配色方案，該遊戲與本專案有著相似的敘事氛圍。我在遊戲的第一部分使用了較冷淡的色調，在第二部分則使用了詭異的暖色調，這兩種場景都在傳遞一種絕望感。
+                            </p>
+
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>第一關美術設計</span>
+                                    <img src="../images/StitchedEXE_1.png" alt="第一關設計" height="220" width="394">
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>第二關美術設計</span>
+                                    <img src="../images/StitchedEXE_6.png" alt="第二關設計" height="220" width="394">
+                                </div>
+                            </div>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>舊版標題畫面</span>
+                                    <img src="../images/StitchedEXE_5.png" alt="舊版標題畫面" height="220" width="394">
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>新版標題畫面</span>
+                                    <img src="../images/StitchedEXE_4.png" alt="新版標題畫面" height="220" width="394">
+                                </div>
+                            </div>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>舊版怪物實體設計</span>
+                                    <img src="../images/StitchedEXE_ThirdChildOld.png" alt="舊版怪物實體設計" height="220" width="350">
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>新版怪物實體設計</span>
+                                    <img src="../images/StitchedEXE_ThirdChildNew.png" alt="新版怪物實體設計" height="220" width="370">
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+
                     <div class="container">
-                        <h3>UI 設計</h3>
-                        <p>這個遊戲有一個標題畫面和一個暫停選單。暫停選單最初的設計只是一個簡單的方框和按鈕，
-                            但這感覺太無趣了。因此，我決定為暫停選單添加一個從左到右的滑動動畫，
-                            並增加更多圖形元素。標題畫面也有不同的設計變化。
+                        <h3>學習成果</h3>
+                        <p>
+                            作為我人生中建立的第一個獨立單人遊戲專案，我學會了如何管理遊戲創意，並將其從一個簡單的平台跳躍概念擴展為具有多種躲藏機制的複雜遊戲。同時，我也深入學習了 Unity 引擎與 C# 程式編寫。
                         </p>
-                        
-
-                        <h5>舊設計</h5>
-                        <div class="image-row">
-                            <div class="SE-imgContainer">
-                                <img src="../images/StitchedEXE_3.png" alt="SE1" height="220" width="394">
-                            </div>
-                            <div class="SE-imgContainer">
-                                <img src="../images/StitchedEXE_5.png" alt="SE2" height="220" width="394">
-                            </div>
-                        </div>
-
-                        <h5>新設計</h5>
-                        <div class="image-row">
-                            <div class="SE-imgContainer">
-                                <img src="../images/StitchedEXE_3.png" alt="SE1" height="220" width="394">
-                            </div>
-                            <div class="SE-imgContainer">
-                                <img src="../images/StitchedEXE_4.png" alt="SE2" height="220" width="394">
-                            </div>
-                        </div>
                     </div>
-
-                </div>
-    
+                    <div class="container">
+                        <h3>遊戲實機影片</h3>
+                        <h5 style="margin-top: -15px;">實機遊玩影片由 Meaningless Awaz 製作</h5>
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/tFTQgbQNBVc"
+                            title="Gameplay Video"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
 
         <script src="../assets/js/switch_lang.js"></script>
+        <script src="../assets/js/show_items.js"></script>
 
     </body>
 </html>
-

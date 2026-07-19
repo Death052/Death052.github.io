@@ -27,18 +27,18 @@
     <!-- Language Switcher Button -->
 	<div style="position: fixed; top: 1rem; right: 1rem; z-index: 1000;">
 		<a class="pixel-button-link">
-			<div class="pixel" id="lang-switch"><p>简</p></div>
+			<div class="pixel" id="lang-switch"><p>EN</p></div>
 		</a>
 	</div>
 		<!-- Header -->
 			<section id="header">
                 <header>
                     <span class="image avatar"><img src="../images/avatar.jpg" alt="" /></span>
-                    <h1 id="logo"><a href="#">郭奕熙</a></h1>
-                    <p>一位游戏设计师兼数字艺术家。<br /></p>
+                    <h1 id="logo"><a href="#">郭奕熙 Stephen</a></h1>
+                    <p>我是一名开发者，心中同时怀着设计师的灵魂</p>
                 </header>
 				<nav id="nav">
-					<a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'index.html#three','prison-island-details.html')">
+					<a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'index.html#four','prison-island-details.html')">
                         <div class="pixel"><p>返回首页</p></div>
                     </a>
 				</nav>
@@ -57,86 +57,156 @@
             <div id="wrapper">
 				<!-- Main -->
 					<div id="main">
-                        <div class="image main" data-position="center">
+                         <div class="image main" data-position="center">
                             <img src="../images/HeaderImg_index.png" alt="" />
                         </div>
                         <div class="container">
                             <header class="major">
-                                <h2>监狱岛</h2>
+                                <h2>监狱岛 (Prison Island)</h2>
                                 <h3>简介</h3>
                             </header>
-                            <p>《监狱岛》是为大学编程项目而制作的一款游戏。我的任务是在不到两个月的时间内翻新一款现有游戏，同时为其玩法增添一些小的变化。</p>
-                            <p>我选择翻新 Sockpop 的游戏《灰色侦察兵》。这款游戏包含大量的潜行元素，要求玩家躲在灌木丛中躲避警卫，
-                                同时试图救出其他囚犯并将他们带回船上。
+                            <p>
+                                《Prison Island》是我在接到一项任务时制作的游戏。该任务要求在不到2个月的时间内「低配重制」（demake）一款现有的游戏，并为其玩法加入一些小创新。
+                                我选择重制的游戏是来自 Sockpop 的《Grey Scout》。这是一款以潜行为主的 3D 游戏，玩家的目标是在避开守卫视线的同时，解救囚犯并将他们带到出口。
                             </p>
+                            <p style="margin-bottom: 10px; margin-top: -15px;">
+                                我主要负责：
+                            </p>
+                            <ul style="margin-top: 10px;">
+                                <li>编写整个游戏的程序，实现所有规划的功能</li>
+                                <li>关卡设计规划</li>
+                                <li>构思并实现卡牌抽卡机制</li>
+                            </ul>
                         </div>
                     </div>
 
                     <div class="container">
-                        <h3>使用的程序</h3>
-                        <ul class="feature-icons">
-                             <li class="icon_logo_img">
-                                <img src="../images/unity_logo.png" alt="Unity" width="50" height="50" >
-                                <span>Unity</span>
-                            </li>
-                        </ul>
+                        <h3>使用的软件</h3>
+                        <table class="programs-used-table">
+                            <tbody>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/unity_logo.png" alt="Unity" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Unity</span></td>
+                                    <td class="program-desc"><span>用于制作这款游戏的程序开发软件</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/github.png" alt="github" width="50" height="50" ></td>
+                                    <td class="program-name"><span>GitHub</span></td>
+                                    <td class="program-desc"><span>版本控制</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/miro.png" alt="Miro" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Miro</span></td>
+                                    <td class="program-desc"><span>游戏企划工具</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-        
+
+
+                    <div class="container">
+                         <h3>各部分详情</h3>
+                         <div class="Detail-Segment-Button-Container">
+                            <ul>
+                                <li>
+                                    <a onclick="toggleContentScripting()" class="pixel-button-link">
+                                        <div class="pixel-blue"><p>程序逻辑</p></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a onclick="toggleContentGameDesign()" class="pixel-button-link">
+                                        <div class="pixel-mechanic-design"><p>机制设计</p></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a onclick="toggleContentLevelDesign()" class="pixel-button-link">
+                                        <div class="pixel-level-design"><p>关卡设计</p></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> 
                     
-                    <div class="container">
-                        <h3>游戏玩法设计</h3>
-                        <p>
-                            游戏由一个大关卡构成，其中有五个装有囚犯的笼子。玩家需要前往每个笼子，释放笼子内的囚犯，
-                            并将囚犯带回船上。然而，每个笼子附近都有一名警卫，玩家必须避免被警卫看到。
-                            如果警卫看到玩家，它会追逐玩家。玩家可以躲在灌木丛中以避免被发现。
-                        </p>
-                        <p>
-                            作为游戏的变体，我创建了一个机制，允许玩家抽取卡片，每张卡片都具有独特的属性，
-                            对玩家既有益也有妨碍。
-                        </p>
-                        
 
-                        <h5>游戏截图</h5>
-                        <div class="image-row">
-                            <div class="SE-imgContainer">
-                                <img src="../images/Prison_Island_1.png" alt="游戏截图1" height="220" width="394">
-                            </div>
-                            <div class="SE-imgContainer">
-                                <img src="../images/Prison_Island_2.png" alt="游戏截图2" height="220" width="394">
-                            </div>
-                        </div>
-                        <div class="image-row">
-                            <div class="SE-imgContainer">
-                                <img src="../images/Prison_Island_3.png" alt="游戏截图3" height="220" width="394">
-                            </div>
-                            <div class="SE-imgContainer">
-                                <img src="../images/Prison_Island_4.png" alt="游戏截图4" height="220" width="394">
+                    <div id="hidden-section-scripting" style="display: none;">
+                        <div class="container">
+                            <h2>程序逻辑</h2>
+                            <p>
+                                游戏完全在 Unity 中开发，因此使用 C# 作为编程脚本语言。这是我第一次尝试在 Unity 中制作 3D 游戏，因此学习了如何导入与使用 3D 资产以及角色动画。
+                            </p>
+                            <p>
+                                我使用有限状态机（state machines）来控制守卫和囚犯的行为。我专门利用射线检测（raycasting）来进行守卫的视线侦测，并使用 NavMesh 来处理守卫在牢笼附近的移动路径。此外，我使用 Unity 的后处理层（Post Processing Layer）来营造关卡氛围，并通过动画状态混合树（Animation state blend trees）来实现流畅的动画过渡。
+                            </p>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>守卫与囚犯行为行为</span>
+                                    <video height="264" width="420" controls>
+                                        <source src="../videos/PrisonIsland_PrisonerGuardMechanism.mp4" type="video/mp4">
+                                    </video>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <div id="hidden-section-game-design" style="display: none;">
+                        <div class="container">
+                            <h2>机制设计</h2>
+                            <p>
+                                我设计了一个卡牌机制来作为这款重制游戏的创新点。玩家可以在游戏中通过按下按钮来抽卡。
+                                每张卡牌都有独特的属性，既能为玩家带来好处，也会在某些方面制造限制。这些卡牌能力经过了严格的玩性测试与调整，以确保它们不会过于强大或过于弱小，并确保它们可以以多种不同的战术方式被使用，维持游戏玩法的公平与趣味性。
+                            </p>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>卡牌机制</span>
+                                    <video height="264" width="420" controls>
+                                        <source src="../videos/PrisonIsland_CardMechanism.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>卡牌详情</span>
+                                    <img src="../images/Prison_Island_CardDetails.png" alt="卡牌详情" height="264" width="420">
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+
+                    <div id="hidden-section-level-design" style="display: none;">
+                        <div class="container">
+                            <h2>关卡设计</h2>
+                        
+                        <p>
+                            我确保游戏的关卡设计易于导航和理解。我绘制了地图布局，精心规划了玩家躲避守卫和穿梭关卡的路线。这是为了确保玩家能体验到适度的挑战感与游戏乐趣。
+                        </p>
+                        <div class="image-row">
+                            <div class="SE-imgContainer">
+                                <span>布局规划</span>
+                                <img src="../images/Prison_Island_LevelDesign.png" alt="带有守卫的关卡布局" height="264" width="420">
+                            </div>
+                            <div class="SE-imgContainer">
+                                <span>实际实现的布局</span>
+                                <img src="../images/Prison_Island_LevelDesignLayout.png" alt="关卡布局" height="264" width="420">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+
 
                     <div class="container">
                         <h3>学习成果</h3>
                         <p>
-                            这是我第一次创建一个玩法丰富的3D游戏，突破了我以往制作2D项目的经验范畴。我学会了如何使用后处理效果
-                            来营造更有氛围的环境。我也学会了如何在Unity中使用骨架模型和导入骨架动画。我还尝试了 Unity 中的
-                            NavMeshes 来实现警卫的移动。
+                            作为一个编程项目，我理解了「低配重制（demaking）」一款游戏与从零开始创作一款游戏有多么不同；这类重制项目的要求往往更加严格，类似于公司对特定项目的严格指标。我也学会了如何在一个受限的框架下思考新的游戏机制，使其既不偏离游戏的原有概念，又能为整体玩法体验增添新的价值。
                         </p>
-                        <p>
-                            与之前的项目类似，我再次练习了在囚犯和警卫角色上使用状态机，以及使用射线检测来实现
-                            警卫的侦测功能。
-                        </p>
-
-                        <!-- https://www.youtube.com/embed/gJUEuxbuTGI -->
                     </div>
 
+
                     <div class="container">
-                        <h3>游戏视频</h3>
+                        <h3>游戏实机影片</h3>
                         <iframe 
                             width="560" 
                             height="315" 
                             src="https://www.youtube.com/embed/gJUEuxbuTGI"
-                            title="游戏玩法视频"
+                            title="Gameplay Video"
                             frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
@@ -144,5 +214,6 @@
                     </div>
                 </div>
             <script src="../assets/js/switch_lang.js"></script>
+            <script src="../assets/js/show_items.js"></script>
     </body>
 </html>

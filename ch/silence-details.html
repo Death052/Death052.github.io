@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Read Only by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Monofett&family=VT323&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/main.css" />
+        <link rel="stylesheet" href="../assets/css/button.css" />
+        <link rel="stylesheet" href="../assets/css/new.css" />
+
+	</head>
+	<body class="is-preload">
+    <!-- Language Switcher Button -->
+	<div style="position: fixed; top: 1rem; right: 1rem; z-index: 1000;">
+		<a class="pixel-button-link">
+			<div class="pixel" id="lang-switch"><p>EN</p></div>
+		</a>
+	</div>
+		<!-- Header -->
+			<section id="header">
+                <header>
+                    <span class="image avatar"><img src="../images/avatar.jpg" alt="" /></span>
+                    <h1 id="logo"><a href="#">郭奕熙 Stephen</a></h1>
+                    <p>我是一名开发者，心中同时怀着设计师的灵魂</p>
+                </header>
+				<nav id="nav">
+                    <a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'index.html#three','silence-details.html')">
+                        <div class="pixel"><p>返回首页</p></div>
+                    </a>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://www.instagram.com/blue_sheep_cookie/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://www.linkedin.com/in/yik-hei-kwok-54680b214/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/Death052" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+
+
+            <div id="wrapper">
+				<!-- Main -->
+					<div id="main">
+                        <div class="image main" data-position="center">
+                            <img src="../images/HeaderImg_index.png" alt="" />
+                        </div>
+                        <div class="container">
+                            <header class="major">
+                                <h2>Silence（寂静）</h2>
+                                <h3>简介</h3>
+                            </header>
+                            <p>《Silence》是我与一个小团队共同开发的兴趣项目。这款游戏将会是一款银河恶魔城（Metroidvania）类型的游戏，并将“声音”作为核心机制，用于地图探索以及应对敌人。当玩家通过击打物体、敌人，甚至从高处坠落而制造出声音时，他们将会在交替的异世界之间切换。
+                            </p>
+                            <p style="margin-bottom: 10px; margin-top: -15px;">
+                                我主要负责：
+                            </p>
+                            <ul style="margin-top: 10px;">
+                                <li>项目管理，组织各项任务与里程碑</li>
+                                <li>机制设计，包含核心的声音玩法与敌人行为</li>
+                                <li>叙事设计，负责世界观构建与角色塑造</li>
+                                <li>美术设计与实装</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <table class="programs-used-table">
+                            <tbody>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/godot_logo.png" alt="Godot" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Godot</span></td>
+                                    <td class="program-desc"><span>用于制作这款游戏的程序开发软件</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/github.png" alt="github" width="50" height="50" ></td>
+                                    <td class="program-name"><span>GitHub</span></td>
+                                    <td class="program-desc"><span>版本控制</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/aesprite.png" alt="Aesprite" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Aseprite</span></td>
+                                    <td class="program-desc"><span>美术工具</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/miro.png" alt="Miro" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Miro</span></td>
+                                    <td class="program-desc"><span>游戏企划工具</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/notion_logo.png" alt="Notion" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Notion</span></td>
+                                    <td class="program-desc"><span>游戏企划 / 项目管理工具</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="container">
+                        <h3>各部分详情</h3>
+                         <div class="Detail-Segment-Button-Container">
+                            <ul>
+                                <li>
+                                    <a onclick="toggleContentProjectManagement()" class="pixel-button-link">
+                                        <div class="pixel-black-blue"><p style="font-size: 22px;">项目管理</p></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a onclick="toggleContentGameDesign()" class="pixel-button-link">
+                                        <div class="pixel-mechanic-design"><p>机制设计</p></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a onclick="toggleContentNarrativeDesign()" class="pixel-button-link">
+                                        <div class="pixel-orange"><p>叙事设计</p></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a onclick="toggleContentArtDesign()" class="pixel-button-link">
+                                        <div class="pixel-pink"><p>美术设计</p></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> 
+
+                    <div id="hidden-section-project-management" style="display: none;">
+                        <div class="container">
+                            <h2>项目管理</h2>
+                            <h4>我的职责</h4>
+                            <p>
+                                作为项目经理，我负责为团队规划所有的任务和截止日期，并主持定期会议以讨论开发进度以及可能遇到的任何问题。
+                            </p>
+                            <h4>如何进行管理</h4>
+                            <p>
+                                我们主要使用 Notion 来整理上述项目。我设立了一个专用页面来记录任务和会议时间，以便追踪进度。更重要的是，我使用了一份游戏企划书（GDD）来整合团队每个人提出的想法。这份 GDD 非常新，并且正在持续更新中。
+                            </p>
+                            <p>
+                                GDD 包含了基本信息、故事结构、具体玩法和角色详情。我们还编写了“游戏四要素（Elemental Tetrad）”和“核心循环（Gameplay Loop）”，以建立更清晰的愿景来为未来做规划。
+                            </p>
+                            
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>资源结构</span>
+                                    <img src="../images/Truck_Management_Simulator_Resources.png" alt="资源" height="264" width="420">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="hidden-section-game-design" style="display: none;">
+                        <div class="container">
+                            <h2>机制与敌人设计</h2>
+                            <p>
+                               我负责构思游戏的核心机制，我认为这个机制必须足够独特，才能与其他银河恶魔城游戏区隔开来。因此我选择了以声音为基础的机制，当玩家制造出足够的声音时，就会在两个交替的世界之间切换。
+                            </p>
+                            <h4>灵感来源</h4>
+                            <p>
+                                我从多款游戏中汲取了灵感。异世界切换机制是受到《弗兰的悲惨之旅》（Fran Bow）的启发，在该游戏中玩家可以切换两个世界来解开谜题。然而，如果单纯通过按一个按键来切换世界，感觉有些过于平淡，而且很多游戏已经这样做了。因此，受到《霍普先生的玩具屋》（Mr.Hopp's Playhouse）和《小小梦魇》（Little Nightmares）等游戏的启发，我决定将此机制改为基于声音的形式，玩家必须仔细规划要制造多少噪音才能在世界之间切换。
+                            </p>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>《Fran Bow》世界切换</span>
+                                    <img src="../images/Silence-Mechanic-Inspiration-Franbow.png" alt="界面迭代 1" height="217" width="388">
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>《小小梦魇》声音机制</span>
+                                    <img src="../images/Silence-Mechanic-Inspiration-LittleNightmare.png" alt="界面迭代 2" height="217" width="388">
+                                </div>
+                            </div>
+                            <h4>敌人概念</h4>
+                            <p>
+                                为了让敌人显得独特并同样运用这套声音机制，我设计了两只困在不同地点的大型敌人。这些敌人的概念和想法都是在 Notion 中规划完成的。
+                            </p>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>在 Miro 上的敌人设计</span>
+                                    <img src="../images/Silence-Enemy-Design-eng.png" alt="界面迭代 1" height="462" width="855">
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                     <div id="hidden-section-narrative-design" style="display: none;">
+                        <div class="container">
+                            <h2>叙事设计</h2>
+                            <h4>我的职责</h4>
+                            <p>
+                                我负责将团队提出的广泛叙事想法包装成一个更具凝聚力的故事，加入可互动的角色，并规划出更有结构的故事推进流程。
+                            </p>
+                            <h4>故事大纲</h4>
+                            <p>
+                                天生失语的由纪（Yuki），其科学家父母试图治愈她，却不小心让自己变成了一个失去理智的五维神明。现在，世界遭受了诅咒：任何发出声音的人都会被拖入五维空间并被吞噬。由纪失去了关于这起事件的所有记忆，但她的脑中有一块大脑碎片，指引她登上塞罗帕大楼（Seropa Building）去接近那位神明。由纪将踏上这段旅程，无论是独自一人，还是在沿途人们的帮助下前行。
+                            </p>
+                            <div class="SE-imgContainer">
+                                <span>分支叙事［仍在进行中］</span>
+                                <img src="../images/Silence-Branching-Narrative-eng.png" alt="分支叙事" height="293" width="855">
+                            </div>
+
+                            <h4>故事类型</h4>
+                            <p>
+                                我希望这款游戏能根据玩家是否选择与角色互动，来产生不同的分支叙事路线。故事中还会加入“后设（meta）”元素，例如玩家大脑中的碎片会告诉玩家不要信任任何人。这将为玩家制造一个道德困境，他们必须在信任角色与不信任之间做出抉择。故事的寓意旨在展现人们必须互相交流与安慰，才能克服反乌托邦世界中的重重挑战。
+                            </p>
+
+                            <h4>故事规划</h4>
+                            <p>
+                                团队中的每个人都有一些模糊的故事想法，这些想法在某些方面能为叙事带来帮助。这些想法会先写在 Miro 上，然后我再将它们整合到 Notion 中，形成一个更具凝聚力的故事。故事规划包含了写下角色的详细设定、动机以及区域地图。
+                            </p>
+                            <div class="image-row">
+                            <div class="SE-imgContainer">
+                                <span>以表格形式整理的角色描述</span>
+                                <img src="../images/Silence-Narrative-Characters-eng.png" alt="角色描述" height="252" width="400">
+                            </div>
+                            <div class="SE-imgContainer">
+                                <span>提供给关卡设计师的区域地图图表</span>
+                                <img src="../images/Silence-Narrative-AreaMaps-eng.png" alt="区域地图" height="252" width="400">
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+
+        <script src="../assets/js/switch_lang.js"></script>
+        <script src="../assets/js/show_items.js"></script>
+
+    </body>
+</html>

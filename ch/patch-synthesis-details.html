@@ -14,25 +14,27 @@
 		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Monofett&family=VT323&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../assets/css/main.css" />
         <link rel="stylesheet" href="../assets/css/button.css" />
-            <link rel="stylesheet" href="../assets/css/new.css" />
+        <link rel="stylesheet" href="../assets/css/new.css" />
+        <link rel="stylesheet" href="../assets/css/card_wrapper.css" />
 
 	</head>
 	<body class="is-preload">
     <!-- Language Switcher Button -->
-	<div style="position: fixed; top: 1rem; right: 1rem; z-index: 1000;">
-		<a class="pixel-button-link">
-			<div class="pixel" id="lang-switch"><p>简</p></div>
-		</a>
-	</div>
+                <div style="position: fixed; top: 1rem; right: 1rem; z-index: 1000;">
+                    <a class="pixel-button-link">
+                        <div class="pixel" id="lang-switch"><p>EN</p></div>
+                    </a>
+                </div>
 		<!-- Header -->
 			<section id="header">
+                
                 <header>
                     <span class="image avatar"><img src="../images/avatar.jpg" alt="" /></span>
-                    <h1 id="logo"><a href="#">郭奕熙</a></h1>
-                    <p>只是一位游戏设计师和数字艺术家。<br /></p>
+                    <h1 id="logo"><a href="#">郭奕熙 Stephen</a></h1>
+                    <p>我是一名开发者，心中同时怀着设计师的灵魂</p>
                 </header>
 				<nav id="nav">
-					<a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'index.html#three','patch-synthesis-details.html')">
+					<a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'index.html#five','patch-synthesis-details.html')">
                         <div class="pixel"><p>返回首页</p></div>
                     </a>
 				</nav>
@@ -51,31 +53,31 @@
             <div id="wrapper">
 				<!-- Main -->
 					<div id="main">
-                        <div class="image main" data-position="center">
+                         <div class="image main" data-position="center">
                             <img src="../images/HeaderImg_index.png" alt="" />
                         </div>
                         <div class="container">
                             <header class="major">
-                                <h2>图块形象合成</h2>
+                                <h2>基于区块的纹理合成 (Patch Based Synthesis)</h2>
                             </header>
-                            <h3>介绍</h3>
-                            <p> 这个项目是我第一个专注用 Compute Shaders 的 Unity 项目，也是我大学电脑科最终年度项目。
-                                这个项目的主要目标是实现一个基于图块合成的创作。
-                            </p>它接收一个
-                                范例纹理，并生成一个任意大小且看起来与范例纹理类似的新纹理。
+                            <h3>简介</h3>
+                            <p> 本项目是我第一个专门研究运算着色器（Compute Shaders）的 Unity 项目，同时也是我的计算机科学学士学位毕业论文项目（Final Year Project）。本专案的主要目标是实现一种基于区块的纹理合成算法。这是一种纹理合成技术，它读取一张样本纹理，并能生成任意大小、且视觉效果与样本相似的新纹理。
                             </p>
                         </div>
 
                     </div>
 
                     <div class="container">
-                        <h3>使用的程序</h3>
-                        <ul class="feature-icons">
-                             <li class="icon_logo_img">
-                                <img src="../images/unity_logo.png" alt="Unity" width="50" height="50" >
-                                <span>Unity</span>
-                            </li>
-                        </ul>
+                        <h3>使用的软件</h3>
+                        <table class="programs-used-table">
+                            <tbody>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/unity_logo.png" alt="Unity" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Unity</span></td>
+                                    <td class="program-desc"><span>用于开发此算法的开发软件</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
 
 
@@ -85,17 +87,25 @@
                     <div class="container">
                         <h3>算法逻辑</h3>
                         <p>
-                            算法首先接收一个范例纹理，并将范例纹理分割成小的正方形
-                            图块。然后保存每个图块的边界像素，用于计算图块之间的相似度。
+                            该算法首先将样本纹理分割成小的正方形区块（patches）并保存其边界像素。接着，它通过随机选择一个初始区块，并根据边界像素的相似度无缝添加新区块，从而生成全新尺寸的纹理。
                         </p>
                         <p>
-                            然后，算法开始创建新纹理，方法是从范例纹理中随机选择一个图块，
-                            然后根据现有图块的边界像素添加新图块。这个算法相当复杂，
-                            因此如果您感兴趣，欢迎查看我撰写的完整文档。
+                            如果您有兴趣，可以阅读我撰写的完整文档。
                         </p>
-                        <a href="documents/YikHeiKWOK25-FINAL.pdf" class="pixel-button-link"><div class="pixel"><p>文档</p></div></a>
+                        <div class="button-row" style="margin-top: -30px;">
+                            <a href="../documents/YikHeiKWOK25-FINAL.pdf" class="pixel-button-link" style="width: auto !important;"><div class="pixel"><p>查看论文文档</p></div></a>
+                        </div>
+                    </div>
 
+                    <div class="container">
+                        <h3>学习成果</h3>
+                        <p>
+                            通过这个项目，我学到了很多关于运算着色器（compute shaders）的知识，并理解了使用运算着色器如何将繁重的运算从 CPU 转移到 GPU，从而显著提高算法某些部分的效能。同时，我也对射线检测（raycasting）的工作原理有了更深入的了解。
+                        </p>
+                    </div>
 
+                    <div class="container">
+                        <h3>项目图片</h3>
                         <div class="image-row">
                             <div class="SE-imgContainer">
                                 <span>选择纹理</span>
@@ -109,7 +119,7 @@
 
                         <div class="image-row">
                             <div class="SE-imgContainer">
-                                <span>创建建筑</span>
+                                <span>合成生成中</span>
                                 <img src="../images/Patch_Synthesis_3.png" alt="SE1" height="220" width="394">
                             </div>
                             <div class="SE-imgContainer">
@@ -117,31 +127,13 @@
                                 <img src="../images/Patch_Synthesis_4.png" alt="SE2" height="220" width="394">
                             </div>
                         </div>
-
-
-                        
-
-
-                        
                     </div>
 
-                    <div class="container">
-                        <h3>学习成果</h3>
-                        <p>
-                            我透过这个项目学到了很多关于 Compute Shaders 的知识，并理解了
-                            使用 Compute Shaders 如何将繁重的计算工作从 CPU 转移到 GPU，
-                            显著提高算法某些方面的效能。
-                        </p>
 
-                        <p>
-                            这是我第一个使用 3D 元素的 Unity 项目（或游戏项目）。
-                            因此，我学会了如何在 Unity 中使用 3D 射线检测，以及使用一些 3D 材质。
-                        </p>
 
-                    </div>
 
                     <div class="container">
-                        <h3>游戏视频</h3>
+                        <h3>展示影片</h3>
                         <iframe 
                             width="560" 
                             height="315" 
@@ -153,6 +145,16 @@
                         </iframe>
                     </div>
                 </div>
-            <script src="../assets/js/switch_lang.js"></script>
+            <!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/jquery.scrollex.min.js"></script>
+		<script src="../assets/js/jquery.scrolly.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<script src="../assets/js/charts.js"></script>
+		<script src="../assets/js/switch_lang.js"></script>
     </body>
 </html>

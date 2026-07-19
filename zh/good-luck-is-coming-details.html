@@ -1,0 +1,263 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Read Only by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Monofett&family=VT323&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/button.css" />
+        <link rel="stylesheet" href="../assets/css/new.css" />
+
+	</head>
+	<body class="is-preload">
+    <!-- 語言切換按鈕 -->
+	<div style="position: fixed; top: 1rem; right: 1rem; z-index: 1000;">
+		<a class="pixel-button-link">
+			<div class="pixel" id="lang-switch"><p>简</p></div>
+		</a>
+	</div>
+		<!-- 側邊欄頁首 -->
+			<section id="header">
+				<header>
+                    <span class="image avatar"><img src="../images/avatar.jpg" alt="" /></span>
+                    <h1 id="logo"><a href="#">郭奕熙 Stephen</a></h1>
+                    <p>我是一名開發者，心中同時懷著設計師的靈魂</p>
+                </header>
+				<nav id="nav">
+					<a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'index.html#four','good-luck-is-coming-details.html')">
+                        <div class="pixel"><p>返回首頁</p></div>
+                    </a>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://www.instagram.com/blue_sheep_cookie/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://www.linkedin.com/in/yik-hei-kwok-54680b214/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/Death052" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+
+
+            <div id="wrapper">
+				<!-- 主要內容 -->
+					<div id="main">
+                         <div class="image main" data-position="center">
+                            <img src="../images/HeaderImg_index.png" alt="" />
+                        </div>
+                        <div class="container">
+                            <header class="major">
+                                <h2>《好運來》 (Good Luck Is Coming)</h2>
+                            </header>
+                            <h3>遊戲簡介</h3>
+                            <p>
+                                《好運來》是由 8 人團隊歷時一個月為 2026 年網易 Game Jam 開發的 2D 卡車管理遊戲。玩家需要派遣卡車前往各個地點，並切換至俯視視角進行瞄準，衝撞不斷變換且帶有黃色高亮標示的目標。
+                            </p>
+                            <p style="margin-bottom: 10px; margin-top: -15px;">
+                                我在此專案中負責：
+                            </p>
+                            <ul style="margin-top: 10px;">
+                                <li>遊戲程式編寫，特別是 UI 互動與資源（Resource）建立</li>
+                                <li>核心系統與機制的技術設計，評估並決定部分機制的實作可行性</li>
+                                <li>構思讓遊戲更具趣味性的自訂隨機事件</li>
+                                <li>UI 設計與 UX 探索，深入理解玩家如何與遊戲進行互動</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="container">
+                        <h3>使用軟體</h3>
+                        <table class="programs-used-table">
+                            <tbody>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/godot_logo.png" alt="Godot" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Godot</span></td>
+                                    <td class="program-desc"><span>用於開發此遊戲的程式編寫軟體</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/github.png" alt="github" width="50" height="50" ></td>
+                                    <td class="program-name"><span>GitHub</span></td>
+                                    <td class="program-desc"><span>版本控制系統</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="program-icon"><img src="../images/miro.png" alt="Miro" width="50" height="50" ></td>
+                                    <td class="program-name"><span>Miro</span></td>
+                                    <td class="program-desc"><span>遊戲企劃與規劃工具</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="container">
+                        <h3>板塊詳情</h3>
+                         <div class="Detail-Segment-Button-Container">
+                            <ul>
+                                <li>
+                                    <a onclick="toggleContentScripting()" class="pixel-button-link">
+                                        <div class="pixel-blue"><p>程式編寫</p></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a onclick="toggleContentGameDesign()" class="pixel-button-link">
+                                        <div class="pixel-mechanic-design"><p>機制設計</p></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a onclick="toggleContentUXDesign()" class="pixel-button-link">
+                                        <div class="pixel-grey-green"><p>UI/UX 設計</p></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> 
+                    
+
+                    <div id="hidden-section-scripting" style="display: none;">
+                        <div class="container">
+                            <h2>程式編寫</h2>
+                            <p>
+                                遊戲完全使用 Godot 的 GDScript 語言進行開發。在此之前，我從未製作過通常包含大量 UI 元素的經營模擬類遊戲，同時也是第一次在 Game Jam 中與另一位程式設計師協同協作。
+                            </p>
+                            <p>
+                                在 UI 元素方面，我善用了水平和垂直容器（Horizontal & Vertical Containers），以確保 UI 介面能適應不同的螢幕尺寸並保持井然有序。此外，我也確保正確運用了訊號（Signals）系統來建立 UI 元素之間的溝通與互動。由於遊戲中存在多種不同的目標、卡車和路人，我為每一類物件建立了獨立的資源檔案（Resources），以確保遊戲具備良好的可擴充性。
+                            </p>
+                            <p>
+                                
+                            </p>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>資源架構</span>
+                                    <img src="../images/Truck_Management_Simulator_Resources.png" alt="資源架構" height="264" width="420">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="hidden-section-game-design" style="display: none;">
+                        <div class="container">
+                            <h2>機制設計</h2>
+                            <p>
+                               雖然遊戲的核心機制是由其他遊戲設計師規劃，但我為遊戲構思並設計了自訂隨機事件，以增添遊戲的趣味性。
+                            </p>
+                            <p>
+                                起初，團隊設計了「交通堵塞」事件來減緩卡車速度甚至阻斷路徑，試圖讓前往目標的過程更有挑戰性。然而，這項機制不僅實作難度高，且只會影響卡車路線規劃的玩法，對核心的卡車衝撞玩法毫無幫助。
+                            </p>
+                            <p>
+                                因此，我改為設計了「地震」和「洪水」事件。這兩項事件不僅能在路線規劃階段延緩卡車，還能在衝撞階段創造出獨特的異常效果，為玩法注入變化。詳細效果可參考下方影片。
+                            </p>
+                            
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>地震事件</span>
+                                    <video height="264" width="420" controls>
+                                        <source src="../videos/Truck_Management_Simulator_Earthquake.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>洪水事件</span>
+                                    <video height="264" width="420" controls>
+                                        <source src="../videos/Truck_Management_Simulator_Flood.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+
+                     <div id="hidden-section-UX-design" style="display: none;">
+                        <div class="container">
+                            <h2>UI/UX 設計</h2>
+                            <p>
+                                作為遊戲的主要 UI 程式設計師，我也負責規劃核心 UX 和 UI 元素。這包括繪製多個版本的迭代圖表作為原型（Prototype）。這對於團隊理解玩家將如何與遊戲互動，以及遊戲如何回應玩家的操作至關重要。
+                            </p>
+                            <p>
+                                在實際實作 UI 之前，我先在 Miro 中繪製了流程圖（如下圖所示）。由於遊戲規格後來調整為同時只會出現 2 個目標，而非在不同序列中出現多個目標，因此我們對主 UI 進行了相應的修改。
+                            </p>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>第一版迭代</span>
+                                    <img src="../images/Truck_Management_Simulator_UX_Design_old.png" alt="UI 第一版迭代" height="246" width="388">
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>第二版迭代</span>
+                                    <img src="../images/Truck_Management_Simulator_UX_Design_new.png" alt="UI 第二版迭代" height="246" width="388">
+                                </div>
+                            </div>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>主 UI 介面</span>
+                                    <img src="../images/Truck_Management_Simulator_UX_Main.png" alt="主 UI 介面" height="217" width="388">
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>地點詳情 UI</span>
+                                    <img src="../images/Truck_Management_Simulator_UX_location.png" alt="地點詳情 UI" height="217" width="388">
+                                </div>
+                            </div>
+
+
+
+                            <p> 
+                                
+                            </p>
+                           
+                        </div>
+                     </div>
+
+
+                    <!-- <div class="container">
+                        <h3>遊戲截圖</h3>
+                        <div class="image-row">
+                            <div class="SE-imgContainer">
+                                <span>標題畫面</span>
+                                <img src="../images/Just_One_Look_4.png" alt="SE1" height="220" width="394">
+                            </div>
+                            <div class="SE-imgContainer">
+                                <span>摘下面具</span>
+                                <img src="../images/Just_One_Look_1.png" alt="SE2" height="220" width="394">
+                            </div>
+                        </div>
+
+                        <div class="image-row">
+                            <div class="SE-imgContainer">
+                                <span>戴上面具</span>
+                                <img src="../images/Just_One_Look_2.png" alt="SE1" height="220" width="394">
+                            </div>
+                            <div class="SE-imgContainer">
+                                <span>瘋狂狀態</span>
+                                <img src="../images/Just_One_Look_3.png" alt="SE2" height="220" width="394">
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="container">
+                        <h3>學習成果</h3>
+                        <p>
+                            我學會了如何更高效地與另一位程式設計師協同工作，不僅透過版本控制系統，還包括主動與彼此溝通各自的工作分配。同時，我也學會了在遊戲設計過程中保持彈性，將遊戲設計視為一種反覆修改的迭代過程，而非傳統僵化的瀑布流模型。
+                        </p>
+                    </div>
+
+                    <div class="container">
+                        <h3>實機試玩影片</h3>
+                        <div class="image-row">
+                            <div class="SE-imgContainer">
+                                <video width="788" height="440" controls>
+                                    <source src="https://pub-76e63136e70e421c867d4fe233c4a4ff.r2.dev/Good-Luck-Is-Coming/Good_Luck_Is_Coming_Video.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <script src="../assets/js/switch_lang.js"></script>
+        <script src="../assets/js/show_items.js"></script>
+    </body>
+</html>

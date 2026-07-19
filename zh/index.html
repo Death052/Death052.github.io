@@ -15,28 +15,34 @@
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<link rel="stylesheet" href="../assets/css/button.css" />
 		<link rel="stylesheet" href="../assets/css/new.css" />
+		<link rel="stylesheet" href="../assets/css/card_wrapper.css" />
 	</head>
 	<body class="is-preload">
-	<!-- Language Switcher Button -->
-	<div style="position: fixed; top: 1rem; right: 1rem; z-index: 1000;">
-		<a class="pixel-button-link">
-			<div class="pixel" id="lang-switch"><p>简</p></div>
-		</a>
-	</div>
-		<!-- Header -->
+	<!-- 語言切換按鈕 -->
+	
+		<!-- 側邊欄頁首 -->
 			<section id="header">
+
+				<div style="position: fixed; top: 1rem; right: 1rem; z-index: 1000;">
+					<a class="pixel-button-link">
+						<div class="pixel" id="lang-switch"><p>简</p></div>
+					</a>
+				</div>
+
 				<header>
 					<span class="image avatar"><img src="../images/avatar.jpg" alt="" /></span>
-					<h1 id="logo"><a href="#">郭奕熙</a></h1>
-					<p>只是一位遊戲設計師和數位藝術家。<br />
-					I am a developer, and a designer at heart</p>
+					<h1 id="logo"><a href="#">郭奕熙 Stephen</a></h1>
+						<p>我是一名開發者，心中同時懷著設計師的靈魂</p>
 				</header>
 				<nav id="nav">
 					<ul>
 						<li><a href="#one" class="active">關於我</a></li>
-						<li><a href="#two">我的技能</a></li>
-						<li><a href="#three">我的作品</a></li>
-						<li><a href="#four">工作經歷</a></li>
+						<li><a href="#two">專業技能</a></li>
+						<li><a href="#three">開發中遊戲專案</a></li>
+						<li><a href="#four">過往遊戲專案</a></li>
+						<li><a href="#five">其他個人專案</a></li>
+						<li><a href="#six">工作經驗</a></li>
+						<li><a href="#seven">成就</a></li>
 					</ul>
 				</nav>
 				<footer>
@@ -49,587 +55,509 @@
 				</footer>
 			</section>
 
-		<!-- Wrapper -->
+		<!-- 區塊包裝層 -->
 			<div id="wrapper">
 
-				<!-- Main -->
+				<!-- 主要內容 -->
 					<div id="main">
 
-						<!-- One -->
+						<!-- 區塊一：關於我 -->
 							<section id="one">
 								<div class="image main" data-position="center">
 									<img src="../images/HeaderImg_index.png" alt="" />
 								</div>
 								<div class="container">
 									<header class="major">
-										<h2>歡迎來到我的作品集</h2>
-										<h4>大家好，我是Stephen！</h4>
+										<h2>遊戲設計師 —— 郭奕熙 Stephen</h2>
 									</header>
 									
-									<p>我是倫敦金匠大學的遊戲設計碩士生。我對遊戲創作充滿熱情，並參與過許多遊戲專案。
-										我是一位遊戲程式設計師，最擅長使用 Godot 和 Unity。雖然我是程式設計師，
-										但我也很喜歡設計，熱愛為遊戲設計機制、角色和環境。
-									</p>
+									<h2>關於我</h2>
+
+									<div class="intro-row">
+										<div class="intro-image">
+											<img src="../images/introduction_picture.jpg" alt="自我介紹照片" />
+										</div>
+
+										<div class="intro-text"> 
+											<p style="font-size: 1.1em;">
+												你好！我是郭奕熙（Stephen），專長為遊戲程式編寫與遊戲技術設計。我曾獨立開發以及團隊協作創作過多款遊戲與美術資產，其中我特別享受在跨領域的團隊中合作交流。
+											</p>
+											<p style="font-size: 1.1em;">
+												我擁有 3 年在 Unity 和 Godot 引擎中開發遊戲的實務經驗，目前也正進一步拓展自己在 Unreal Engine 的技能。除了程式編寫，我也能熟練運用各種工具進行 2D 與 3D 前端的美術資產創作。
+											</p> 
+											
+											<p style="font-size: 1.1em;">
+												我畢業於里茲大學（University of Leeds）電腦科學學士學位，以及倫敦大學金匠學院（Goldsmiths, University of London）遊戲與玩樂設計（Games and Playful Design）碩士學位。憑藉在技術與設計兩大領域的紮實根基，我非常擅長將創意視覺與技術實作進行完美銜接，將抽象的遊戲概念轉化為精緻流暢的玩家體驗。
+											</p>
+										</div>
+									</div>
 								</div>
 							</section>
 
-						<!-- Two -->
+						<!-- 區塊二：技能 -->
 							<section id="two">
 								<div class="container">
-									<h3>使用的程式</h3>
-									<p>這些是我曾經使用過且有經驗的程式。</p>
-									<ul class="feature-icons">
-										<li class="icon_logo_img">
-											<img src="../images/unity_logo.png" alt="Unity" width="50" height="50" >
-											<span>Unity</span>
-										</li>
-										<li class="icon_logo_img">
-											<img src="../images/godot_logo.png" alt="Godot" width="50" height="50" >
-											<span>Godot</span>
-										</li>
-										<li class="icon_logo_img">
-											<img src="../images/aesprite.png" alt="Aesprite" width="50" height="50" >
-											<span>Aesprite</span>
-										</li>
-										<li class="icon_logo_img">
-											<img src="../images/maya.png" alt="Maya" width="50" height="50" >
-											<span>Maya</span>
-										</li>
-										<li class="icon_logo_img">
-											<img src="../images/csp_logo.png" alt="CSP" width="50" height="50" >
-											<span>Clip Studio Paint</span>
-										</li>
-										<li class="icon_logo_img">
-											<img src="../images/hitfilm_logo.png" alt="HitFilm" width="50" height="50" >
-											<span>HitFilm</span>
-										</li>
-                        			</ul>
-									<h3>我使用過的程式語言</h3>
-									<p>我對這些編程語言有經驗</p>
-									<!-- <ul class="feature-icons">
-										<li class="icon solid fa-code">C#</li>
-										<li class="icon solid fa-code">C/C++</li>
-										<li class="icon solid fa-code">GDScript</li>
-										<li class="icon solid fa-code">Python</li>
-										<li class="icon solid fa-code">HTML/JS</li>
-										<li class="icon solid fa-code">CSS</li>
-									</ul> -->
+										<h2 >我使用的軟體與工具</h2>
+										<div class="programs-categories">
+											<div class="program-category-wrap">
+												<h4>程式開發相關：</h4>
+												<div class="program-category">
+													<div class="programs-grid">
+														<div class="program-item">
+															<img src="../images/godot_logo.png" alt="Godot" width="50" height="50">
+															<span>Godot</span>
+														</div>
+														<div class="program-item">
+															<img src="../images/unity_logo.png" alt="Unity" width="50" height="50">
+															<span>Unity</span>
+														</div>
+														<div class="program-item">
+															<img src="../images/Unreal_Engine.png" alt="Unreal" width="50" height="50">
+															<span>Unreal</span>
+														</div>
+														<div class="program-item">
+															<img src="../images/github.png" alt="Github" width="50" height="50">
+															<span>GitHub</span>
+														</div>
+														<div class="program-item">
+															<img src="../images/preforce.png" alt="Perforce" width="50" height="50">
+															<span>Perforce</span>
+														</div>
+													</div>
+												</div>
+											</div>
 
-									<canvas id="Coding_Language_Chart" style="width:100%;max-width:700px"></canvas>
-									<p></p>
-									<p>即使有些編程語言未列於此處，
-									如果新專案需要，我仍然可以在未來學習。</p>
+											<div class="program-category-wrap">
+												<h4>美術與設計相關：</h4>
+												<div class="program-category">
+													<div class="programs-grid">
+														<div class="program-item">
+															<img src="../images/aesprite.png" alt="Aesprite" width="50" height="50">
+															<span>Aseprite</span>
+														</div>
+														<div class="program-item">
+															<img src="../images/maya.png" alt="Maya" width="50" height="50">
+															<span>Maya</span>
+														</div>
+														<div class="program-item">
+															<img src="../images/csp_logo.png" alt="CSP" width="50" height="50">
+															<span>Clip Studio Paint</span>
+														</div>
+														<div class="program-item">
+															<img src="../images/adobe_photoshop.png" alt="Photoshop" width="50" height="50">
+															<span>Photoshop</span>
+														</div>
+														<div class="program-item">
+															<img src="../images/adobe_after_effects.png" alt="After Effects" width="50" height="50">
+															<span>After Effects</span>
+														</div>
+													</div>
+												</div>
+											</div>
 
+											<div class="program-category-wrap">
+												<h4>專案規劃相關：</h4>
+												<div class="program-category">
+													<div class="programs-grid">
+														<div class="program-item">
+															<img src="../images/notion_logo.png" alt="Notion" width="50" height="50">
+															<span>Notion</span>
+														</div>
+														<div class="program-item">
+															<img src="../images/miro.png" alt="Miro" width="50" height="50">
+															<span>Miro</span>
+														</div>
+														<div class="program-item">
+															<img src="../images/figma_logo.png" alt="Figma" width="50" height="50">
+															<span>Figma</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 								</div>
-								<!-- <div class="container"> -->
 							</section>
 
 
-						<!-- Three -->
+						<!-- 區塊三：開發中專案 -->
 							<section id="three">
 								<div class="container">
-									<h3>我的作品</h3>
-									<p>以下是我參與過的一些遊戲專案。這些專案展示了我在遊戲開發方面的技能和經驗。</p>
+									<h2 style="margin-left: -1.7em;">開發中遊戲專案</h2>
+									<p style="margin-left: -3em; font-size: 1.1em;">
+										這些是我目前正在進行的遊戲專案。由於仍處於開發階段，目前較缺乏實際遊玩影片，但頁面中仍提供螢幕截圖與設計流程供參考。
+									</p>
 									<div class="features">
 										<article>
-											<a href="#" class="image"><img src="../images/StitchedEXE_tumbnail.png" alt="" /></a>
+											<a href="#" class="image"><img src="../images/Silence_thumbnail.png" alt="Silence" /></a>
 											<div class="inner">
-												<h4>Stitched.EXE</h4>
-												<p>Stitched.EXE 是我在 2024 年參與的熱情專案。我花了一年時間在這個專案上。這個專案擁有兩個可玩角色，他們在恐怖沉浸式平台遊戲中拼命試圖躲避殺手。</p>
+												<h4 style="font-size: 1.5em;">《Silence》</h4>
+												<p>
+													<span class="label-Project-Management">專案管理</span>
+													<span class="label-mechanic-design">機制設計</span>
+													<span class="label-narrative">敘事設計</span>
+													<span class="label-art">美術設計</span>
+												</p>
+												<p style="font-size: 1.1em; margin-bottom: 0.5em;">
+													《Silence》是一款結合戰鬥與解謎要素的類銀河戰士惡魔城遊戲。玩家將在一棟充滿賽博朋克風格的建築中穿梭，利用聲音在不同的平行世界之間切換。
+												</p>
+												<div class="button-row">
+													<a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'silence-details.html','index.html')">
+														<div class="pixel"><p>專案詳情</p></div>
+													</a>
+												</div>	
+											</div>
+											<div class="responsibilities-box">
+												<p>我負責／將負責的事項：</p>
+												<ul>
+													<li>專案管理</li>
+													<li>遊戲設計：核心機制設計、敵人設計</li>
+													<li>敘事設計：劇情與世界觀發展</li>
+													<li>美術設計：場景美術、角色美術</li>
+												</ul>
+											</div>
+										</article>
+
+										<article>
+											<a href="#" class="image"><img src="../images/Blossems_of_the_dead_thumbnail.png" alt="Blossems of the Dead" /></a>
+											<div class="inner">
+												<h4 style="font-size: 1.5em;">《Blossoms of the Dead》</h4>
+												<p>
+													<span class="label-coding">程式編寫</span>
+													<span class="label-mechanic-design">機制設計</span>
+													<span class="label-UX-design">UI/UX 設計</span>
+													<span class="label-narrative">敘事設計</span>
+													
+												</p>
+												<p style="font-size: 1.1em; margin-bottom: 0.5em;">
+													《Blossoms of the Dead》是一款精緻的 3D 平台動作解謎遊戲。主角來到神祕的死後世界尋找她已故的祖母，希望能向她好好道別。
+												</p>
+												<div class="button-row">
+													<a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'blossems-of-the-dead-details.html','index.html')">
+														<div class="pixel"><p>專案詳情</p></div>
+													</a>
+												</div>	
+											</div>
+											<div class="responsibilities-box">
+												<p>我負責／將負責的事項：</p>
+												<ul>
+													<li>程式編寫：使用藍圖（Blueprint）實現遊戲中所有機制的程式邏輯</li>
+													<li>遊戲設計：核心玩法的機制設計</li>
+													<li>敘事設計：劇情的撰寫與角色對話</li>
+													<li>UI/UX 設計：使用者介面與互動體驗設計</li>
+												</ul>
+											</div>
+										</article>
+
+										
+									</div>
+								</div>
+							</section>
+
+							<!-- 區塊四：過往專案 -->
+							<section id="four">
+								<div class="container">
+									<h2 style="margin-left: -1.7em;">過往遊戲專案</h2>
+									<p style="margin-left: -3em; font-size: 1.1em;">
+										這些是我過去已經完成的遊戲專案。各專案的詳細頁面中均包含完整的遊戲實機影片與截圖可供審閱。
+									</p>
+									<div class="features">
+										<article>
+											<a href="#" class="image"><img src="../images/StitchedEXE_tumbnail.png" alt="Stitched.EXE" /></a>
+											<div class="inner">
+												<h4 style="font-size: 1.5em;">《Stitched.EXE》 [2024]</h4>
+												<p>
+													<span class="label-coding">程式編寫</span>
+													<span class="label-mechanic-design">機制設計</span>
+													<span class="label-art">美術設計</span>
+													<span class="label-UX-design">UI/UX 設計</span>
+												</p>
+												<p style="font-size: 1.1em; margin-bottom: 0.5em;">
+													《Stitched.EXE》是一款深受經典都市傳說（Creepypasta）恐怖遊戲啟發的個人獨立開發作品。這是一款平台動作遊戲，核心著重於關卡與敘事設計，並結合了獨特的玩法機制。
+												</p>
 												
 												<div class="button-row">
 													<a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'stitched-exe-details.html','index.html')">
-														<div class="pixel"><p>詳情</p></div>
+														<div class="pixel"><p>專案詳情</p></div>
 													</a>
 													<a href="https://gamejolt.com/games/Stitched_IceClimbers/929379" class="pixel-button-link">
-														<div class="pixel"><p>網站</p></div>
+														<div class="pixel"><p>前往網站</p></div>
 													</a>
 												</div>	
 											</div>
-										</article>
-
-										<article>
-											<a href="#" class="image"><img src="../images/Prison_Island_thumbnail.png" alt="" /></a>
-											<div class="inner">
-												<h4>Prison Island</h4>
-												<p>Prison Island 是一款受遊戲出版社 Sockpop 發出的遊戲（Grey Scout） 啟發的 3D 潛行遊戲。這個專案的目標是翻新現有的遊戲，同時為其遊戲玩法增添新的元素。</p>
-				
-												<div class="button-row">
-													<a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'prison-island-details.html','index.html')">
-														<div class="pixel"><p>詳情</p></div>
-													</a>
-													<a href="https://death052.itch.io/prisonisland" class="pixel-button-link">
-														<div class="pixel"><p>網站</p></div>
-													</a>
-												</div>	
+											<div class="responsibilities-box">
+												<p>我負責的事項：</p>
+												<ul>
+													<li>程式編寫：玩家控制、敵人 AI、場景邏輯（含遊戲事件與過場動畫）</li>
+													<li>美術設計：角色美術、場景美術、UI 美術資產</li>
+													<li>敘事設計：遊戲演出與流程設計</li>
+													<li>遊戲設計：關卡設計、核心機制設計</li>
+												</ul>
 											</div>
 										</article>
-
+											
 										<article>
-											<a href="#" class="image"><img src="../images/Just_One_Look_thumbnail.png" alt="" /></a>
+											<a href="#" class="image"><img src="../images/Prison_Island_thumbnail.png" alt="Prison Island" /></a>
 											<div class="inner">
-												<h4>Just One Look</h4>
-												<p>Just One Look 是一款俯視角 2D 潛行遊戲，玩家必須戴上面具來收集寶珠並避開敵人。
-													這款遊戲根據玩家如何使用面具，提供兩種不同的結局。</p>
-				
-												<div class="button-row">
-													<a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'just-one-look-details.html','index.html')">
-														<div class="pixel"><p>詳情</p></div>
-													</a>
-													<a href="https://rhea-45.itch.io/just-one-look" class="pixel-button-link">
-														<div class="pixel"><p>網站</p></div>
-													</a>
-												</div>	
-											</div>
-										</article>
-										
-										<article>
-											<a href="#" class="image"><img src="../images/Maya_Projects_Thumbnail.png" alt="" /></a>
-											<div class="inner">
-												<h4>Maya 專案</h4>
+												<h4 style="font-size: 1.5em;">《Prison Island》 [2025]</h4>
 												<p>
-													我有一些使用 Maya 創建 3D 模型和動畫的經驗。
+													<span class="label-coding">程式編寫</span>
+													<span class="label-mechanic-design">機制設計</span>
+													<span class="label-level-design">關卡設計</span>
+												</p>
+												<p style="font-size: 1.1em; margin-bottom: 0.5em;">
+													《Prison Island》是一款 3D 潛行遊戲，靈感來自 Sockpop 的《Grey Scout》。玩家必須在島嶼上躲避敵方視線並解救囚犯。我們在原版玩法的基礎上加入了卡牌機制，進一步提升遊戲的策略深度。
 												</p>
 				
 												<div class="button-row">
-													<a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'maya-projects.html','index.html')">
-														<div class="pixel"><p>詳情</p></div>
+													<a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'prison-island-details.html','index.html')">
+														<div class="pixel"><p>專案詳情</p></div>
+													</a>
+													<a href="https://death052.itch.io/prisonisland" class="pixel-button-link">
+														<div class="pixel"><p>前往網站</p></div>
 													</a>
 												</div>	
 											</div>
+											<div class="responsibilities-box">
+												<p>我負責的事項：</p>
+												<ul>
+													<li>程式編寫：玩家移動、敵人 AI 行為樹、整體 UI 系統系統</li>
+													<li>遊戲設計：核心機制設計</li>
+													
+												</ul>
+											</div>
 										</article>
-
 
 										<article>
-											<a href="#" class="image"><img src="../images/Patch_Synthesis_Thumbnail.png" alt="" /></a>
+											<a href="#" class="image"><img src="../images/Just_One_Look_thumbnail.png" alt="Just One Look" /></a>
 											<div class="inner">
-												<h4>基於圖塊的合成專案</h4>
+												<h4 style="font-size: 1.5em;">《Just One Look》 [2026]</h4>
 												<p>
-												這是一個電腦圖形密集型專案，作為我大學電腦科最終年度專案。
+													<span class="label-coding">程式編寫</span>
+													<span class="label-narrative">敘事設計</span>
+													<span class="label-mechanic-design">機制設計</span>
+												</p>
+												<p style="font-size: 1.1em; margin-bottom: 0.5em;">
+													《Just One Look》是一款專為 2026 年 Global Game Jam 開發的俯視角 2D 潛行遊戲。玩家必須在戴著面具躲避敵人的同時收集能量球。
+												</p>
+				
 												<div class="button-row">
-													<a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'patch-synthesis-details.html','index.html')">
-														<div class="pixel"><p>詳情</p></div>
+													<a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'just-one-look-details.html','index.html')">
+														<div class="pixel"><p>專案詳情</p></div>
 													</a>
 													<a href="https://rhea-45.itch.io/just-one-look" class="pixel-button-link">
-														<div class="pixel"><p>網站</p></div>
+														<div class="pixel"><p>前往網站</p></div>
 													</a>
 												</div>	
 											</div>
+											<div class="responsibilities-box">
+												<p>我負責的事項：</p>
+												<ul>
+													<li>程式編寫：玩家移動、敵人 AI 行為、著色器（Shader）與特效實作</li>
+													<li>敘事設計：遊戲文本對話、多結局系統</li>
+													<li>遊戲設計：核心機制設計</li>
+												</ul>
+											</div>
 										</article>
 
-
+										<article>
+											<a href="#" class="image"><img src="../images/Truck_Management_Simulator_thumbnail.png" alt="Good Luck Is Coming" /></a>
+											<div class="inner">
+												<h4 style="font-size: 1.5em;">《好運來》 (Good Luck Is Coming) [2026]</h4>
+												<p>
+													<span class="label-coding">程式編寫</span>
+													<span class="label-mechanic-design">機制設計</span>
+													<span class="label-UX-design">UI/UX 設計</span>
+												</p>
+												<p style="font-size: 1.1em; margin-bottom: 0.5em;">
+													《好運來》是一款 2D 俯視角卡車管理模擬遊戲，為 2026 年網易迷你遊戲 Game Jam 的參賽作品。玩家負責調配並操控卡車去撞擊目標以獲得積分。
+												</p>
+				
+												<div class="button-row">
+													<a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'good-luck-is-coming-details.html','index.html')">
+														<div class="pixel"><p>專案詳情</p></div>
+													</a>
+													<a href="https://game.academy.163.com/event/mg2026/mg2026?id=50326" class="pixel-button-link">
+														<div class="pixel"><p>前往網站</p></div>
+													</a>
+													
+												</div>	
+											</div>
+											<div class="responsibilities-box">
+												<p>我負責的事項：</p>
+												<ul>
+													<li>程式編寫：卡車路徑移動、卡車衝撞判定、NPC 行為、UI 互動系統</li>
+													<li>遊戲設計：隨機突發天氣事件</li>
+													<li>UI/UX 設計：卡車管理介面的 UI 設計與互動流程</li>
+												</ul>
+											</div>
+										</article>
 
 
 									</div>
 								</div>
 							</section>
 
-						<!-- Four -->
-							<section id="four">
+							<!-- 區塊五：其他個人專案 -->
+							<section id="five"> 
+								<div class="container"> 
+									<h2>其他個人專案</h2> 
+									<p style=" font-size: 1.1em;">這些是我參與過的其他類型專案。雖然它們不屬於遊戲開發，但同樣展現了我在多媒體與技術上的實作能力。</p> 
+									
+									<div class="features"> 
+										<div class="image-row-with-border-center"> 
+											<div class="wireframe-row"> 
+												
+												<div class="wireframe-column"> 
+													<div class="wireframe-card"> 
+														<div class="card-image-wrapper-rectangle"> 
+															<img src="../images/Maya_Projects_Thumbnail_Square.png" alt="Maya 專案圖示" height="200" width="200"> 
+														</div> 
+														<h3 class="card-title">Maya 3D 專案</h3> 
+														<div class="card-description"> 
+															<p>我主要使用 Maya 進行所有的 3D 建模工作。曾創作過靜態物件美術以及動態角色骨架與動畫。</p> 
+														</div> 
+														<a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'maya-projects.html','index.html')"> 
+															<div class="pixel"><p>查看專案</p></div> 
+														</a> 
+													</div> 
+												</div> 
+
+												<div class="wireframe-column"> 
+													<div class="wireframe-card"> 
+														<div class="card-image-wrapper-rectangle"> 
+															<img src="../images/Patch_Synthesis_Thumbnail_Square.png" alt="Patch 影像合成專案圖示" height="200" width="200"> 
+														</div> 
+														<h3 class="card-title" style="font-size: 1.1em;">Patch 影像合成專案</h3> 
+														<div class="card-description"> 
+															<p>這是一個著重於電腦圖學（Computer Graphics）的技術專案，為我大學電腦科學課程的畢業設計。</p> 
+														</div> 
+														<a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'patch-synthesis-details.html','index.html')"> 
+															<div class="pixel"><p>查看專案</p></div> 
+														</a> 
+													</div> 
+												</div> 
+
+												<div class="wireframe-column"> 
+													<div class="wireframe-card"> 
+														<div class="card-image-wrapper-rectangle"> 
+															<img src="../images/Adobe_Creative_Cloud_Thumbnail_Square.png" alt="Adobe Creative Cloud 圖示" height="200" width="200"> 
+														</div> 
+														<h3 class="card-title">Adobe 多媒體專案</h3> 
+														<div class="card-description"> 
+															<p>我透過自學熟練掌握了多款 Adobe 工具，並廣泛應用於平面視覺設計及動態影像創作。</p> 
+														</div> 
+														<a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'adobe-details.html','index.html')"> 
+															<div class="pixel"><p>查看專案</p></div> 
+														</a> 
+													</div> 
+												</div> 
+
+											</div> 
+										</div> 
+									</div> 
+								</div>
+							</section>
+
+						<!-- 區塊六：工作經驗 -->
+							<section id="six">
 								<div class="container">
-									<h3>工作經歷</h3>
-									<p>雖然我過去曾參與過各種遊戲開發專案，但我也曾在不同的公司工作，
-										擔任不同的職位。
+									<h3>工作經驗</h3>
+									<p>除了豐富的遊戲開發實務外，我也曾在不同的企業與機構實習，主要擔任設計、技術及研究類型的職務。
 									</p>
 
 									<div class="image-row-with-border-center">
-										<div class="row">
-											<div class="column">
-												<div class="SE-imgContainer">
-													<img src="../images/Internship_SKLMP_Logo.png" alt="SE1" height="200" width="200">
+										<div class="wireframe-row">
+											<div class="wireframe-column">
+												<div class="wireframe-card">
+													<div class="card-image-wrapper">
+														<img src="../images/Internship_SKLMP_Logo.png" alt="SKLMP 標誌" height="200" width="200">
+													</div>
+													<h3 class="card-title" style="text-align: center;">SKLMP 海洋污染國家重點實驗室</h3>
+													<div class="card-description">
+														<p>實習期間主要負責官方網站的 UI/UX 介面設計與優化。</p>
+													</div>
 													<a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'intern-SKLMP.html','index.html')">
-														<div class="pixel"><p>詳情</p></div>
+														<div class="pixel"><p>查看詳情</p></div>
 													</a>
 												</div>
 											</div>
-											<div class="column">
-												<div class="SE-imgContainer">
-													<img src="../images/Internship_RTHK_Logo.png" alt="SE2" height="200" width="200">
+
+											<div class="wireframe-column">
+												<div class="wireframe-card">
+													<div class="card-image-wrapper">
+														<img src="../images/Internship_RTHK_Logo.png" alt="RTHK 標誌" height="200" width="200">
+													</div>
+													<h3 class="card-title" style="text-align: center;">RTHK 香港電台</h3>
+													<div class="card-description">
+														<p>實習期間專注於專案管理、AI 語音模型研究以及系統自動化測試。</p>
+													</div>
 													<a href="#" class="pixel-button-link" onclick="onChangePageClick(event, 'intern-RTHK.html','index.html')">
-														<div class="pixel"><p>詳情</p></div>
+														<div class="pixel"><p>查看詳情</p></div>
 													</a>
 												</div>
 											</div>
 										</div>
 									</div>
-
-
-
-
-									<!-- <form method="post" action="#">
-										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-											<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-											<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
-											<div class="col-12">
-												<ul class="actions">
-													<li><input type="submit" class="primary" value="Send Message" /></li>
-													<li><input type="reset" value="Reset Form" /></li>
-												</ul>
-											</div>
-										</div>
-									</form>
-								</div>
-							</section> -->
-
-						<!-- Five -->
-						<!--
-							<section id="five">
-								<div class="container">
-									<h3>Elements</h3>
-
-									<section>
-										<h4>Text</h4>
-										<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-										This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-										This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-										<hr />
-										<header>
-											<h4>Heading with a Subtitle</h4>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<header>
-											<h5>Heading with a Subtitle</h5>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<hr />
-										<h2>Heading Level 2</h2>
-										<h3>Heading Level 3</h3>
-										<h4>Heading Level 4</h4>
-										<h5>Heading Level 5</h5>
-										<h6>Heading Level 6</h6>
-										<hr />
-										<h5>Blockquote</h5>
-										<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-										<h5>Preformatted</h5>
-										<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-									</section>
-
-									<section>
-										<h4>Lists</h4>
-										<div class="row">
-											<div class="col-6 col-12-xsmall">
-												<h5>Unordered</h5>
-												<ul>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-												<h5>Alternate</h5>
-												<ul class="alt">
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-											</div>
-											<div class="col-6 col-12-xsmall">
-												<h5>Ordered</h5>
-												<ol>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ol>
-												<h5>Icons</h5>
-												<ul class="icons">
-													<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-													<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-													<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-													<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-													<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-													<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-												</ul>
-											</div>
-										</div>
-										<h5>Actions</h5>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Default</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Default</a></li>
-										</ul>
-										<ul class="actions small">
-											<li><a href="#" class="button primary small">Small</a></li>
-											<li><a href="#" class="button small">Small</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<div class="row">
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary">Default</a></li>
-													<li><a href="#" class="button">Default</a></li>
-													<li><a href="#" class="button alt">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6 col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small">Small</a></li>
-													<li><a href="#" class="button small">Small</a></li>
-													<li><a href="#" class="button alt small">Small</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary fit">Default</a></li>
-													<li><a href="#" class="button fit">Default</a></li>
-													<li><a href="#" class="button alt fit">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small fit">Small</a></li>
-													<li><a href="#" class="button small fit">Small</a></li>
-													<li><a href="#" class="button alt small fit">Small</a></li>
-												</ul>
-											</div>
-										</div>
-									</section>
-
-									<section>
-										<h4>Table</h4>
-										<h5>Default</h5>
-										<div class="table-wrapper">
-											<table>
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
-
-										<h5>Alternate</h5>
-										<div class="table-wrapper">
-											<table class="alt">
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
-									</section>
-
-									<section>
-										<h4>Buttons</h4>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Primary</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Alternate</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary large">Large</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<ul class="actions fit">
-											<li><a href="#" class="button primary fit">Fit</a></li>
-											<li><a href="#" class="button fit">Fit</a></li>
-											<li><a href="#" class="button alt fit">Fit</a></li>
-										</ul>
-										<ul class="actions fit small">
-											<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-											<li><a href="#" class="button fit small">Fit + Small</a></li>
-											<li><a href="#" class="button alt fit small">Fit + Small</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-											<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-											<li><a href="#" class="button alt icon solid fa-check">Icon</a></li>
-										</ul>
-										<ul class="actions">
-											<li><span class="button primary disabled">Primary</span></li>
-											<li><span class="button disabled">Default</span></li>
-											<li><span class="button alt disabled">Alternate</span></li>
-										</ul>
-									</section>
-
-									<section>
-										<h4>Form</h4>
-										<form method="post" action="#">
-											<div class="row gtr-uniform">
-												<div class="col-6 col-12-xsmall">
-													<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-												</div>
-												<div class="col-6 col-12-xsmall">
-													<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-												</div>
-												<div class="col-12">
-													<select name="demo-category" id="demo-category">
-														<option value="">- Category -</option>
-														<option value="1">Manufacturing</option>
-														<option value="1">Shipping</option>
-														<option value="1">Administration</option>
-														<option value="1">Human Resources</option>
-													</select>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-													<label for="demo-priority-low">Low Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-normal" name="demo-priority">
-													<label for="demo-priority-normal">Normal Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-high" name="demo-priority">
-													<label for="demo-priority-high">High Priority</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-copy" name="demo-copy">
-													<label for="demo-copy">Email me a copy of this message</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-human" name="demo-human" checked>
-													<label for="demo-human">I am a human and not a robot</label>
-												</div>
-												<div class="col-12">
-													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-												</div>
-												<div class="col-12">
-													<ul class="actions">
-														<li><input type="submit" value="Send Message" /></li>
-														<li><input type="reset" value="Reset" class="alt" /></li>
-													</ul>
-												</div>
-											</div>
-										</form>
-									</section>
-
-									<section>
-										<h4>Image</h4>
-										<h5>Fit</h5>
-										<span class="image fit"><img src="images/banner.jpg" alt="" /></span>
-										<div class="box alt">
-											<div class="row gtr-50 gtr-uniform">
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											</div>
-										</div>
-										<h5>Left &amp; Right</h5>
-										<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-										<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-									</section>
-
 								</div>
 							</section>
-						-->
 
 					</div>
+				</section>
+				
+				<!-- 區塊七：成就 -->
+				<section id="seven">
+					<div class="container">
+						<h3>成就</h3>
+						<p>本板塊展示了我的教育背景、學術表現與政府獎項資歷。</p>
+						<table class="awards-achievements-table">
+							<tr>
+								<th>資歷類型</th>
+								<th>頒發機構 / 院校</th>
+								<th>成果 / 榮譽</th>
+							</tr>
+							<tr>
+								<td>電腦科學學士學位 [BSc]</td>
+								<td><span class="institution-with-logo"><span class="institution-name">里茲大學</span><img src="../images/UniversityofLeeds_Logo.png" alt="University of Leeds" width="70" height="70"></span></td>
+								<td>一等榮譽畢業 </td>
+							</tr>
+							<tr>
+								<td>遊戲與玩樂設計碩士學位 [MA]</td>
+								<td><span class="institution-with-logo"><span class="institution-name">倫敦大學金匠學院</span><img src="../images/Goldsmiths_Logo.png" alt="Goldsmiths" width="70" height="70"></span></td>
+								<td>[修讀中]</td>
+							</tr>
+							<tr>
+								<td>香港卓越獎學金計劃 (HKSES)</td>
+								<td><span class="institution-with-logo"><span class="institution-name">香港特別行政區政府</span><img src="../images/HKSES_Logo.png" alt="HKSES" width="70" height="70"></span></td>
+								<td>獲選</td>
+							</tr>
 
-				<!-- Footer -->
+						</table>
+
+					</div>
+				</section>
+
+				<!-- 頁尾 -->
 					<section id="footer">
 						<div class="container">
 							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; Untitled. 保留所有權利。</li><li>網頁設計：<a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</section>
 
 			</div>
 
-		<!-- Scripts -->
-			<script src="../assets/js/jquery.min.js"></script>
-			<script src="../assets/js/jquery.scrollex.min.js"></script>
-			<script src="../assets/js/jquery.scrolly.min.js"></script>
-			<script src="../assets/js/browser.min.js"></script>
-			<script src="../assets/js/breakpoints.min.js"></script>
-			<script src="../assets/js/util.js"></script>
-			<script src="../assets/js/main.js"></script>
-			<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-			<script src="../assets/js/charts.js"></script>
-			<script src="../assets/js/switch_lang.js"></script>
-
-		
+		<!-- 腳本 -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/jquery.scrollex.min.js"></script>
+		<script src="../assets/js/jquery.scrolly.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<script src="../assets/js/charts.js"></script>
+		<script src="../assets/js/switch_lang.js"></script>
 
 	</body>
 </html>
