@@ -56,17 +56,19 @@
                         </div>
                         <div class="container">
                             <header class="major">
-                                <h2>Blossems of the Dead</h2>
+                                <h2>Before You Cross</h2>
                                 <h3>Introduction</h3>
                             </header>
                             <p>
-                                Blossems of The Dead is an on-going final year project for my Goldsmiths University Game Design course.
+                                Before You Cross is a game created for my final year project in my Goldsmiths University Game Design course.
                                 The game is a 3D puzzle based platformer being developed in Unreal Engine. I am working with 3 other 
                                 team members to create this game. 
                             </p>
                             <p style="margin-top: -15px;">
                                 The character navigates through the land of the dead, switching
                                 between soul forms to solve puzzles, and ultimately find her deceased grandmother, wishing her one final goodbye.
+                                Dimension-switching serves as the core gameplay loop, requiring the player to alternate between different soul 
+                                forms to solve environmental puzzles and explore the world.
                             </p>
                             <p style="margin-bottom: 10px; margin-top: -15px;">
                                 I am responsible for:
@@ -75,8 +77,6 @@
                                 <li>Programming the game's core mechanics and systems</li>
                                 <li>Mechanic Design involving soul switching</li>
                                 <li>UI/UX Design for the game's interface</li>
-                                <li>Narrative Design through character dialogue and overall storytelling</li>
-                                
                             </ul>
                         </div>
                     </div>
@@ -127,11 +127,7 @@
                                         <div class="pixel-grey-green"><p>UI/UX Design</p></div>
                                     </a>
                                 </li>
-                                <li>
-                                    <a onclick="toggleContentNarrativeDesign()" class="pixel-button-link">
-                                        <div class="pixel-orange"><p>Narrative Design</p></div>
-                                    </a>
-                                </li>
+                                
                             </ul>
                         </div>
                     </div> 
@@ -141,36 +137,50 @@
                             <h2>Scripting</h2>
                             <h4>My Responsibility</h4>
                             <p>
-                                As the main programmer of this project, I am responsible for implementing most of the mechanics in the game, mainly using
-                                blueprints. I also work as the Technical Designer, making sure the mechanics can be reused and can be implemented with
-                                reasonable effort.
-                            </p>
-                            <h4>What is currently done</h4>
-                            <p>
-                                As a puzzle based platformer with state switching, I implemented a state switching system that teleports the player between
-                                2 almost identical worlds by a press of a button. Each of the worlds have slightly different objects and pathways which
-                                the player can explore. Some objects may even have different properties when interacted at different states. 
+                                As the main Technical Designer and programmer of this project, I am not only responsible for implementing most of the mechanics in the game,
+                                but also ensuring the program is well-structured, maintainable, reusable, and that the mechanics can be implemented with reasonable effort.    
                             </p>
                             <p>
-                                I also experimented on the Niagara particle system and different materials to create wind effects, and created shaders for
-                                object outline effects.
+                                As a dimension-switching puzzle-platformer, the game teleports the player between two parallel worlds stacked along the Y-axis. 
+                                Both worlds share common sub-levels, allowing shared assets and interactive items to be updated universally in a single scene. 
+                                Checkpoint systems, fire interactables, enemy behaviours and other objects that have different properties in each world are incorporated into
+                                this dimension-switching system.
                             </p>
+                            <p>
+                                Particle effects for wind and flame are implemented using material shaders and the Niagara Particle System, which produces 
+                                particles efficiently with a multitude of parameter settings to ensure best visual quality.
+                            </p>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>Wind Particle Effect</span>
+                                    <img src="../images/Blossems_of_the_dead_NiagaraWind.png" alt="Wind" height="220" width="394">
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>Flame Particle Effect</span>
+                                    <img src="../images/Blossems_of_the_dead_NiagaraFlame.png" alt="Flame" height="220" width="394">
+                                </div>
+                            </div>
+                            <p>
+                                I am also mainly responsible for implementing the Bagua matching puzzle system within the second level of the game, which 
+                                obtained paintings are matched with trigrams within the Bagua. I used a data-driven approach where a single modular script 
+                                handles all trigrams, using each object's sprite reference as a unique ID to validate correct placement.  
+                            </p>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>Obtainable Picture</span>
+                                    <img src="../images/Blossems_of_the_dead_Bagua1.png" alt="Bagua 1" height="220" width="394">
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>Bagua System View with some paintings mapped</span>
+                                    <img src="../images/Blossems_of_the_dead_Bagua2.png" alt="Bagua 2" height="220" width="394">
+                                </div>
+                            </div>
                             <h4>Version Control</h4>
                             <p>
                                 Version control is used in this project, with Perforce as the main version control software. I was responsible for aiding 
                                 the setup of the perforce server and helping team members set up their clients.
                             </p>
-                            <p>
-                                
-                            </p>
-                            <div class="image-row">
-                                <div class="SE-imgContainer">
-                                    <span>Checkpoints, Scene Switching, Object Interaction</span>
-                                    <video width="394" height="220" controls>
-                                        <source src="../videos/Blossems_of_the_dead_scripting1.mp4" type="video/mp4">
-                                    </video>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
 
@@ -189,7 +199,7 @@
                                 State switching is decided as the main mechanic of the game, so I suggested a multitude of sub-mechanics which revolve
                                 around the state switching idea. Since the state switching mechanic is based on Sol Flames, I thought about how flames
                                 can be extinguished by wind and how it can light up objects, which I expanded upon these ideas. The diagrams below
-                                only show part of the ideas I have thought of.
+                                only show part of the ideas I have planned and discussed with my team.
                             </p>
                             <div class="image-row">
                                 <div class="SE-imgContainer">
@@ -211,6 +221,19 @@
                                     <img src="../images/Blossems_of_the_dead_mechan_mist_eng.png" alt="Mist Mechanic 2" height="289" width="400">
                                 </div>
                             </div>
+                            <p>
+                                I have also designed the Bagua matching puzzle system residing at the ground floor of a tower within the second
+                                level. Since the game has other puzzles with a relatively long runtime for a university project, I decided to
+                                design a simple puzzle that is both easy to understand and simple to play. The player is required to find
+                                paintings within the tower and place these paintings into the correct trigram within the Bagua, with hints
+                                provided by a billboard showing matching patterns.
+                            </p>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>Bagua Mechanism Planning Diagram</span>
+                                    <img src="../images/Blossems_of_the_dead_mechan_Bagua_eng.png" alt="Bagua Mechanic" height="385" width="765">
+                                </div>
+                            </div>
                         </div>
                      </div>
 
@@ -219,15 +242,17 @@
                             <h2>UI/UX Design</h2>
                             <h4>My Responsibility</h4>
                             <p>
-                                I am responsible for planning and executing UI interfaces for the game. Currently, only the game UI layout is created. However, 
-                                I will plan the layout for the main menu, pause menu, and the dialogue system in the future as well.
+                                I designed and implemented the game's entire UI and UX systems, covering both head-up overlays and world-space interactable objects.
+                                These UI and UX elements are designed to be simple yet achieves the goal of providing the player with information and improve navigability
+                                within the game.
                             </p>
                             <h4>My Ideas</h4>
                             <p>
                                 Similarly to how I usually plan UI designs, I start off with a wireframe diagram with notes, then only execute the design into
-                                the final interface when agreed upon by the team. Initially, the player was discussed to have a cooldown and duration period 
-                                while in the sol flame state, therefore I planned the game overlay UI to have a cooldown duration bar. This however was discarded
-                                later on, and I opted to have a simpler overlay UI. I also started prototyping the pause/setting menu.
+                                the final interface when agreed upon by the team. 
+                                Since the player will obtain 3 sol flames within the game, the progression of the flames is shown in the overlay UI. 
+                                I initially designed an overlay with a cooldown bar for the 3 collectable Sol Flames, but simplified this later when the cooldown 
+                                mechanic was cut.
                             </p>
 
                             <div class="image-row">
@@ -240,46 +265,68 @@
                                     <img src="../images/Blossems_of_the_dead_OldUILayout2.png" alt="Layout 2" height="222" width="400">
                                 </div>
                             </div>
-                            <div class="image-row">
-                                <div class="SE-imgContainer">
-                                    <span>New approved In-Game UI Design</span>
-                                    <img src="../images/Blossems_of_the_dead_NewUILayoutOverlay.png" alt="Layout 3" height="222" width="400">
-                                </div>
-                                <div class="SE-imgContainer">
-                                    <span>Pause Menu UI Wireframe</span>
-                                    <img src="../images/Blossems_of_the_dead_NewUILayoutPause.png" alt="Layout Implementation" height="222" width="400">
-                                </div>
-                            </div>
-                            <div class="image-row">
-                                <div class="SE-imgContainer">
-                                    <span>Options Menu UI Wireframe</span>
-                                    <img src="../images/Blossems_of_the_dead_NewUILayoutAudio.png" alt="Layout 3" height="222" width="400">
-                                </div>
-                                <div class="SE-imgContainer">
-                                    <span>Prototype Implementation in Unreal Engine</span>
-                                    <img src="../images/Blossems_of_the_dead_NewUILayoutImplementationDraft.png" alt="Layout Implementation" height="222" width="400">
-                                </div>
-                            </div>
-                            
-                            
-
-                            
-
-
-                        </div>
-                     </div>
-                     <div id="hidden-section-narrative-design" style="display: none;">
-                        <div class="container">
-                            <h2>Narrative Design</h2>
-                            <h4>My Responsibility</h4>
                             <p>
-                                I will be responsible for creating narrative plot points for the game, including character dialogue and backstory 
-                                cutscenes. As of right now, no work has been accomplished yet.
+                                The game provides the player with text throughout the game in the form of dialogue boxes and cutscenes, both to
+                                enrich the narrative and to improve world-building. Initially, only a interactable dialogue box is designed appearing
+                                when the player physically interacts with a character. It was later proven that the player doesn't have time to interact
+                                with every NPC in the area individually, so I referenced other games like Paper Mario and designed floating dialogue boxes
+                                above the NPCs, which are triggered when the player is within a certain distance of the NPC.
                             </p>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>Interactable Dialogue Box</span>
+                                    <img src="../images/Blossems_of_the_dead_DialogueInteractable.png" alt="Interactable Dialogue Box" height="222" width="400">
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>Non-Interactable Dialogue Box</span>
+                                    <img src="../images/Blossems_of_the_dead_DialogueNonInteractable.png" alt="Non-Interactable Dialogue Box" height="222" width="400">
+                                </div>
+                            </div>
+                            <p>
+                                The game has intro and ending cutscenes, and have to be implemented in a way that is easy to edit and maintain while being
+                                simplistic due to the game's limited development time. I chosen to use static images to display certain events accompanied
+                                by text at the bottom of the image. 
+                            </p>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>Cutscene UI Wireframe</span>
+                                    <img src="../images/Blossems_of_the_dead_UICutscenePlanning.png" alt="Cutscene Planning" height="222" width="400">
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>Final Implementation</span>
+                                    <img src="../images/Blossems_of_the_dead_UICutsceneImplemented.png" alt="Cutscene Implementation" height="222" width="400">
+                                </div>
+                            </div>
+                             <p>
+                                Object Interaction is a major part of the game, and the player requires indication on what is interactable and what isn't.
+                                Initially, interactable objects within the player's reach is shown using a yellow outline around its mesh, but was later changed
+                                to mesh highlighting using a blue texture when the former was proven to be not visually significant enough for some players to notice.
+                                For the Bagua matching puzzle, colour changes are not only used to indicate interactable trigrams, but also to indicate the correct placement 
+                                of paintings within the Bagua.
+                            </p>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>Interactable Ladder Glow</span>
+                                    <img src="../images/Blossems_of_the_dead_UINavigationGlow1.png" alt="Interactable Object Glow" height="222" width="400">
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>Interactable Painting Glow</span>
+                                    <img src="../images/Blossems_of_the_dead_UINavigationGlow2.png" alt="Interactable Object Glow 2" height="222" width="400">
+                                </div>
+                            </div>
+                            <div class="image-row">
+                                <div class="SE-imgContainer">
+                                    <span>Bagua Trigram states</span>
+                                    <img src="../images/Blossems_of_the_dead_UINavigationGlow3.png" alt="Bagua Trigram when in range [left] and successfully matched [right]" height="222" width="400">
+                                </div>
+                                <div class="SE-imgContainer">
+                                    <span>Bagua when all trigrams are correctly placed</span>
+                                    <img src="../images/Blossems_of_the_dead_UINavigationGlow4.png" alt="Bagua when all trigrams are correctly placed" height="222" width="400">
+                                </div>
+                            </div>
                         </div>
                     </div>
-        
-                    
+
                     <!-- <div class="container">
                         <h3>Inspirations</h3>
                         <p>
@@ -320,7 +367,19 @@
                             </div>
                         </div>
                     </div> -->
-
+                     <div class="container">
+                        <h3>Gameplay Video</h3>
+                        <h5 style="margin-top: -15px;">Gameplay Video created by team-member Aki Pan</h5>
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/aPEaaQpM5Ko"
+                            title="Gameplay Video"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
                 </div>
 
     
